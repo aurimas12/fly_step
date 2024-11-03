@@ -5,6 +5,25 @@ from constants import csv_file_path
 from typing import Dict, List, Any
 
 
+def check_or_directory_exists(directory_path: str):
+    """
+    Check if a directory exists at the specified path.
+    If it does not exist, create it.
+    Parameters:
+    directory_path (str): The path to the directory to check or create.
+    Returns:
+    bool: True if the directory was created, False if it already existed.
+    """
+    path = Path(directory_path)
+    if not path.exists():
+        path.mkdir(parents=True, exist_ok=True)
+        print(f"Directory '{directory_path}' created.")
+        return True
+    else:
+        print(f"Directory '{directory_path}' already exists.")
+        return False
+
+
 def check_write_data_to_json_file(data: str, json_file_path: str) -> str:
     """
     Function creates, check or data exist and adds unique data
@@ -142,4 +161,3 @@ def get_value(data: dict, key: str) -> str:
     'Vilnius International Airport'
     """
     return data.get(key, "none")
-

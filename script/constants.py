@@ -1,9 +1,14 @@
-csv_file_path = "./script/data/airports.csv"
-
+# Urls
 base_url = "https://services-api.ryanair.com/farfnd/v4/oneWayFares"
 
-vno_bcn_data_path = "./script/data/vno_bcn_data.json"
 
+# Paths
+csv_file_path = "./script/airports.csv"
+vno_bcn_data_path = "./script/data/vno_bcn_data.json"
+data_folder_path = "./script/data"
+
+
+# Json
 json_structure = {
             "departureAirport": {
             "countryName": "",
