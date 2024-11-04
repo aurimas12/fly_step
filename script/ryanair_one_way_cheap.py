@@ -17,8 +17,8 @@ def get_one_way_cheap_flight(base_url: str,
 
     Args:
         base_url (str): The base URL of the flight API to fetch flight data.
-        departure_iata (str): The IATA code for the departure airport.
-        arrival_iata (str): The IATA code for the arrival airport.
+        departure_iata (str): The IATA code for the departure airport exp:'VNO'.
+        arrival_iata (str): The IATA code for the arrival airport exp:'BCN'.
         date (datetime): The date of departure as a datetime object.
 
     Returns:
@@ -51,11 +51,14 @@ def get_one_way_cheap_flight(base_url: str,
 def get_flight_values_from_data(one_flight_data: Dict[str, Any],
                                 json_structure: Dict[str, Any]) -> str:
     """
-    Extracts flight information from the provided flight data and updates the given JSON structure with this information.
+    Extracts flight information from the provided flight data and updates the
+    given JSON structure with this information.
     Args:
-        one_flight_data (Dict[str, Any]): A dictionary containing details of a flight, including fare information,
-                                            departure and arrival airport details, and flight schedule.
-        json_structure (Dict[str, Any]): A dictionary structure that will be updated with the extracted flight values.
+        one_flight_data (Dict[str, Any]): A dictionary containing details of a flight, including fare
+                                            information, departure and arrival airport details,
+                                            and flight schedule.
+        json_structure (Dict[str, Any]): A dictionary structure that will be
+                                        updated with the extracted flight values.
     Returns:
         str: A JSON-formatted string representing the updated JSON structure,
              including the extracted flight information, formatted with an indentation of 4 spaces.
