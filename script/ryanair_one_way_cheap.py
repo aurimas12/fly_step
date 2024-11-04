@@ -1,6 +1,7 @@
 import json
 import requests
 from datetime import datetime, timedelta
+from dateutil.relativedelta import relativedelta
 from constants import base_url, json_structure, vno_bcn_data_path, data_folder_path
 from file import check_write_data_to_json_file, check_or_directory_exists
 from typing import Dict, Any
@@ -133,6 +134,6 @@ def get_flights_by_date_range(start_date: datetime, end_date: datetime):
 
 if __name__ == '__main__':
     check_or_directory_exists(data_folder_path)
-    start_date = datetime(2024,11,8)
-    end_date = datetime(2024,12,31)
+    start_date = datetime.today().replace(hour=0, minute=0, second=0, microsecond=0)
+    end_date = start_date + relativedelta(months=3)
     get_flights_by_date_range(start_date, end_date)
