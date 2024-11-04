@@ -7,7 +7,7 @@ __pycache__/
 *.so
 
 #folders
-script/data/
+
 
 # google drive auth
 google_auth/service_account.json
