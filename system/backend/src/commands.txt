@@ -1,0 +1,5 @@
+carbo build
+cargo run
+cargo new name
+cargo new name --lib
+cargo run --bin backend
