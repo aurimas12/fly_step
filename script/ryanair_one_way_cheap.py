@@ -2,9 +2,15 @@ import json
 import requests
 from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
-from constants import base_url, json_structure, vno_bcn_data_path, data_folder_path
+from constants import base_url, json_structure, vno_bcn_data_json_path, data_folder_path
 from file import check_write_data_to_json_file, check_or_directory_exists
 from typing import Dict, Any
+import logging
+import logging.config
+from logging_config import LOGGING_CONFIG
+
+logging.config.dictConfig(LOGGING_CONFIG)
+logger = logging.getLogger(__name__)
 
 
 def get_one_way_cheap_flight(base_url: str,
@@ -44,6 +50,7 @@ def get_one_way_cheap_flight(base_url: str,
 
         return data
     except requests.exceptions.RequestException as e:
+        logger.error(f"Failed to fetch flight data from {departure_iata} to {arrival_iata} on {date_str}: {e}")
         print(f"An error occurred: {e}")
         return None
 
@@ -68,6 +75,7 @@ def get_flight_values_from_data(one_flight_data: Dict[str, Any],
 
     fares = one_flight_data.get("fares", [])
     if not fares:
+        logger.info("No fares found in the response data.")
         print("No fares found")
     else:
         outbound = fares[0]['outbound']
@@ -109,6 +117,7 @@ def get_flight_values_from_data(one_flight_data: Dict[str, Any],
         json_structure["price"]["value"] = price_value
         json_structure["price"]["currencyCode"] = price_currency
         json_structure["priceUpdated"] = [price_updated]
+        logger.info("Extracted flight information from response data")
         return json.dumps(json_structure, indent=4)
 
 
@@ -130,9 +139,19 @@ def get_flights_by_date_range(start_date: datetime, end_date: datetime):
         one_way_fares = get_one_way_cheap_flight(base_url, 'VNO', 'BCN', search_date)
         flight_values = get_flight_values_from_data(one_way_fares, json_structure)
         if not flight_values:
+            logger.info(f"No flight data available for {search_date.strftime('%Y-%m-%d')}")
             continue
         else:
-            print(check_write_data_to_json_file(flight_values, vno_bcn_data_path))
+            result = check_write_data_to_json_file(flight_values, vno_bcn_data_json_path)
+            if result:
+                logger.info(f"Flight data successfully saved for {search_date.strftime('%Y-%m-%d')}")
+            else:
+                logger.error(f"Failed to save flight data for {search_date.strftime('%Y-%m-%d')}")
+
+        if not flight_values:
+            continue
+        else:
+            print(check_write_data_to_json_file(flight_values, vno_bcn_data_json_path))
 
 
 if __name__ == '__main__':
@@ -140,3 +159,4 @@ if __name__ == '__main__':
     start_date = datetime.today().replace(hour=0, minute=0, second=0, microsecond=0)
     end_date = start_date + relativedelta(months=3)
     get_flights_by_date_range(start_date, end_date)
+    logger.info(f"Flight data from {start_date } to {end_date} scraping complete")
