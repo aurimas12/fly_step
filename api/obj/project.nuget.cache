@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4ppNLxYQt/Bdli7c1NxuOxb6XsW8STP3LvO/BE9eQQX0TgyiYvHU3qNaT338hj1g7DNhBvFJIUi9VhgS3V+tsg==",
+  "dgSpecHash": "kGDNUrGCZSP61AviSJdJrsXe7iPmCfqz24Zk3hEh97ritciKvY/SeelheOz5RBKq2SIZZ0UKTnHshP+YuOeBtQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nerijus\\Desktop\\taskUpdate\\api\\api.csproj",
+  "projectFilePath": "C:\\Users\\Nerijus\\Desktop\\NaujausiasApi\\api\\api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nerijus\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.10\\microsoft.entityframeworkcore.8.0.10.nupkg.sha512",
     "C:\\Users\\Nerijus\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.10\\microsoft.entityframeworkcore.abstractions.8.0.10.nupkg.sha512",
