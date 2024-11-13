@@ -47,7 +47,6 @@ def get_one_way_cheap_flight(base_url: str,
         response = requests.get(url)
         response.raise_for_status()
         data = response.json()
-
         return data
     except requests.exceptions.RequestException as e:
         logger.error(f"Failed to fetch flight data from {departure_iata} to {arrival_iata} on {date_str}: {e}")
@@ -76,7 +75,6 @@ def get_flight_values_from_data(one_flight_data: Dict[str, Any],
     fares = one_flight_data.get("fares", [])
     if not fares:
         logger.info("No fares found in the response data.")
-        print("No fares found")
     else:
         outbound = fares[0]['outbound']
         departure_country = outbound['departureAirport']['countryName']
@@ -134,24 +132,18 @@ def get_flights_by_date_range(start_date: datetime, end_date: datetime):
     """
     for i in range((end_date - start_date).days + 1):
         search_date = start_date + timedelta(days=i)
-        print(search_date)
-        # date_str = current_date.strftime("%Y-%m-%d")
         one_way_fares = get_one_way_cheap_flight(base_url, 'VNO', 'BCN', search_date)
         flight_values = get_flight_values_from_data(one_way_fares, json_structure)
         if not flight_values:
-            logger.info(f"No flight data available for {search_date.strftime('%Y-%m-%d')}")
+            logger.info(f"No flight data available in {search_date.strftime('%Y-%m-%d')}")
             continue
         else:
             result = check_write_data_to_json_file(flight_values, vno_bcn_data_json_path)
+            print(search_date, result)
             if result:
                 logger.info(f"Flight data successfully saved for {search_date.strftime('%Y-%m-%d')}")
             else:
                 logger.error(f"Failed to save flight data for {search_date.strftime('%Y-%m-%d')}")
-
-        if not flight_values:
-            continue
-        else:
-            print(check_write_data_to_json_file(flight_values, vno_bcn_data_json_path))
 
 
 if __name__ == '__main__':
@@ -159,4 +151,4 @@ if __name__ == '__main__':
     start_date = datetime.today().replace(hour=0, minute=0, second=0, microsecond=0)
     end_date = start_date + relativedelta(months=3)
     get_flights_by_date_range(start_date, end_date)
-    logger.info(f"Flight data from {start_date } to {end_date} scraping complete")
+    logger.info("Flight data scraping complete")
