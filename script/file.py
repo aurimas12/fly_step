@@ -1,8 +1,13 @@
 import pandas as pd
 from pathlib import Path
 import json
-from constants import csv_file_path
 from typing import Dict, List, Any
+import logging
+import logging.config
+from logging_config import LOGGING_CONFIG
+
+logging.config.dictConfig(LOGGING_CONFIG)
+logger = logging.getLogger(__name__)
 
 
 def check_or_directory_exists(directory_path: str):
@@ -17,9 +22,11 @@ def check_or_directory_exists(directory_path: str):
     path = Path(directory_path)
     if not path.exists():
         path.mkdir(parents=True, exist_ok=True)
+        logger.info(f"Directory '{directory_path}' created.")
         print(f"Directory '{directory_path}' created.")
         return True
     else:
+        logger.info(f"Directory '{directory_path}' already exists.")
         print(f"Directory '{directory_path}' already exists.")
         return False
 
@@ -36,43 +43,54 @@ def check_write_data_to_json_file(data: str, json_file_path: str) -> str:
         str: A message indicating whether new data was added, no new data was added,
              or the file was created and data was written.
     """
-
     try:
-        new_entry = json.loads(data)  # Parse the JSON string into a dictionary
+        new_entry = json.loads(data)
     except json.JSONDecodeError:
+        logger.error("Invalid JSON data provided.")
         return "Invalid JSON data provided."
 
     path = Path(json_file_path)
+
     if path.is_file():
         with open(path, "r+", encoding="utf-8") as file:
             try:
                 existing_data = json.load(file)
-                if not isinstance(existing_data, list):
-                    existing_data = []
             except json.JSONDecodeError:
-                existing_data = []
+                logger.warning(f"File '{json_file_path}' contained invalid JSON. Overwriting with new data.")
+                existing_data = None
 
-            exists = any(
-                isinstance(existing_item, dict) and
-                existing_item.get("departureAirport", {}).get("iataCode") == new_entry.get("departureAirport", {}).get("iataCode") and
-                existing_item.get("arrivalAirport", {}).get("iataCode") == new_entry.get("arrivalAirport", {}).get("iataCode") and
-                existing_item.get("price", {}).get("value") == new_entry.get("price", {}).get("value")and
-                existing_item.get("departureDate") == new_entry.get("departureDate")
-                for existing_item in existing_data
-            )
+            if isinstance(existing_data, list):
+                exists = any(
+                    isinstance(existing_item, dict) and
+                    existing_item.get("departureAirport", {}).get("iataCode") == new_entry.get("departureAirport", {}).get("iataCode") and
+                    existing_item.get("arrivalAirport", {}).get("iataCode") == new_entry.get("arrivalAirport", {}).get("iataCode") and
+                    existing_item.get("price", {}).get("value") == new_entry.get("price", {}).get("value") and
+                    existing_item.get("departureDate") == new_entry.get("departureDate")
+                    for existing_item in existing_data
+                )
 
-            if exists:
-                return f"No new data added to '{json_file_path}' because it already exists."
+                if exists:
+                    logger.info(f"No new data added to '{json_file_path}', it already exists.")
+                    return f"No new data added to '{json_file_path}', it already exists."
+                else:
+                    existing_data.append(new_entry)
+                    file.seek(0)
+                    json.dump(existing_data, file, indent=4)
+                    file.truncate()
+                    logger.info(f"New data added to '{json_file_path}'.")
+                    return f"New data added to '{json_file_path}'."
             else:
-                existing_data.append(new_entry)
                 file.seek(0)
-                json.dump(existing_data, file, indent=4)
+                json.dump([new_entry], file, indent=4)
                 file.truncate()
-                return f"New data added to '{json_file_path}'."
+                logger.info(f"File '{json_file_path}' did not contain valid data. Overwritten with new data.")
+                return f"File '{json_file_path}' contained invalid data. Overwritten with new data."
     else:
         with open(path, "w", encoding="utf-8") as file:
             json.dump([new_entry], file, indent=4)
+            logger.info(f"Created '{json_file_path}' and wrote data to it.")
             return f"Created '{json_file_path}' and wrote data to it."
+
 
 
 def read_csv_file(csv_file_path: str) -> str:
@@ -86,11 +104,14 @@ def read_csv_file(csv_file_path: str) -> str:
     """
     try:
         df = pd.read_csv(csv_file_path)
+        logger.info(f"Successfully read CSV file: '{csv_file_path}'")
         return df
     except FileNotFoundError:
+        logger.error(f"Error: CSV file '{csv_file_path}' does not exist.")
         print(f"Error: csv file '{csv_file_path}' does not exist.")
         return None
     except pd.errors.ParserError as e:
+        logger.error(f"Error reading CSV file '{csv_file_path}': {e}")
         print(f"Error reading csv file '{csv_file_path}' error: {e}")
         return None
 
@@ -129,11 +150,16 @@ def get_dict_from_csv_df_selected_line(df: pd.DataFrame, search_iata_code: str) 
     search_iata_code = search_iata_code.upper()
 
     try:
+        logger.info(f"Row found for IATA code '{search_iata_code}': {row_dict}")
         row_dict = df[df['iata_code'] == search_iata_code][selected_columns].iloc[0].to_dict()
     except IndexError:
-        row_dict = {}
-
+        logger.warning(f"No data found for IATA code '{search_iata_code}'. Returning an empty dictionary.")
+        return "Returning an empty dictionary"
+    except KeyError as e:
+        logger.error(f"DataFrame missing required column: {e}")
+        return "DataFrame missing required column"
     return row_dict
+
 
 
 def get_value(data: dict, key: str) -> str:
@@ -160,4 +186,11 @@ def get_value(data: dict, key: str) -> str:
     >>> get_value(data, 'name')
     'Vilnius International Airport'
     """
-    return data.get(key, "none")
+    if key in data:
+        value = data.get(key)
+        logger.info(f"Key '{key}' found in data with value: {value}")
+    else:
+        value = "none"
+        logger.warning(f"Key '{key}' not found in data. Returning default value: {value}")
+
+    return value

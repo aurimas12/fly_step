@@ -702,5 +702,2437 @@
         "priceUpdated": [
             1730648107000
         ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-11-12T17:05:00",
+        "arrivalDate": "2024-11-12T19:40:00",
+        "price": {
+            "value": 144.04,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731163219000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-11-15T12:55:00",
+        "arrivalDate": "2024-11-15T15:30:00",
+        "price": {
+            "value": 51.44,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731157631000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-11-16T05:45:00",
+        "arrivalDate": "2024-11-16T08:20:00",
+        "price": {
+            "value": 39.99,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731162079000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-11-19T17:05:00",
+        "arrivalDate": "2024-11-19T19:40:00",
+        "price": {
+            "value": 55.81,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731137175000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-11-22T12:55:00",
+        "arrivalDate": "2024-11-22T15:30:00",
+        "price": {
+            "value": 21.99,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731157086000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-11-23T05:45:00",
+        "arrivalDate": "2024-11-23T08:20:00",
+        "price": {
+            "value": 35.99,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731123378000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-11-26T17:05:00",
+        "arrivalDate": "2024-11-26T19:40:00",
+        "price": {
+            "value": 62.77,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731141129000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-11-29T12:55:00",
+        "arrivalDate": "2024-11-29T15:30:00",
+        "price": {
+            "value": 39.99,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731158295000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-11-30T05:45:00",
+        "arrivalDate": "2024-11-30T08:20:00",
+        "price": {
+            "value": 54.84,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731134305000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-12-03T17:05:00",
+        "arrivalDate": "2024-12-03T19:40:00",
+        "price": {
+            "value": 62.07,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731135503000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-12-06T12:55:00",
+        "arrivalDate": "2024-12-06T15:30:00",
+        "price": {
+            "value": 32.45,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731158889000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-12-07T05:45:00",
+        "arrivalDate": "2024-12-07T08:20:00",
+        "price": {
+            "value": 62.64,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731135550000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-12-10T17:05:00",
+        "arrivalDate": "2024-12-10T19:40:00",
+        "price": {
+            "value": 55.43,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731135550000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-12-13T12:55:00",
+        "arrivalDate": "2024-12-13T15:30:00",
+        "price": {
+            "value": 26.66,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731157023000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-12-14T05:45:00",
+        "arrivalDate": "2024-12-14T08:20:00",
+        "price": {
+            "value": 58.26,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731134305000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-12-17T17:05:00",
+        "arrivalDate": "2024-12-17T19:40:00",
+        "price": {
+            "value": 43.71,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731133780000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-12-20T12:55:00",
+        "arrivalDate": "2024-12-20T15:30:00",
+        "price": {
+            "value": 63.99,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731145506000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-12-21T05:45:00",
+        "arrivalDate": "2024-12-21T08:20:00",
+        "price": {
+            "value": 92.64,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731136156000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-12-27T12:55:00",
+        "arrivalDate": "2024-12-27T15:30:00",
+        "price": {
+            "value": 135.48,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731159441000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-12-28T05:45:00",
+        "arrivalDate": "2024-12-28T08:20:00",
+        "price": {
+            "value": 123.89,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731134295000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-01T16:10:00",
+        "arrivalDate": "2025-01-01T18:45:00",
+        "price": {
+            "value": 73.99,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731142766000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-03T12:55:00",
+        "arrivalDate": "2025-01-03T15:30:00",
+        "price": {
+            "value": 73.99,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731146716000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-04T05:45:00",
+        "arrivalDate": "2025-01-04T08:20:00",
+        "price": {
+            "value": 96.99,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731150558000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-07T17:05:00",
+        "arrivalDate": "2025-01-07T19:40:00",
+        "price": {
+            "value": 73.99,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731134355000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-10T12:55:00",
+        "arrivalDate": "2025-01-10T15:30:00",
+        "price": {
+            "value": 73.99,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731134355000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-11T05:45:00",
+        "arrivalDate": "2025-01-11T08:20:00",
+        "price": {
+            "value": 59.95,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731136095000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-14T17:05:00",
+        "arrivalDate": "2025-01-14T19:40:00",
+        "price": {
+            "value": 48.86,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731134305000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-17T12:55:00",
+        "arrivalDate": "2025-01-17T15:30:00",
+        "price": {
+            "value": 50.15,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731134305000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-18T05:45:00",
+        "arrivalDate": "2025-01-18T08:20:00",
+        "price": {
+            "value": 51.87,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731158600000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-21T17:05:00",
+        "arrivalDate": "2025-01-21T19:40:00",
+        "price": {
+            "value": 40.72,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731134615000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-24T12:55:00",
+        "arrivalDate": "2025-01-24T15:30:00",
+        "price": {
+            "value": 48.0,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731135554000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-25T05:45:00",
+        "arrivalDate": "2025-01-25T08:20:00",
+        "price": {
+            "value": 59.95,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731133895000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-28T17:05:00",
+        "arrivalDate": "2025-01-28T19:40:00",
+        "price": {
+            "value": 40.12,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731134620000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-31T12:55:00",
+        "arrivalDate": "2025-01-31T15:30:00",
+        "price": {
+            "value": 38.65,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731133455000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-02-01T05:45:00",
+        "arrivalDate": "2025-02-01T08:20:00",
+        "price": {
+            "value": 40.12,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731134305000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-02-04T17:05:00",
+        "arrivalDate": "2025-02-04T19:40:00",
+        "price": {
+            "value": 48.86,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731134305000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-02-07T12:55:00",
+        "arrivalDate": "2025-02-07T15:30:00",
+        "price": {
+            "value": 35.99,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731153250000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-02-08T05:45:00",
+        "arrivalDate": "2025-02-08T08:20:00",
+        "price": {
+            "value": 63.9,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731134505000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-11-15T12:55:00",
+        "arrivalDate": "2024-11-15T15:30:00",
+        "price": {
+            "value": 147.25,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731513878000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-11-16T05:45:00",
+        "arrivalDate": "2024-11-16T08:20:00",
+        "price": {
+            "value": 147.25,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731513774000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-11-19T17:05:00",
+        "arrivalDate": "2024-11-19T19:40:00",
+        "price": {
+            "value": 99.77,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731513825000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-11-22T12:55:00",
+        "arrivalDate": "2024-11-22T15:30:00",
+        "price": {
+            "value": 27.59,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731524036000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-11-23T05:45:00",
+        "arrivalDate": "2024-11-23T08:20:00",
+        "price": {
+            "value": 38.06,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731523980000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-11-26T17:05:00",
+        "arrivalDate": "2024-11-26T19:40:00",
+        "price": {
+            "value": 55.81,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731517810000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-11-29T12:55:00",
+        "arrivalDate": "2024-11-29T15:30:00",
+        "price": {
+            "value": 35.99,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731498309000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-11-30T05:45:00",
+        "arrivalDate": "2024-11-30T08:20:00",
+        "price": {
+            "value": 39.99,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731507625000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-12-03T17:05:00",
+        "arrivalDate": "2024-12-03T19:40:00",
+        "price": {
+            "value": 55.43,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731521486000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-12-06T12:55:00",
+        "arrivalDate": "2024-12-06T15:30:00",
+        "price": {
+            "value": 34.22,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731523402000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-12-07T05:45:00",
+        "arrivalDate": "2024-12-07T08:20:00",
+        "price": {
+            "value": 68.47,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731515950000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-12-10T17:05:00",
+        "arrivalDate": "2024-12-10T19:40:00",
+        "price": {
+            "value": 72.31,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731515949000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-12-13T12:55:00",
+        "arrivalDate": "2024-12-13T15:30:00",
+        "price": {
+            "value": 45.56,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731515899000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-12-14T05:45:00",
+        "arrivalDate": "2024-12-14T08:20:00",
+        "price": {
+            "value": 64.35,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731515903000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-12-17T17:05:00",
+        "arrivalDate": "2024-12-17T19:40:00",
+        "price": {
+            "value": 42.12,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731515900000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-12-20T12:55:00",
+        "arrivalDate": "2024-12-20T15:30:00",
+        "price": {
+            "value": 97.24,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731515849000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-12-21T05:45:00",
+        "arrivalDate": "2024-12-21T08:20:00",
+        "price": {
+            "value": 74.99,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731518175000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-12-27T12:55:00",
+        "arrivalDate": "2024-12-27T15:30:00",
+        "price": {
+            "value": 119.95,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731514045000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2024-12-28T05:45:00",
+        "arrivalDate": "2024-12-28T08:20:00",
+        "price": {
+            "value": 127.99,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731472642000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-01T16:10:00",
+        "arrivalDate": "2025-01-01T18:45:00",
+        "price": {
+            "value": 67.28,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731495128000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-03T12:55:00",
+        "arrivalDate": "2025-01-03T15:30:00",
+        "price": {
+            "value": 74.99,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731514813000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-04T05:45:00",
+        "arrivalDate": "2025-01-04T08:20:00",
+        "price": {
+            "value": 63.99,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731472666000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-07T17:05:00",
+        "arrivalDate": "2025-01-07T19:40:00",
+        "price": {
+            "value": 55.99,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731518545000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-10T12:55:00",
+        "arrivalDate": "2025-01-10T15:30:00",
+        "price": {
+            "value": 58.87,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731495312000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-11T05:45:00",
+        "arrivalDate": "2025-01-11T08:20:00",
+        "price": {
+            "value": 54.36,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731518046000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-14T17:05:00",
+        "arrivalDate": "2025-01-14T19:40:00",
+        "price": {
+            "value": 54.36,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731479899000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-17T12:55:00",
+        "arrivalDate": "2025-01-17T15:30:00",
+        "price": {
+            "value": 55.81,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731481107000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-18T05:45:00",
+        "arrivalDate": "2025-01-18T08:20:00",
+        "price": {
+            "value": 57.75,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731488407000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-21T17:05:00",
+        "arrivalDate": "2025-01-21T19:40:00",
+        "price": {
+            "value": 39.53,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731480029000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-24T12:55:00",
+        "arrivalDate": "2025-01-24T15:30:00",
+        "price": {
+            "value": 50.15,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731479602000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-25T05:45:00",
+        "arrivalDate": "2025-01-25T08:20:00",
+        "price": {
+            "value": 56.99,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731451093000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-28T17:05:00",
+        "arrivalDate": "2025-01-28T19:40:00",
+        "price": {
+            "value": 45.43,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731479398000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-31T12:55:00",
+        "arrivalDate": "2025-01-31T15:30:00",
+        "price": {
+            "value": 39.06,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731479893000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-02-01T05:45:00",
+        "arrivalDate": "2025-02-01T08:20:00",
+        "price": {
+            "value": 39.53,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731480507000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-02-04T17:05:00",
+        "arrivalDate": "2025-02-04T19:40:00",
+        "price": {
+            "value": 53.39,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731509959000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-02-07T12:55:00",
+        "arrivalDate": "2025-02-07T15:30:00",
+        "price": {
+            "value": 38.65,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731479277000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-01-01T16:10:00",
+        "arrivalDate": "2025-01-01T18:45:00",
+        "price": {
+            "value": 61.08,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731526819000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-02-11T17:05:00",
+        "arrivalDate": "2025-02-11T19:40:00",
+        "price": {
+            "value": 51.01,
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1731479728000
+        ]
     }
 ]
