@@ -22,7 +22,7 @@ LOGGING_CONFIG = {
             'filename': logs_file_path,
              'mode': 'a',
             'encoding': 'utf-8',
-            "maxBytes": 500000,
+            "maxBytes": 1000000,
             "backupCount": 3,
         },
     },
