@@ -46,15 +46,18 @@ def get_price_from_entry(entry: dict) -> float:
     return price
 
 
-def overwrite_existing_entry(existing_item: dict, new_entry: dict):
+def overwrite_existing_entry(existing_item: dict,
+                            new_entry: dict,
+                            new_price: float,
+                            old_price: float):
     """
     Overwrite the price in an existing entry with the price from the new entry.
     Args:
         existing_item (dict): The existing entry to be updated.
         new_entry (dict): The new entry containing the updated price.
+        new_price (float): the price from new entry
+        old_price: float the price from existinf item
     """
-    new_price = get_price_from_entry(new_entry)
-    old_price = get_price_from_entry(existing_item)
 
     if isinstance(new_price, (int, float)):
         existing_item["price"] = new_entry["price"]
@@ -183,7 +186,7 @@ def check_update_or_write_data_to_json_file(data: str, json_file_path: str) -> s
         new_price = get_price_from_entry(new_entry)
 
         if new_price != old_price:
-            overwrite_existing_entry(existing_entry, new_entry)
+            overwrite_existing_entry(existing_entry, new_entry, new_price, old_price)
             write_data_to_json_file(existing_data, json_file_path)
             return f"Updated entry {old_price} with new price: {new_price}."
         else:
