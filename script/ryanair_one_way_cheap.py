@@ -139,7 +139,7 @@ def get_flights_by_date_range(start_date: datetime, end_date: datetime):
             continue
         else:
             result = check_update_or_write_data_to_json_file(flight_values, vno_bcn_data_json_path)
-            print(search_date, result)
+            print(search_date.strftime('%Y-%m-%d'), result)
             if result:
                 logger.info(f"Flight data successfully saved for {search_date.strftime('%Y-%m-%d')}")
             else:
