@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Nerijus\\Desktop\\NaujausiasApi\\api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CC6D4311-F9EB-4902-B1C2-EDC57E8DCBFA}|api.csproj|c:\\users\\nerijus\\desktop\\naujausiasapi\\api\\models\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC6D4311-F9EB-4902-B1C2-EDC57E8DCBFA}|api.csproj|solutionrelative:models\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CC6D4311-F9EB-4902-B1C2-EDC57E8DCBFA}|api.csproj|c:\\users\\nerijus\\desktop\\naujausiasapi\\api\\models\\price.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC6D4311-F9EB-4902-B1C2-EDC57E8DCBFA}|api.csproj|solutionrelative:models\\price.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -38,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -49,12 +53,21 @@
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "test.cs",
+              "DocumentMoniker": "C:\\Users\\Nerijus\\Desktop\\NaujausiasApi\\api\\Models\\test.cs",
+              "RelativeDocumentMoniker": "Models\\test.cs",
+              "ToolTip": "C:\\Users\\Nerijus\\Desktop\\NaujausiasApi\\api\\Models\\test.cs",
+              "RelativeToolTip": "Models\\test.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T17:45:01.639Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Price.cs",
               "DocumentMoniker": "C:\\Users\\Nerijus\\Desktop\\NaujausiasApi\\api\\Models\\Price.cs",
               "RelativeDocumentMoniker": "Models\\Price.cs",
@@ -67,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "FlyInfo.cs",
               "DocumentMoniker": "C:\\Users\\Nerijus\\Desktop\\NaujausiasApi\\api\\Models\\FlyInfo.cs",
               "RelativeDocumentMoniker": "Models\\FlyInfo.cs",
@@ -75,12 +88,11 @@
               "RelativeToolTip": "Models\\FlyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T20:23:53.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T20:23:53.75Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "DepartureAirport.cs",
               "DocumentMoniker": "C:\\Users\\Nerijus\\Desktop\\NaujausiasApi\\api\\Models\\DepartureAirport.cs",
               "RelativeDocumentMoniker": "Models\\DepartureAirport.cs",
@@ -88,12 +100,11 @@
               "RelativeToolTip": "Models\\DepartureAirport.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T20:23:24.731Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T20:23:24.731Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "City.cs",
               "DocumentMoniker": "C:\\Users\\Nerijus\\Desktop\\NaujausiasApi\\api\\Models\\City.cs",
               "RelativeDocumentMoniker": "Models\\City.cs",
@@ -101,12 +112,11 @@
               "RelativeToolTip": "Models\\City.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T20:22:48.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T20:22:48.792Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Nerijus\\Desktop\\NaujausiasApi\\api\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -118,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Nerijus\\Desktop\\NaujausiasApi\\api\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -126,12 +136,11 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-29T19:51:21.353Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T19:51:21.353Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "AppData.cs",
               "DocumentMoniker": "C:\\Users\\Nerijus\\Desktop\\NaujausiasApi\\api\\Data\\AppData.cs",
               "RelativeDocumentMoniker": "Data\\AppData.cs",
