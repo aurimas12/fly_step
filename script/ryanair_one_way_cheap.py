@@ -3,7 +3,7 @@ import requests
 from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
 from constants import base_url, json_structure, vno_bcn_data_json_path, data_folder_path
-from file import check_write_data_to_json_file, check_or_directory_exists
+from file import check_update_or_write_data_to_json_file, check_or_directory_exists
 from typing import Dict, Any
 import logging
 import logging.config
@@ -138,8 +138,8 @@ def get_flights_by_date_range(start_date: datetime, end_date: datetime):
             logger.info(f"No flight data available in {search_date.strftime('%Y-%m-%d')}")
             continue
         else:
-            result = check_write_data_to_json_file(flight_values, vno_bcn_data_json_path)
-            print(search_date, result)
+            result = check_update_or_write_data_to_json_file(flight_values, vno_bcn_data_json_path)
+            print(search_date.strftime('%Y-%m-%d'), result)
             if result:
                 logger.info(f"Flight data successfully saved for {search_date.strftime('%Y-%m-%d')}")
             else:
