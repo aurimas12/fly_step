@@ -6,6 +6,7 @@ import logging
 import logging.config
 from logging_config import LOGGING_CONFIG
 
+
 logging.config.dictConfig(LOGGING_CONFIG)
 logger = logging.getLogger(__name__)
 
@@ -23,17 +24,16 @@ def check_or_directory_exists(directory_path: str):
     if not path.exists():
         path.mkdir(parents=True, exist_ok=True)
         logger.info(f"Directory '{directory_path}' created.")
-        print(f"Directory '{directory_path}' created.")
-        return True
+        return f"Directory '{directory_path}' created."
     else:
         logger.info(f"Directory '{directory_path}' already exists.")
-        print(f"Directory '{directory_path}' already exists.")
-        return False
+        return f"Directory '{directory_path}' already exists."
 
 
 def get_price_from_entry(entry: dict) -> float:
     """
-    Retrieve the price value from an entry. Returns 0.0 if price is not found or is invalid.
+    Retrieve the price value from an entry.
+    Returns 0.0 if price is not found or is invalid.
     Args:
         entry (dict): The entry containing the price information.
     Returns:
@@ -108,7 +108,8 @@ def read_load_json_file(json_file_path: str) -> list:
     Args:
         json_file_path (str): Path to the JSON file.
     Returns:
-        list: Parsed JSON data as a list, or an empty list if the file is empty, missing, or invalid.
+        list: Parsed JSON data as a list, or an empty list if the file is empty,
+        missing, or invalid.
     """
     path = Path(json_file_path)
     try:
@@ -118,20 +119,23 @@ def read_load_json_file(json_file_path: str) -> list:
                 logger.info(f"Successfully loaded data from '{json_file_path}'.")
                 return json.loads(data)
             else:
-                logger.warning(f"File '{json_file_path}' is empty. Returning an empty list.")
+                logger.warning(f"""File '{json_file_path}' is empty.
+                                Returning an empty list.""")
                 return []
     except FileNotFoundError:
         logger.warning(f"File '{json_file_path}' not found. Returning an empty list.")
         return []
     except json.JSONDecodeError:
-        logger.error(f"Error decoding JSON in file '{json_file_path}'. Returning an empty list.")
+        logger.error(f"""Error decoding JSON in file '{json_file_path}'.
+                    Returning an empty list.""")
         return []
 
 
 def check_if_entry_exists(new_entry_data: dict, existing_data: list) -> dict | None:
     """
-    Checks if an entry with matching `departureAirport.iataCode`, `arrivalAirport.iataCode`,
-    and `departureDate` already exists in the provided list of existing data.
+    Checks if an entry with matching `departureAirport.iataCode`,
+    `arrivalAirport.iataCode`, and `departureDate` already exists in the
+    provided list of existing data.
     Args:
         new_entry (dict): The new entry to check.
         existing_data (list): The list of existing entries.
@@ -140,8 +144,10 @@ def check_if_entry_exists(new_entry_data: dict, existing_data: list) -> dict | N
     """
     for existing_item in existing_data:
         if all([
-            existing_item.get("departureAirport", {}).get("iataCode") == new_entry_data.get("departureAirport", {}).get("iataCode"),
-            existing_item.get("arrivalAirport", {}).get("iataCode") == new_entry_data.get("arrivalAirport", {}).get("iataCode"),
+            existing_item.get("departureAirport", {}).get("iataCode") ==
+                new_entry_data.get("departureAirport", {}).get("iataCode"),
+            existing_item.get("arrivalAirport", {}).get("iataCode") ==
+                new_entry_data.get("arrivalAirport", {}).get("iataCode"),
             existing_item.get("departureDate") == new_entry_data.get("departureDate")
         ]):
             logger.info(f"Matching entry found.")
@@ -175,7 +181,8 @@ def check_update_or_write_data_to_json_file(data: str, json_file_path: str) -> s
         data (str): JSON string representing the data entry to be added or checked.
         json_file_path (str): Path to the JSON file.
     Returns:
-        str: Message indicating if data was added, updated, or if the file was created.
+        str: Message indicating if data was added,
+            updated, or if the file was created.
     """
     new_entry = parse_json_safely(data)
     existing_data = read_load_json_file(json_file_path)
@@ -224,15 +231,19 @@ def read_csv_file(csv_file_path: str) -> str:
 
 def get_dict_from_csv_df_selected_line(df: pd.DataFrame, search_iata_code: str) -> dict:
     """
-    Retrieve a dictionary representation of a specific row from a DataFrame based on a given IATA code.
+    Retrieve a dictionary representation of a specific row from a DataFrame
+        based on a given IATA code.
     Parameters:
-    df (pd.DataFrame): The DataFrame containing airport data.
-    search_iata_code (str): The IATA code to search for in the DataFrame exp: 'VNO'.
+        df (pd.DataFrame): The DataFrame containing airport data.
+        search_iata_code (str): The IATA code to search in the DataFrame exp: 'VNO'.
     Returns:
-    Dict[str, any]: A dictionary of selected columns from the matching row for the specified IATA code.
-                    If the IATA code is not found, an empty dictionary is returned.
+        Dict[str, any]:
+            A dictionary of selected columns from the matching row for
+            the specified IATA code.
+            If the IATA code is not found, an empty dictionary is returned.
     Raises:
-    IndexError: If the specified IATA code is found but no rows match the selected columns.
+        IndexError:
+            If the specified IATA code is found but no rows match the selected columns.
     """
     selected_columns = [ "id",
                         "icao_code",
@@ -259,7 +270,8 @@ def get_dict_from_csv_df_selected_line(df: pd.DataFrame, search_iata_code: str) 
         logger.info(f"Row found for IATA code '{search_iata_code}': {row_dict}")
         row_dict = df[df['iata_code'] == search_iata_code][selected_columns].iloc[0].to_dict()
     except IndexError:
-        logger.warning(f"No data found for IATA code '{search_iata_code}'. Returning an empty dictionary.")
+        logger.warning(f"""No data found for IATA code '{search_iata_code}'.
+                        Returning an empty dictionary.""")
         return "Returning an empty dictionary"
     except KeyError as e:
         logger.error(f"DataFrame missing required column: {e}")
@@ -296,6 +308,6 @@ def get_value(data: dict, key: str) -> str:
         logger.info(f"Key '{key}' found in data with value: {value}")
     else:
         value = "none"
-        logger.warning(f"Key '{key}' not found in data. Returning default value: {value}")
-
+        logger.warning(f"""Key '{key}' not found in data.
+                        Returning default value: {value}""")
     return value
