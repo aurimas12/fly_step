@@ -8,6 +8,12 @@ from typing import Dict, Any
 import logging
 import logging.config
 from logging_config import LOGGING_CONFIG
+from rich import print
+from rich.progress import track
+from rich.table import Table, Column
+from rich.console import Console
+from rich_process import style_numbers_result
+
 
 logging.config.dictConfig(LOGGING_CONFIG)
 logger = logging.getLogger(__name__)
@@ -42,14 +48,14 @@ def get_one_way_cheap_flight(base_url: str,
         f"outboundDepartureDateFrom={date_str}&"
         f"outboundDepartureDateTo={date_str}"
     )
-
     try:
         response = requests.get(url)
         response.raise_for_status()
         data = response.json()
         return data
     except requests.exceptions.RequestException as e:
-        logger.error(f"Failed to fetch flight data from {departure_iata} to {arrival_iata} on {date_str}: {e}")
+        logger.error(f"""Failed to fetch flight data from {departure_iata} to
+                    {arrival_iata} on {date_str}: {e}""")
         print(f"An error occurred: {e}")
         return None
 
@@ -60,18 +66,20 @@ def get_flight_values_from_data(one_flight_data: Dict[str, Any],
     Extracts flight information from the provided flight data and updates the
     given JSON structure with this information.
     Args:
-        one_flight_data (Dict[str, Any]): A dictionary containing details of a flight, including fare
-                                            information, departure and arrival airport details,
-                                            and flight schedule.
-        json_structure (Dict[str, Any]): A dictionary structure that will be
-                                        updated with the extracted flight values.
+        one_flight_data (Dict[str, Any]):
+            A dictionary containing details of a flight, including fare
+            information, departure and arrival airport details,
+            and flight schedule.
+        json_structure (Dict[str, Any]):
+            A dictionary structure that will be
+            updated with the extracted flight values.
     Returns:
         str: A JSON-formatted string representing the updated JSON structure,
-             including the extracted flight information, formatted with an indentation of 4 spaces.
+            including the extracted flight information, formatted with
+            an indentation of 4 spaces.
     Raises:
         KeyError: If the expected keys are not present in the `one_flight_data`.
     """
-
     fares = one_flight_data.get("fares", [])
     if not fares:
         logger.info("No fares found in the response data.")
@@ -130,24 +138,41 @@ def get_flights_by_date_range(start_date: datetime, end_date: datetime):
         None: The function performs output operations
             (printing and writing to a file) but does not return any values.
     """
-    for i in range((end_date - start_date).days + 1):
+    console = Console()
+    table = Table(
+        Column("Search Date", justify="center", style="cyan", width=16),
+        Column("Result", justify="left", style="green"),
+        title="Flight Data Results",
+        title_style = "cyan",
+        show_header=True,
+        header_style="bold dark_red"
+    )
+
+    for i in track(range((end_date - start_date).days + 1), description='Processing ...'):
         search_date = start_date + timedelta(days=i)
         one_way_fares = get_one_way_cheap_flight(base_url, 'VNO', 'BCN', search_date)
         flight_values = get_flight_values_from_data(one_way_fares, json_structure)
         if not flight_values:
-            logger.info(f"No flight data available in {search_date.strftime('%Y-%m-%d')}")
+            logger.info(f"""No flight data available in
+                        {search_date.strftime('%Y-%m-%d')}""")
             continue
         else:
-            result = check_update_or_write_data_to_json_file(flight_values, vno_bcn_data_json_path)
-            print(search_date.strftime('%Y-%m-%d'), result)
+            result = check_update_or_write_data_to_json_file(flight_values,
+                                                            vno_bcn_data_json_path)
+            style_result = style_numbers_result(result)
+            table.add_row(search_date.strftime('%Y-%m-%d'), style_result)
             if result:
-                logger.info(f"Flight data successfully saved for {search_date.strftime('%Y-%m-%d')}")
+                logger.info(f"""Flight data successfully saved for
+                            {search_date.strftime('%Y-%m-%d')}""")
             else:
-                logger.error(f"Failed to save flight data for {search_date.strftime('%Y-%m-%d')}")
+                logger.error(f"""Failed to save flight data for
+                            {search_date.strftime('%Y-%m-%d')}""")
+
+    console.print(table)
 
 
 if __name__ == '__main__':
-    check_or_directory_exists(data_folder_path)
+    print(check_or_directory_exists(data_folder_path))
     start_date = datetime.today().replace(hour=0, minute=0, second=0, microsecond=0)
     end_date = start_date + relativedelta(months=3)
     get_flights_by_date_range(start_date, end_date)
