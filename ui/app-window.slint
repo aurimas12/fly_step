@@ -1,4 +1,37 @@
+import { LineEdit, VerticalBox, Button } from "std-widgets.slint";
+
 component MemoryTile inherits Rectangle {
+    GridLayout {
+        Row {
+            Text {
+                text: "Enter Total Income";
+                horizontal-alignment: center;
+                font-size: 24px;
+                font-weight: 900;
+            }
+        }
+
+        Row {
+            LineEdit {
+                font-size: 16px;
+                width: 200px;
+                height: 25px;
+                placeholder-text: "Enter your number0";
+            }
+
+            VerticalBox {
+                Button {
+                    text: "Calculate";
+                    clicked => {
+                        self.text = "Clicked";
+                    }
+                }
+            }
+        }
+
+        Row { }
+    }
+
     callback clicked;
     in property <bool> open_curtain;
     in property <bool> solved;
