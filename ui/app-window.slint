@@ -1,10 +1,15 @@
 import { LineEdit, VerticalBox, Button } from "std-widgets.slint";
 
-component MemoryTile inherits Rectangle {
+export component AppWindow inherits Window {
+    in property <string> results:"";
+    callback cheapest-fly(string, string, string);
+    background: #313e50;
     GridLayout {
+        padding: 50px;
+        spacing: 25px;
         Row {
             Text {
-                text: "Enter Total Income";
+                text: "Cheapest Fly Ticket";
                 horizontal-alignment: center;
                 font-size: 24px;
                 font-weight: 900;
@@ -12,83 +17,65 @@ component MemoryTile inherits Rectangle {
         }
 
         Row {
-            LineEdit {
+            departureFrom := LineEdit {
+                horizontal-alignment: center;
                 font-size: 16px;
-                width: 200px;
-                height: 25px;
-                placeholder-text: "Enter your number0";
+                width: 240px;
+                height: 35px;
+                placeholder-text: "From";
             }
 
-            VerticalBox {
-                Button {
-                    text: "Calculate";
-                    clicked => {
-                        self.text = "Clicked";
-                    }
+            departureTo := LineEdit {
+                horizontal-alignment: center;
+                font-size: 16px;
+                width: 240px;
+                height: 35px;
+                placeholder-text: "To";
+            }
+
+            flyDateTime := LineEdit {
+                horizontal-alignment: center;
+                font-size: 16px;
+                width: 240px;
+                height: 35px;
+                placeholder-text: "Ticket date time";
+            }
+        }
+
+        Row {
+            Button {
+                text: "Calculate";
+                primary: true;
+                height: 35px;
+                width: 240px;
+                clicked => {
+                    cheapest-fly(departureFrom.text,departureTo.text,flyDateTime.text)
+                }
+            }
+
+            Button {
+                text: "Refresh";
+                primary: true;
+                height: 35px;
+                width: 240px;
+                clicked => {
                 }
             }
         }
 
-        Row { }
-    }
-
-    callback clicked;
-    in property <bool> open_curtain;
-    in property <bool> solved;
-    in property <image> icon;
-    height: 64px;
-    width: 64px;
-    background: solved ? #34CE57 : #3960D5;
-    animate background { duration: 800ms; }
-    Image {
-        source: icon;
-        width: parent.width;
-        height: parent.height;
-    }
-
-    // Left curtain
-    Rectangle {
-        background: #193076;
-        x: 0px;
-        width: open_curtain ? 0px : (parent.width / 2);
-        height: parent.height;
-        animate width {
-            duration: 250ms;
-            easing: ease-in;
-        }
-    }
-
-    // Right curtain
-    Rectangle {
-        background: #193076;
-        x: open_curtain ? parent.width : (parent.width / 2);
-        width: open_curtain ? 0px : (parent.width / 2);
-        height: parent.height;
-        animate width {
-            duration: 250ms;
-            easing: ease-in;
-        }
-        animate x {
-            duration: 250ms;
-            easing: ease-in;
-        }
-    }
-
-    TouchArea {
-        clicked => {
-            // Delegate to the user of this element
-            root.clicked();
-        }
-    }
-}
-
-export component MainWindow inherits Window {
-    width: 326px;
-    height: 326px;
-    MemoryTile {
-        icon: @image-url("icons/bus.jpg");
-        clicked => {
-            self.open_curtain = !self.open_curtain;
+        Row {
+            VerticalBox {
+                Rectangle {
+                    height: 100px;
+                    background: #f2f2f2;
+                    Text {
+                        color: black;
+                        font-size: 16px;
+                        font-weight: 500;
+                        text: root.results;
+                    }
+                }
+            }
         }
     }
 }
