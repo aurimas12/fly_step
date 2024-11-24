@@ -12,7 +12,8 @@ from rich import print
 from rich.progress import track
 from rich.table import Table, Column
 from rich.console import Console
-from rich_process import style_numbers_result
+from rich_process import style_numbers_result, display_chipest_flights_in_table
+from json_data_process import get_sort_json_data_flights, prepare_flight_formated_output
 
 
 logging.config.dictConfig(LOGGING_CONFIG)
@@ -176,4 +177,7 @@ if __name__ == '__main__':
     start_date = datetime.today().replace(hour=0, minute=0, second=0, microsecond=0)
     end_date = start_date + relativedelta(months=3)
     get_flights_by_date_range(start_date, end_date)
+    flights_info = get_sort_json_data_flights(vno_bcn_data_json_path, 3)
+    output_chipest_fligts = prepare_flight_formated_output(flights_info)
+    display_chipest_flights_in_table(output_chipest_fligts)
     logger.info("Flight data scraping complete")

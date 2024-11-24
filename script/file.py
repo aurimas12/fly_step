@@ -195,15 +195,15 @@ def check_update_or_write_data_to_json_file(data: str, json_file_path: str) -> s
         if new_price != old_price:
             overwrite_existing_entry(existing_entry, new_entry, new_price, old_price)
             write_data_to_json_file(existing_data, json_file_path)
-            return f"Updated entry {old_price} with new price: {new_price}."
+            return f"Updated entry {old_price} with new price: {new_price}"
         else:
             logger.info("No update needed. The price is the same.")
-            return f"No update needed. The price is the same {new_price}."
+            return f"No update needed. The price is the same {new_price}"
 
     else:
         existing_data.append(new_entry)
         write_data_to_json_file(existing_data, json_file_path)
-        return f"Created new entry and added to '{json_file_path}'."
+        return f"Created new entry and added to '{json_file_path}'"
 
 
 def read_csv_file(csv_file_path: str) -> str:
