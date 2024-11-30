@@ -145,13 +145,13 @@ def add_price_to_existing_entry(existing_item: dict, new_price: float) -> None:
     if isinstance(new_price, (int, float)):
         prices_list = existing_flight.get_prices_list()
         if not prices_list:
-            existing_item["price"]["value"] = []
+            prices_list = []
 
-        existing_item["price"]["value"].append(new_price)
+        prices_list.append(new_price)
         logger.info(f"Added new price {new_price} to price list."
-                    f"Current prices: {existing_item['price']['value']}")
+                    f"Current prices: {prices_list}")
     else:
-        logger.warning("Invalid price value in the new entry. Price was not added.")
+        logger.warning(f"Invalid price value {new_price} in the new entry. Price was not added.")
 
 
 def check_append_price_and_write_data_to_json_file(data: str, json_file_path: str) -> str:
