@@ -34,7 +34,7 @@ json_structure = {
             "departureDate": "",
             "arrivalDate": "",
             "price": {
-                "value": None,
+                "value": [],
                 "currencyCode": ""
             },
             "flightNumber": "",

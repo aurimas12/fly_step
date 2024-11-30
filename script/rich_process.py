@@ -1,19 +1,42 @@
-from rich.text import Text
-import re
+from rich.table import Table, Column
+from typing import List, Dict
+from rich.console import Console
 
 
-def style_numbers_result(result: str) -> Text:
+def display_chipest_flights_in_table(data: List[Dict]) -> List[Dict]:
     """
-    Styles a result string by highlighting numbers, (numbers, style='red')
+    Displays the cheapest flight_dict data in a rich table format.
+    from function prepare_flight_formated_output()
     Args:
-        result (str): The result string to be styled.
+        data(List[Dict[str, str]]):
+        A list of flight_dict dictionaries, where each dictionary includes from
+        def prepare_flight_formated_output():
+            'departureDate' (str): The departure date and time as a string.
+            'direction' (str): The direction in the format 'City (IATA) -> City (IATA)'.
+            'price' (str or float): The flight_dict price in euros.
+            exp: {
+                'departureDate': '2024-12-13 12:55:00',
+                'from': 'Vilnius', 'to': 'Barcelona',
+                'direction': 'Vilnius (VNO) -> Barcelona (BCN)',
+                'price': 39.99
+            }
     Returns:
-        Text: The styled result with numbers highlighted.
+        None: Prints the table of cheapest flights to the console.
     """
-    styled_result = Text()
-    for part in re.split(r'(\d+\.\d+|\d+)', result):
-        if re.match(r'^\d+\.\d+|\d+$', part):
-            styled_result.append(part, style="red")
-        else:
-            styled_result.append(part)
-    return styled_result
+    console = Console()
+    table = Table(
+        Column("Departure Date", justify="center", style="cyan"),
+        Column("Direction", justify="left", style="green"),
+        Column("Price (EUR)", justify="left", style="red"),
+        title="Chipest Flight Information",
+        title_style = "orange3",
+        show_header=True,
+        header_style="bold dark_red"
+    )
+    for flight_dict in data:
+        departure_date = flight_dict['departureDate']
+        direction = flight_dict['direction']
+        price = flight_dict['price']
+        table.add_row(departure_date, direction, str(price))
+
+    console.print(table)
