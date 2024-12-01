@@ -5,7 +5,7 @@ from typing import Dict, List, Any
 import logging
 import logging.config
 from logging_config import LOGGING_CONFIG
-
+from flight_data_process import FlightData
 
 logging.config.dictConfig(LOGGING_CONFIG)
 logger = logging.getLogger(__name__)
@@ -16,9 +16,9 @@ def check_or_directory_exists(directory_path: str):
     Check if a directory exists at the specified path.
     If it does not exist, create it.
     Parameters:
-    directory_path (str): The path to the directory to check or create.
+        directory_path (str): The path to the directory to check or create.
     Returns:
-    bool: True if the directory was created, False if it already existed.
+        bool: True if the directory was created, False if it already existed.
     """
     path = Path(directory_path)
     if not path.exists():
@@ -28,42 +28,6 @@ def check_or_directory_exists(directory_path: str):
     else:
         logger.info(f"Directory '{directory_path}' already exists.")
         return f"Directory '{directory_path}' already exists."
-
-
-def get_price_from_entry(entry: dict) -> float:
-    """
-    Retrieve the price value from an entry.
-    Returns 0.0 if price is not found or is invalid.
-    Args:
-        entry (dict): The entry containing the price information.
-    Returns:
-        float: The price value, or 0.0 if price is not found.
-    """
-    price = entry.get("price", {}).get("value")
-    if price is None or not isinstance(price, (int, float)):
-        logger.warning(f"Price not found or invalid in entry: {entry}")
-        return 0.0
-    return price
-
-
-def overwrite_existing_entry(existing_item: dict,
-                            new_entry: dict,
-                            new_price: float,
-                            old_price: float):
-    """
-    Overwrite the price in an existing entry with the price from the new entry.
-    Args:
-        existing_item (dict): The existing entry to be updated.
-        new_entry (dict): The new entry containing the updated price.
-        new_price (float): the price from new entry
-        old_price: float the price from existinf item
-    """
-
-    if isinstance(new_price, (int, float)):
-        existing_item["price"] = new_entry["price"]
-        logger.info(f"Updated price from {old_price} to {new_price} in entry.")
-    else:
-        logger.warning("Invalid price value in new entry. Price was not updated.")
 
 
 def write_data_to_json_file(data: list | dict, json_file_path: str) -> str:
@@ -108,8 +72,7 @@ def read_load_json_file(json_file_path: str) -> list:
     Args:
         json_file_path (str): Path to the JSON file.
     Returns:
-        list: Parsed JSON data as a list, or an empty list if the file is empty,
-        missing, or invalid.
+        list: Parsed JSON data as a list, or an empty list if the file is empty, missing, or invalid.
     """
     path = Path(json_file_path)
     try:
@@ -119,42 +82,14 @@ def read_load_json_file(json_file_path: str) -> list:
                 logger.info(f"Successfully loaded data from '{json_file_path}'.")
                 return json.loads(data)
             else:
-                logger.warning(f"""File '{json_file_path}' is empty.
-                                Returning an empty list.""")
+                logger.warning(f"File '{json_file_path}' is empty. Returning an empty list.")
                 return []
     except FileNotFoundError:
         logger.warning(f"File '{json_file_path}' not found. Returning an empty list.")
         return []
     except json.JSONDecodeError:
-        logger.error(f"""Error decoding JSON in file '{json_file_path}'.
-                    Returning an empty list.""")
+        logger.error(f"Error decoding JSON in file '{json_file_path}'. Returning an empty list.")
         return []
-
-
-def check_if_entry_exists(new_entry_data: dict, existing_data: list) -> dict | None:
-    """
-    Checks if an entry with matching `departureAirport.iataCode`,
-    `arrivalAirport.iataCode`, and `departureDate` already exists in the
-    provided list of existing data.
-    Args:
-        new_entry (dict): The new entry to check.
-        existing_data (list): The list of existing entries.
-    Returns:
-        dict | None: The matching existing entry if found, otherwise `None`.
-    """
-    for existing_item in existing_data:
-        if all([
-            existing_item.get("departureAirport", {}).get("iataCode") ==
-                new_entry_data.get("departureAirport", {}).get("iataCode"),
-            existing_item.get("arrivalAirport", {}).get("iataCode") ==
-                new_entry_data.get("arrivalAirport", {}).get("iataCode"),
-            existing_item.get("departureDate") == new_entry_data.get("departureDate")
-        ]):
-            logger.info(f"Matching entry found.")
-            return existing_item
-
-    logger.info("No matching entry found.")
-    return None
 
 
 def parse_json_safely(data: str) -> dict | None:
@@ -172,78 +107,116 @@ def parse_json_safely(data: str) -> dict | None:
         return None
 
 
-def check_update_or_write_data_to_json_file(data: str, json_file_path: str) -> str:
+def check_if_entry_exists(new_entry_data: dict, existing_data: list) -> dict | None:
     """
-    Checks if the specified data entry already exists in the JSON file.
-    If it exists with a different price, updates it. If it doesn't exist,
-    appends the new entry.
+    Checks if an entry with matching `departureAirport iataCode`, `arrivalAirport iataCode`,
+    and `departureDate` already exists in the provided list of existing data.
     Args:
-        data (str): JSON string representing the data entry to be added or checked.
-        json_file_path (str): Path to the JSON file.
+        new_entry_data (dict): The new entry to check.
+        existing_data (list): The list of existing entries.
     Returns:
-        str: Message indicating if data was added,
-            updated, or if the file was created.
+        dict | None: The matching existing entry if found, otherwise `None`.
+    """
+    new_flight = FlightData(new_entry_data)
+
+    for existing_item in existing_data:
+        existing_flight = FlightData(existing_item)
+        if all([
+            existing_flight.get_departure_airport_iata() == new_flight.get_departure_airport_iata(),
+            existing_flight.get_arrival_airport_iata() == new_flight.get_arrival_airport_iata(),
+            existing_flight.get_departure_date() == new_flight.get_departure_date()
+        ]):
+            logger.info("Matching entry found.")
+            return existing_item
+
+    logger.info("No matching entry found.")
+    return None
+
+
+def add_price_to_existing_entry(existing_item: dict, new_price: float) -> None:
+    """
+    Add the price from the new entry to the list of prices in the existing entry.
+    Args:
+        existing_item (dict): The existing flight entry to be updated.
+        new_price (float): The price from the new entry to add.
+    """
+    existing_flight = FlightData(existing_item)
+
+    if isinstance(new_price, (int, float)):
+        prices_list = existing_flight.get_prices_list()
+        if not prices_list:
+            prices_list = []
+
+        prices_list.append(new_price)
+        logger.info(f"Added new price {new_price} to price list."
+                    f"Current prices: {prices_list}")
+    else:
+        logger.warning(f"Invalid price value {new_price} in the new entry. Price was not added.")
+
+
+def check_append_price_and_write_data_to_json_file(data: str, json_file_path: str) -> str:
+    """
+    Processes a new flight entry, checks for an existing entry in a JSON file,
+    and updates or appends the data accordingly.
+    Args:
+        data (str): JSON string containing the new flight entry.
+        json_file_path (str): Path to the JSON file containing existing flight data.
+    Returns:
+        str: A message indicating whether the entry was updated or added.
+    Workflow:
+        1. Parse the new flight entry from the `data` string.
+        2. Load the existing data from the JSON file.
+        3. Check if the new entry matches any existing entry
+            (based on departure airport, arrival airport, and date).
+        4. If a match is found:
+            - Check if the new price is already in the price list.
+            - If not, add the new price and update the JSON file.
+        5. If no match is found:
+            - Append the new entry to the existing data and write it back to the file.
+    Notes:
+        - Uses the `FlightData` class for structured data handling.
+        - Updates the `price.value` field of the existing entry if a new price is found.
     """
     new_entry = parse_json_safely(data)
     existing_data = read_load_json_file(json_file_path)
     existing_entry = check_if_entry_exists(new_entry, existing_data)
 
     if existing_entry:
-        old_price = get_price_from_entry(existing_entry)
-        new_price = get_price_from_entry(new_entry)
+        existing_flight = FlightData(existing_entry)
+        new_flight = FlightData(new_entry)
 
-        if new_price != old_price:
-            overwrite_existing_entry(existing_entry, new_entry, new_price, old_price)
+        all_prices = existing_flight.get_prices_list()
+        new_price = new_flight.get_latest_price()
+
+        if new_price not in all_prices:
+            add_price_to_existing_entry(existing_entry, new_price)
             write_data_to_json_file(existing_data, json_file_path)
-            return f"Updated entry {old_price} with new price: {new_price}."
+            return f"Updated entry with new price: {new_price} in entry: {all_prices}"
         else:
-            logger.info("No update needed. The price is the same.")
-            return f"No update needed. The price is the same {new_price}."
-
+            logger.info("No update needed. The price is already in the entry.")
+            return f"No update needed. The price {new_price} is already in entry: {all_prices}"
     else:
+        new_flight = FlightData(new_entry)
         existing_data.append(new_entry)
         write_data_to_json_file(existing_data, json_file_path)
-        return f"Created new entry and added to '{json_file_path}'."
-
-
-def read_csv_file(csv_file_path: str) -> str:
-    """
-    function read data from csv file
-    Args:
-        csv_file_path: (str) path to csv file
-    Returns:
-        pandas.DataFrame: DataFrame containing the data read from the CSV file
-        Returns None if file does not exist or cannot be read
-    """
-    try:
-        df = pd.read_csv(csv_file_path)
-        logger.info(f"Successfully read CSV file: '{csv_file_path}'")
-        return df
-    except FileNotFoundError:
-        logger.error(f"Error: CSV file '{csv_file_path}' does not exist.")
-        print(f"Error: csv file '{csv_file_path}' does not exist.")
-        return None
-    except pd.errors.ParserError as e:
-        logger.error(f"Error reading CSV file '{csv_file_path}': {e}")
-        print(f"Error reading csv file '{csv_file_path}' error: {e}")
-        return None
+        new_price = new_flight.get_latest_price()
+        return f"Added new entry to JSON, new price: {new_price}"
 
 
 def get_dict_from_csv_df_selected_line(df: pd.DataFrame, search_iata_code: str) -> dict:
     """
-    Retrieve a dictionary representation of a specific row from a DataFrame
-        based on a given IATA code.
+    Retrieve a dictionary representation of a specific row from a DataFrame based
+    on a given IATA code.
     Parameters:
         df (pd.DataFrame): The DataFrame containing airport data.
-        search_iata_code (str): The IATA code to search in the DataFrame exp: 'VNO'.
+        search_iata_code (str): The IATA code to search exp: 'VNO'.
     Returns:
-        Dict[str, any]:
-            A dictionary of selected columns from the matching row for
-            the specified IATA code.
+        Dict[str, any]: A dictionary of selected columns from the matching row
+            for the specified IATA code.
             If the IATA code is not found, an empty dictionary is returned.
     Raises:
-        IndexError:
-            If the specified IATA code is found but no rows match the selected columns.
+        IndexError: If the specified IATA code is found but no rows match
+        the selected columns.
     """
     selected_columns = [ "id",
                         "icao_code",
@@ -270,16 +243,16 @@ def get_dict_from_csv_df_selected_line(df: pd.DataFrame, search_iata_code: str) 
         logger.info(f"Row found for IATA code '{search_iata_code}': {row_dict}")
         row_dict = df[df['iata_code'] == search_iata_code][selected_columns].iloc[0].to_dict()
     except IndexError:
-        logger.warning(f"""No data found for IATA code '{search_iata_code}'.
-                        Returning an empty dictionary.""")
+        logger.warning(f"No data found for IATA code '{search_iata_code}'. Returning an empty dictionary.")
         return "Returning an empty dictionary"
     except KeyError as e:
         logger.error(f"DataFrame missing required column: {e}")
         return "DataFrame missing required column"
+        #row_dict = {}
     return row_dict
 
 
-def get_value(data: dict, key: str) -> str:
+def get_value_from_dict(data: dict, key: str) -> str:
     """
     Retrieve a specific value from a dictionary using a given key.
     Parameters:
@@ -308,6 +281,6 @@ def get_value(data: dict, key: str) -> str:
         logger.info(f"Key '{key}' found in data with value: {value}")
     else:
         value = "none"
-        logger.warning(f"""Key '{key}' not found in data.
-                        Returning default value: {value}""")
+        logger.warning(f"Key '{key}' not found in data. Returning default value: {value}")
+
     return value
