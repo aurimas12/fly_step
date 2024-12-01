@@ -58,7 +58,7 @@ def write_data_to_json_file(data: list | dict, json_file_path: str) -> str:
                 return f"Data successfully written to '{json_file_path}'."
 
         else:
-            logger.warning("The provided data must be a list or a dictionary.")
+            logger.error("The provided data must be a list or a dictionary.")
             raise ValueError("The provided data must be a list or a dictionary.")
 
     except Exception as e:
