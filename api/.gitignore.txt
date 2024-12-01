@@ -1,0 +1,13 @@
+.vs/
+*.suo
+*.vscode
+*.user
+bin/
+obj/
+*.dtbcache.v2
+*.futdcache.v2
+*.vsidx
+*.backup.json
+*.cache
+.DS_Store
+Thumbs.db
