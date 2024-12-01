@@ -58,6 +58,7 @@ def write_data_to_json_file(data: list | dict, json_file_path: str) -> str:
                 return f"Data successfully written to '{json_file_path}'."
 
         else:
+            logger.warning("The provided data must be a list or a dictionary.")
             raise ValueError("The provided data must be a list or a dictionary.")
 
     except Exception as e:
@@ -126,7 +127,6 @@ def check_if_entry_exists(new_entry_data: dict, existing_data: list) -> dict | N
             existing_flight.get_arrival_airport_iata() == new_flight.get_arrival_airport_iata(),
             existing_flight.get_departure_date() == new_flight.get_departure_date()
         ]):
-            logger.info("Matching entry found.")
             return existing_item
 
     logger.info("No matching entry found.")
@@ -200,6 +200,7 @@ def check_append_price_and_write_data_to_json_file(data: str, json_file_path: st
         existing_data.append(new_entry)
         write_data_to_json_file(existing_data, json_file_path)
         new_price = new_flight.get_latest_price()
+        logger.info(f"Added new entry to JSON, new price: {new_price}")
         return f"Added new entry to JSON, new price: {new_price}"
 
 
