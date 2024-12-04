@@ -11,7 +11,7 @@ logs_warning_file_path = "./script/logs/logs_warning.log"
 
 
 # Json
-json_structure = {
+flight_json_schema = {
             "departureAirport": {
             "countryName": "",
             "iataCode": "",
@@ -35,9 +35,9 @@ json_structure = {
             "departureDate": "",
             "arrivalDate": "",
             "price": {
-                "value": [],
-                "currencyCode": ""
-            },
+            "values": [],
+            "currencyCode": ""
+        },
             "flightNumber": "",
             "priceUpdated": []
         }

@@ -66,8 +66,36 @@ class FlightData:
 
 
     def get_prices_list(self) -> List[float]:
-        """Get the list[float] of price values [76.15, 99.53, 236.77]."""
-        return self.json_data.get("price", {}).get("value", [])
+        """
+        Get the list of prices as floats from the `price["values"]` field.
+        Exp:
+            Input:
+                "values": [
+                    {"timestamp": 1732624691000, "value": 57.27},
+                    {"timestamp": 1732624694000, "value": 73.6}
+                ]
+            Output:
+                [57.27, 73.6]
+        Returns:
+            List[float]: A list of price values.
+        """
+        list_of_dict = self.json_data.get("price", {}).get("values", [])
+        if isinstance(list_of_dict, list):
+            try:
+                prices = [float(item['value']) for item in list_of_dict]
+                return prices
+            except (TypeError, ValueError):
+                return []
+        return []
+
+    def get_price_values(self) -> List[dict]:
+        """ Returns:
+        exp: [
+        {'timestamp': 1732624691000, 'value': 57.27},
+        {'timestamp': 1732624694000, 'value': 73.6}
+        ]
+        """
+        return self.json_data.get("price", {}).get("values", [])
 
     def get_currency_code(self) -> str:
         return self.json_data.get("price", {}).get("currencyCode", "")
@@ -79,21 +107,19 @@ class FlightData:
         return self.json_data.get("priceUpdated", [])
 
     def get_latest_price(self) -> float:
-        """Get the latest price from the price list.
-            price list from def get_prices_list()
-        """
+        """Get the latest price from the price list."""
         price_list = self.get_prices_list()
         return price_list[-1] if price_list else 0.0
 
 
     def get_direction(self) -> str:
-        """ Returns(str) direction.
-        exp: Vilnius (VNO) -> Barcelona (BCN)
-        """
+        """ Returns(str) direction
+        exp: Vilnius (VNO) -> Barcelona (BCN)"""
         departure_city = self.get_departure_city_name()
         arrival_city = self.get_arrival_city_name()
         departure_iata = self.get_departure_airport_iata()
         arrival_iata = self.get_arrival_airport_iata()
+
         return f"{departure_city} ({departure_iata}) -> {arrival_city} ({arrival_iata})"
 
     def to_table_formated_dict(self) -> Dict[str, Union[str, float]]:

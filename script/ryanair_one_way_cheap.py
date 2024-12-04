@@ -2,8 +2,8 @@ import json
 import requests
 from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
-from constants import base_url, json_structure, vno_bcn_data_json_path, data_folder_path
-from file import check_append_price_and_write_data_to_json_file, check_or_directory_exists
+from constants import base_url, flight_json_schema, vno_bcn_data_json_path, data_folder_path
+from file import check_or_directory_exists
 from typing import Dict, Any
 import logging
 import logging.config
@@ -11,14 +11,19 @@ from logging_config import LOGGING_CONFIG
 from rich import print
 from rich.progress import track
 from rich_process import display_chipest_flights_in_table
-from json_data_process import get_sort_json_data_flights, prepare_flight_formated_output
+from json_data_process import (
+                            get_sort_json_data_flights,
+                            prepare_flight_formated_output,
+                            check_append_price_and_write_data_to_json_file,
+                            time_stamp,
+                            )
 
 
 logging.config.dictConfig(LOGGING_CONFIG)
 logger = logging.getLogger(__name__)
 
-departure_airport = "VNO"
-arrival_airport = "BCN"
+departure_airport_iata = "VNO"
+arrival_airport_iata = "BCN"
 
 
 def get_one_way_cheap_flight(base_url: str,
@@ -61,7 +66,7 @@ def get_one_way_cheap_flight(base_url: str,
 
 
 def get_flight_values_from_data(one_flight_data: Dict[str, Any],
-                                json_structure: Dict[str, Any]) -> str:
+                                json_schema: Dict[str, Any]) -> str:
     """
     Extracts flight information from the provided flight data and updates the
     given JSON structure with this information.
@@ -69,7 +74,7 @@ def get_flight_values_from_data(one_flight_data: Dict[str, Any],
         one_flight_data (Dict[str, Any]):
             A dictionary containing details of a flight, including fare
             information, departure and arrival airport details, and flight schedule.
-        json_structure (Dict[str, Any]):
+        json_schema (Dict[str, Any]):
             A dictionary structure that will be updated with the extracted flight values.
     Returns:
         str: A JSON-formatted string representing the updated JSON structure,
@@ -100,42 +105,55 @@ def get_flight_values_from_data(one_flight_data: Dict[str, Any],
         price_value = outbound['price']['value']
         price_currency = outbound['price']['currencyCode']
         price_updated = outbound['priceUpdated']
+        try:
+            json_schema["departureAirport"]["countryName"] = departure_country
+            json_schema["departureAirport"]["iataCode"] = departure_iata
+            json_schema["departureAirport"]["name"] = departure_city
+            json_schema["departureAirport"]["city"]["name"] = departure_city_name
+            json_schema["departureAirport"]["city"]["code"] = departure_city_code
+            json_schema["departureAirport"]["city"]["countryCode"] = departure_countryCode
+            json_schema["arrivalAirport"]["countryName"] = arrival_country
+            json_schema["arrivalAirport"]["iataCode"] = arrival_iata
+            json_schema["arrivalAirport"]["name"] = arrival_city
+            json_schema["arrivalAirport"]["city"]["name"] = arrival_city_name
+            json_schema["arrivalAirport"]["city"]["code"] = arrival_city_code
+            json_schema["arrivalAirport"]["city"]["countryCode"] = arrival_countryCode
+            json_schema["departureDate"] = departure_date
+            json_schema["arrivalDate"] = arrival_date
+            json_schema["flightNumber"] = flight_number
+            new_price_entry = {
+                "timestamp": time_stamp(),
+                "value": price_value
+            }
+            json_schema["price"]["values"] = [new_price_entry]
+            json_schema["price"]["currencyCode"] = price_currency
+            json_schema["priceUpdated"] = [price_updated]
+            logger.info("Extracted flight information from response data")
+            return json.dumps(json_schema, indent=4)
 
-        # Update JSON structure with extracted values
-        json_structure["departureAirport"]["countryName"] = departure_country
-        json_structure["departureAirport"]["iataCode"] = departure_iata
-        json_structure["departureAirport"]["name"] = departure_city
-        json_structure["departureAirport"]["city"]["name"] = departure_city_name
-        json_structure["departureAirport"]["city"]["code"] = departure_city_code
-        json_structure["departureAirport"]["city"]["countryCode"] = departure_countryCode
-        json_structure["arrivalAirport"]["countryName"] = arrival_country
-        json_structure["arrivalAirport"]["iataCode"] = arrival_iata
-        json_structure["arrivalAirport"]["name"] = arrival_city
-        json_structure["arrivalAirport"]["city"]["name"] = arrival_city_name
-        json_structure["arrivalAirport"]["city"]["code"] = arrival_city_code
-        json_structure["arrivalAirport"]["city"]["countryCode"] = arrival_countryCode
-        json_structure["departureDate"] = departure_date
-        json_structure["arrivalDate"] = arrival_date
-        json_structure["flightNumber"] = flight_number
-        json_structure["price"]["value"] = [price_value]
-        json_structure["price"]["currencyCode"] = price_currency
-        json_structure["priceUpdated"] = [price_updated]
-        logger.info("Extracted flight information from response data")
-        return json.dumps(json_structure, indent=4)
+        except KeyError as e:
+            logger.error(f"KeyError encountered: {e}")
+            raise
+        except TypeError as e:
+            logger.error(f"TypeError encountered: {e}")
+            raise
+        except Exception as e:
+            logger.error(f"Unexpected error: {e}")
+        raise
 
 
 def get_flights_by_date_range(start_date: datetime,
                               end_date: datetime,
-                              departure_airport: str,
-                              arrival_airport:str) -> None:
+                              departure_airport_iata: str,
+                              arrival_airport_iata: str) -> None:
     """
     Retrieves flight information for each date within a specified date range
         and writes the data to a JSON file if available.
     Args:
         start_date (datetime): The starting date of the date range.
         end_date (datetime): The ending date of the date range.
-        departure_airport (str): iata code of airport Vilnius exp: "VNO"
-        arrival_airport (str): iata code of airport Barcelona exp: "BCN"
+        departure_airport_iata (str): iata code of airport Vilnius exp: "VNO"
+        arrival_airport_iata (str): iata code of airport Barcelona exp: "BCN"
     Returns:
         None: The function performs output operations
             (printing and writing to a file) but does not return any values.
@@ -143,10 +161,10 @@ def get_flights_by_date_range(start_date: datetime,
     for search_day in track(range((end_date - start_date).days + 1), description='Processing ...'):
         search_date = start_date + timedelta(days=search_day)
         one_way_fares = get_one_way_cheap_flight(base_url,
-                                                 departure_airport,
-                                                 arrival_airport,
+                                                 departure_airport_iata,
+                                                 arrival_airport_iata,
                                                  search_date)
-        flight_values = get_flight_values_from_data(one_way_fares, json_structure)
+        flight_values = get_flight_values_from_data(one_way_fares, flight_json_schema)
         if not flight_values:
             logger.info(f"No flight data available in {search_date.strftime('%Y-%m-%d')}")
             continue
@@ -163,8 +181,8 @@ if __name__ == '__main__':
     print(check_or_directory_exists(data_folder_path))
     start_date = datetime.today().replace(hour=0, minute=0, second=0, microsecond=0)
     end_date = start_date + relativedelta(months=3)
-    get_flights_by_date_range(start_date, end_date, departure_airport, arrival_airport)
-    flights_info = get_sort_json_data_flights(vno_bcn_data_json_path, num_results=15)
-    output_chipest_fligts = prepare_flight_formated_output(flights_info)
+    get_flights_by_date_range(start_date, end_date, departure_airport_iata, arrival_airport_iata)
+    sorted_flights_info = get_sort_json_data_flights(vno_bcn_data_json_path, num_results=15)
+    output_chipest_fligts = prepare_flight_formated_output(sorted_flights_info)
     display_chipest_flights_in_table(output_chipest_fligts)
     logger.info("Flight data scraping complete")

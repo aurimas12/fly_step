@@ -20,51 +20,24 @@
                 "countryCode": "es"
             }
         },
-        "departureDate": "2024-12-03T17:05:00",
-        "arrivalDate": "2024-12-03T19:40:00",
-        "price": {
-            "value": [
-                148.32
-            ],
-            "currencyCode": "EUR"
-        },
-        "flightNumber": "FR1787",
-        "priceUpdated": [
-            1732998335000
-        ]
-    },
-    {
-        "departureAirport": {
-            "countryName": "Lithuania",
-            "iataCode": "VNO",
-            "name": "Vilnius",
-            "city": {
-                "name": "Vilnius",
-                "code": "VILNIUS",
-                "countryCode": "lt"
-            }
-        },
-        "arrivalAirport": {
-            "countryName": "Spain",
-            "iataCode": "BCN",
-            "name": "Barcelona",
-            "city": {
-                "name": "Barcelona",
-                "code": "BARCELONA",
-                "countryCode": "es"
-            }
-        },
         "departureDate": "2024-12-06T12:55:00",
         "arrivalDate": "2024-12-06T15:30:00",
         "price": {
-            "value": [
-                51.87
+            "values": [
+                {
+                    "timestamp": 1733348135,
+                    "value": 98.24
+                },
+                {
+                    "timestamp": 1733348189,
+                    "value": 97.24
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732997104000
+            1733323486000
         ]
     },
     {
@@ -91,14 +64,17 @@
         "departureDate": "2024-12-07T05:45:00",
         "arrivalDate": "2024-12-07T08:20:00",
         "price": {
-            "value": [
-                56.3
+            "values": [
+                {
+                    "timestamp": 1733348135,
+                    "value": 72.31
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732998339000
+            1733306386000
         ]
     },
     {
@@ -125,14 +101,17 @@
         "departureDate": "2024-12-10T17:05:00",
         "arrivalDate": "2024-12-10T19:40:00",
         "price": {
-            "value": [
-                44.56
+            "values": [
+                {
+                    "timestamp": 1733348135,
+                    "value": 56.3
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732968199000
+            1733326186000
         ]
     },
     {
@@ -159,14 +138,17 @@
         "departureDate": "2024-12-13T12:55:00",
         "arrivalDate": "2024-12-13T15:30:00",
         "price": {
-            "value": [
-                39.99
+            "values": [
+                {
+                    "timestamp": 1733348136,
+                    "value": 38.06
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732982843000
+            1733346886000
         ]
     },
     {
@@ -193,14 +175,17 @@
         "departureDate": "2024-12-14T05:45:00",
         "arrivalDate": "2024-12-14T08:20:00",
         "price": {
-            "value": [
-                42.42
+            "values": [
+                {
+                    "timestamp": 1733348136,
+                    "value": 33.34
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732998394000
+            1733319978000
         ]
     },
     {
@@ -227,14 +212,17 @@
         "departureDate": "2024-12-17T17:05:00",
         "arrivalDate": "2024-12-17T19:40:00",
         "price": {
-            "value": [
-                48.54
+            "values": [
+                {
+                    "timestamp": 1733348136,
+                    "value": 37.95
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732949088000
+            1733334676000
         ]
     },
     {
@@ -261,14 +249,17 @@
         "departureDate": "2024-12-20T12:55:00",
         "arrivalDate": "2024-12-20T15:30:00",
         "price": {
-            "value": [
-                105.14
+            "values": [
+                {
+                    "timestamp": 1733348136,
+                    "value": 95.94
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732949084000
+            1733309010000
         ]
     },
     {
@@ -295,14 +286,17 @@
         "departureDate": "2024-12-21T05:45:00",
         "arrivalDate": "2024-12-21T08:20:00",
         "price": {
-            "value": [
-                155.53
+            "values": [
+                {
+                    "timestamp": 1733348136,
+                    "value": 112.99
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732948186000
+            1733306388000
         ]
     },
     {
@@ -329,14 +323,17 @@
         "departureDate": "2024-12-27T12:55:00",
         "arrivalDate": "2024-12-27T15:30:00",
         "price": {
-            "value": [
-                243.9
+            "values": [
+                {
+                    "timestamp": 1733348137,
+                    "value": 228.99
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732949087000
+            1733345307000
         ]
     },
     {
@@ -363,14 +360,17 @@
         "departureDate": "2024-12-28T05:45:00",
         "arrivalDate": "2024-12-28T08:20:00",
         "price": {
-            "value": [
-                228.99
+            "values": [
+                {
+                    "timestamp": 1733348137,
+                    "value": 269.77
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732998375000
+            1733306387000
         ]
     },
     {
@@ -397,14 +397,17 @@
         "departureDate": "2025-01-01T16:10:00",
         "arrivalDate": "2025-01-01T18:45:00",
         "price": {
-            "value": [
-                98.0
+            "values": [
+                {
+                    "timestamp": 1733348138,
+                    "value": 100.53
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732998745000
+            1733306388000
         ]
     },
     {
@@ -431,14 +434,17 @@
         "departureDate": "2025-01-03T12:55:00",
         "arrivalDate": "2025-01-03T15:30:00",
         "price": {
-            "value": [
-                97.24
+            "values": [
+                {
+                    "timestamp": 1733348138,
+                    "value": 111.67
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732989767000
+            1733346889000
         ]
     },
     {
@@ -465,14 +471,17 @@
         "departureDate": "2025-01-04T05:45:00",
         "arrivalDate": "2025-01-04T08:20:00",
         "price": {
-            "value": [
-                106.19
+            "values": [
+                {
+                    "timestamp": 1733348138,
+                    "value": 148.25
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732998897000
+            1733327020000
         ]
     },
     {
@@ -499,14 +508,17 @@
         "departureDate": "2025-01-07T17:05:00",
         "arrivalDate": "2025-01-07T19:40:00",
         "price": {
-            "value": [
-                74.24
+            "values": [
+                {
+                    "timestamp": 1733348152,
+                    "value": 75.24
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732991697000
+            1733340935000
         ]
     },
     {
@@ -533,14 +545,17 @@
         "departureDate": "2025-01-10T12:55:00",
         "arrivalDate": "2025-01-10T15:30:00",
         "price": {
-            "value": [
-                58.24
+            "values": [
+                {
+                    "timestamp": 1733348152,
+                    "value": 58.24
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732993503000
+            1733347785000
         ]
     },
     {
@@ -567,14 +582,17 @@
         "departureDate": "2025-01-11T05:45:00",
         "arrivalDate": "2025-01-11T08:20:00",
         "price": {
-            "value": [
-                45.99
+            "values": [
+                {
+                    "timestamp": 1733348152,
+                    "value": 59.24
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732995177000
+            1733345086000
         ]
     },
     {
@@ -601,14 +619,17 @@
         "departureDate": "2025-01-14T17:05:00",
         "arrivalDate": "2025-01-14T19:40:00",
         "price": {
-            "value": [
-                57.75
+            "values": [
+                {
+                    "timestamp": 1733348153,
+                    "value": 56.78
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732965644000
+            1733337690000
         ]
     },
     {
@@ -635,14 +656,17 @@
         "departureDate": "2025-01-17T12:55:00",
         "arrivalDate": "2025-01-17T15:30:00",
         "price": {
-            "value": [
-                65.04
+            "values": [
+                {
+                    "timestamp": 1733348153,
+                    "value": 75.52
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732991803000
+            1733345087000
         ]
     },
     {
@@ -669,14 +693,17 @@
         "departureDate": "2025-01-18T05:45:00",
         "arrivalDate": "2025-01-18T08:20:00",
         "price": {
-            "value": [
-                57.75
+            "values": [
+                {
+                    "timestamp": 1733348153,
+                    "value": 66.17
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732998370000
+            1733339689000
         ]
     },
     {
@@ -703,14 +730,17 @@
         "departureDate": "2025-01-21T17:05:00",
         "arrivalDate": "2025-01-21T19:40:00",
         "price": {
-            "value": [
-                44.99
+            "values": [
+                {
+                    "timestamp": 1733348154,
+                    "value": 52.73
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732983728000
+            1733306391000
         ]
     },
     {
@@ -737,14 +767,17 @@
         "departureDate": "2025-01-24T12:55:00",
         "arrivalDate": "2025-01-24T15:30:00",
         "price": {
-            "value": [
-                46.11
+            "values": [
+                {
+                    "timestamp": 1733348154,
+                    "value": 59.21
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732997714000
+            1733345086000
         ]
     },
     {
@@ -771,14 +804,17 @@
         "departureDate": "2025-01-25T05:45:00",
         "arrivalDate": "2025-01-25T08:20:00",
         "price": {
-            "value": [
-                63.99
+            "values": [
+                {
+                    "timestamp": 1733348154,
+                    "value": 87.86
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732980166000
+            1733306388000
         ]
     },
     {
@@ -805,14 +841,17 @@
         "departureDate": "2025-01-28T17:05:00",
         "arrivalDate": "2025-01-28T19:40:00",
         "price": {
-            "value": [
-                46.11
+            "values": [
+                {
+                    "timestamp": 1733348155,
+                    "value": 59.21
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732978941000
+            1733345652000
         ]
     },
     {
@@ -839,14 +878,17 @@
         "departureDate": "2025-01-31T12:55:00",
         "arrivalDate": "2025-01-31T15:30:00",
         "price": {
-            "value": [
-                59.21
+            "values": [
+                {
+                    "timestamp": 1733348155,
+                    "value": 57.78
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732983074000
+            1733341922000
         ]
     },
     {
@@ -873,14 +915,17 @@
         "departureDate": "2025-02-01T05:45:00",
         "arrivalDate": "2025-02-01T08:20:00",
         "price": {
-            "value": [
-                58.75
+            "values": [
+                {
+                    "timestamp": 1733348155,
+                    "value": 52.6
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732995886000
+            1733345990000
         ]
     },
     {
@@ -907,14 +952,17 @@
         "departureDate": "2025-02-04T17:05:00",
         "arrivalDate": "2025-02-04T19:40:00",
         "price": {
-            "value": [
-                63.34
+            "values": [
+                {
+                    "timestamp": 1733348156,
+                    "value": 62.64
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732970686000
+            1733342039000
         ]
     },
     {
@@ -941,14 +989,17 @@
         "departureDate": "2025-02-07T12:55:00",
         "arrivalDate": "2025-02-07T15:30:00",
         "price": {
-            "value": [
-                51.87
+            "values": [
+                {
+                    "timestamp": 1733348156,
+                    "value": 49.0
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732970686000
+            1733346888000
         ]
     },
     {
@@ -975,14 +1026,17 @@
         "departureDate": "2025-02-08T05:45:00",
         "arrivalDate": "2025-02-08T08:20:00",
         "price": {
-            "value": [
-                38.97
+            "values": [
+                {
+                    "timestamp": 1733348156,
+                    "value": 59.95
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732976411000
+            1733326191000
         ]
     },
     {
@@ -1009,14 +1063,17 @@
         "departureDate": "2025-02-11T17:05:00",
         "arrivalDate": "2025-02-11T19:40:00",
         "price": {
-            "value": [
-                54.99
+            "values": [
+                {
+                    "timestamp": 1733348157,
+                    "value": 56.3
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732997754000
+            1733344398000
         ]
     },
     {
@@ -1043,14 +1100,17 @@
         "departureDate": "2025-02-14T12:55:00",
         "arrivalDate": "2025-02-14T15:30:00",
         "price": {
-            "value": [
-                103.7
+            "values": [
+                {
+                    "timestamp": 1733348157,
+                    "value": 119.4
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732995951000
+            1733306392000
         ]
     },
     {
@@ -1077,14 +1137,17 @@
         "departureDate": "2025-02-15T05:45:00",
         "arrivalDate": "2025-02-15T08:20:00",
         "price": {
-            "value": [
-                106.5
+            "values": [
+                {
+                    "timestamp": 1733348157,
+                    "value": 156.53
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732981651000
+            1733345988000
         ]
     },
     {
@@ -1111,14 +1174,17 @@
         "departureDate": "2025-02-18T17:05:00",
         "arrivalDate": "2025-02-18T19:40:00",
         "price": {
-            "value": [
-                42.42
+            "values": [
+                {
+                    "timestamp": 1733348158,
+                    "value": 40.69
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732985274000
+            1733343921000
         ]
     },
     {
@@ -1145,14 +1211,17 @@
         "departureDate": "2025-02-19T07:40:00",
         "arrivalDate": "2025-02-19T10:15:00",
         "price": {
-            "value": [
-                44.06
+            "values": [
+                {
+                    "timestamp": 1733348158,
+                    "value": 38.94
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR5247",
         "priceUpdated": [
-            1732975579000
+            1733327534000
         ]
     },
     {
@@ -1179,14 +1248,17 @@
         "departureDate": "2025-02-20T10:45:00",
         "arrivalDate": "2025-02-20T13:20:00",
         "price": {
-            "value": [
-                40.74
+            "values": [
+                {
+                    "timestamp": 1733348158,
+                    "value": 29.99
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732992757000
+            1733338622000
         ]
     },
     {
@@ -1213,14 +1285,17 @@
         "departureDate": "2025-02-21T12:55:00",
         "arrivalDate": "2025-02-21T15:30:00",
         "price": {
-            "value": [
-                41.49
+            "values": [
+                {
+                    "timestamp": 1733348158,
+                    "value": 37.88
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732992819000
+            1733341492000
         ]
     },
     {
@@ -1247,14 +1322,17 @@
         "departureDate": "2025-02-22T05:45:00",
         "arrivalDate": "2025-02-22T08:20:00",
         "price": {
-            "value": [
-                39.99
+            "values": [
+                {
+                    "timestamp": 1733348158,
+                    "value": 29.99
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732994381000
+            1733338681000
         ]
     },
     {
@@ -1281,14 +1359,17 @@
         "departureDate": "2025-02-25T17:05:00",
         "arrivalDate": "2025-02-25T19:40:00",
         "price": {
-            "value": [
-                39.99
+            "values": [
+                {
+                    "timestamp": 1733348159,
+                    "value": 33.45
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732992876000
+            1733335833000
         ]
     },
     {
@@ -1315,14 +1396,91 @@
         "departureDate": "2025-02-28T12:55:00",
         "arrivalDate": "2025-02-28T15:30:00",
         "price": {
-            "value": [
-                42.99
+            "values": [
+                {
+                    "timestamp": 1733348159,
+                    "value": 43.37
+                }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
         "priceUpdated": [
-            1732998439000
+            1733345092000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-03-01T05:45:00",
+        "arrivalDate": "2025-03-01T08:20:00",
+        "price": {
+            "values": [
+                {
+                    "timestamp": 1733348159,
+                    "value": 69.76
+                }
+            ],
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1733306389000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-03-04T17:05:00",
+        "arrivalDate": "2025-03-04T19:40:00",
+        "price": {
+            "values": [
+                {
+                    "timestamp": 1733348160,
+                    "value": 43.05
+                }
+            ],
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1733307436000
         ]
     }
 ]
