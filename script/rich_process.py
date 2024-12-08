@@ -3,23 +3,21 @@ from typing import List, Dict
 from rich.console import Console
 
 
-def display_chipest_flights_in_table(data: List[Dict]) -> List[Dict]:
+def display_chipest_flights_in_table(data: List[Dict[str, str]]) -> None:
     """
-    Displays the cheapest flight_dict data in a rich table format.
-    from function prepare_flight_formated_output()
+    Displays the cheapest flight data in a rich table format.
     Args:
         data(List[Dict[str, str]]):
-        A list of flight_dict dictionaries, where each dictionary includes from
-        def prepare_flight_formated_output():
+        data from def prepare_flight_formated_output()
+        exp: {'departureDate': '2024-12-13 12:55:00',
+            'from': 'Vilnius', 'to': 'Barcelona',
+            'direction': 'Vilnius (VNO) -> Barcelona (BCN)',
+            'price': 39.99}
+        A list of flight dictionaries, where each dictionary includes from
+        json_data_process.py def prepare_flight_formated_output():
             'departureDate' (str): The departure date and time as a string.
             'direction' (str): The direction in the format 'City (IATA) -> City (IATA)'.
-            'price' (str or float): The flight_dict price in euros.
-            exp: {
-                'departureDate': '2024-12-13 12:55:00',
-                'from': 'Vilnius', 'to': 'Barcelona',
-                'direction': 'Vilnius (VNO) -> Barcelona (BCN)',
-                'price': 39.99
-            }
+            'price' (str or float): The flight price in euros.
     Returns:
         None: Prints the table of cheapest flights to the console.
     """
@@ -33,10 +31,11 @@ def display_chipest_flights_in_table(data: List[Dict]) -> List[Dict]:
         show_header=True,
         header_style="bold dark_red"
     )
-    for flight_dict in data:
-        departure_date = flight_dict['departureDate']
-        direction = flight_dict['direction']
-        price = flight_dict['price']
+
+    for item_dict in data:
+        departure_date = item_dict['departureDate']
+        direction = item_dict['direction']
+        price = item_dict['price']
         table.add_row(departure_date, direction, str(price))
 
     console.print(table)

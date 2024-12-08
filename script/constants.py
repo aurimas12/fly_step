@@ -11,33 +11,33 @@ logs_warning_file_path = "./script/logs/logs_warning.log"
 
 
 # Json
-json_structure = {
-            "departureAirport": {
-            "countryName": "",
-            "iataCode": "",
+flight_json_schema = {
+    "departureAirport": {
+        "countryName": "",
+        "iataCode": "",
+        "name": "",
+        "city": {
             "name": "",
-            "city": {
-                "name": "",
-                "code": "",
-                "countryCode": ""
-                }
-            },
-            "arrivalAirport": {
-            "countryName": "",
-            "iataCode": "",
-            "name": "",
-            "city": {
-                "name": "",
-                "code": "",
-                "countryCode": ""
-                }
-            },
-            "departureDate": "",
-            "arrivalDate": "",
-            "price": {
-                "value": [],
-                "currencyCode": ""
-            },
-            "flightNumber": "",
-            "priceUpdated": []
+            "code": "",
+            "countryCode": ""
         }
+    },
+    "arrivalAirport": {
+        "countryName": "",
+        "iataCode": "",
+        "name": "",
+        "city": {
+            "name": "",
+            "code": "",
+            "countryCode": ""
+        }
+    },
+    "departureDate": "",
+    "arrivalDate": "",
+    "price": {
+        "values": [],
+        "currencyCode": ""
+    },
+    "flightNumber": "",
+    "priceUpdated": []
+}
