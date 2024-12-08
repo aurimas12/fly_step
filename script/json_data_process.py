@@ -75,7 +75,8 @@ def check_append_price_and_write_data_to_json_file(data: str, json_file_path: st
     Processes a new flight entry, checks for an existing entry in a JSON file,
     and updates or appends the data accordingly.
     Args:
-        data (str): JSON string containing the new flight entry.
+        data (str): JSON string containing the new flight entry from
+        update_one_way_flight_json_schema().
         json_file_path (str): Path to the JSON file containing existing flight data.
     Returns:
         str: A message indicating whether the entry was updated or added.
