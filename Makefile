@@ -1,8 +1,8 @@
-# Variables
 PYTHON = python3
 APP = script/ryanair_one_way_cheap.py
 VENV = fs_env
 PIP = $(VENV)/bin/pip
+REQUIREMENTS = requirements.txt
 
 
 ifeq ($(OS),Windows_NT)
@@ -20,17 +20,16 @@ venv:
 
 setup: venv
 	@echo "Create virtual env and install dependencies"
-	$(VENV)/bin/pip install -r requirements.txt
+	$(VENV)/bin/pip install -r $(REQUIREMENTS)
 
 
-# Default target, single action to instal and run app
 all: setup run
 
 
 run:
 	@echo "Run the app"
 	$(ACTIVATION) && $(PYTHON) $(APP)
-#$(VENV)/bin/$(PYTHON) $(APP)
+
 
 
 clean:
