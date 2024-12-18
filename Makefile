@@ -2,9 +2,9 @@
 PYTHON = python3
 APP = script/ryanair_one_way_cheap.py
 VENV = fs_env
+PIP = $(VENV)/bin/pip
 
 
-# Detect OS
 ifeq ($(OS),Windows_NT)
     ACTIVATION=.\$(VENV)\Scripts\activate
 else
@@ -42,6 +42,24 @@ clean_venv:
 	rm -rf $(VENV)
 
 
+info:
+	@echo "Project Information:"
+	@echo "---------------------"
+	@echo "Python version:"
+	@$(PYTHON) --version
+	@echo
+	@echo "Pip version:"
+	@$(PYTHON) -m pip --version
+	@echo
+	@echo "Installed dependencies:"
+	@$(PIP) list
+	@echo
+	@echo "Virtual environment location:"
+	@echo "$(VENV)"
+	@echo
+	@echo "Main application entry point: $(APP)"
+
+
 help:
 	@echo "Usage:"
 	@echo "  make venv        - Creates a virtual environment and upgrades pip"
@@ -50,3 +68,4 @@ help:
 	@echo "  make run         - Executes the app using the virtual environment"
 	@echo "  make clean       - Clean up files"
 	@echo "  make clean_venv  - Delete virtual env"
+	@echo "  make info        - Display project information"
