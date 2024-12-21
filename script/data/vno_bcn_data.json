@@ -383,6 +383,10 @@
                 {
                     "timestamp": 1734544255,
                     "value": 145.97
+                },
+                {
+                    "timestamp": 1734783921,
+                    "value": 112.99
                 }
             ],
             "currencyCode": "EUR"
@@ -432,6 +436,10 @@
                 {
                     "timestamp": 1734544255,
                     "value": 107.42
+                },
+                {
+                    "timestamp": 1734783922,
+                    "value": 187.24
                 }
             ],
             "currencyCode": "EUR"
@@ -481,6 +489,10 @@
                 {
                     "timestamp": 1734544255,
                     "value": 128.47
+                },
+                {
+                    "timestamp": 1734783923,
+                    "value": 111.67
                 }
             ],
             "currencyCode": "EUR"
@@ -530,6 +542,10 @@
                 {
                     "timestamp": 1734544255,
                     "value": 127.99
+                },
+                {
+                    "timestamp": 1734783923,
+                    "value": 124.8
                 }
             ],
             "currencyCode": "EUR"
@@ -579,6 +595,10 @@
                 {
                     "timestamp": 1734544256,
                     "value": 98.77
+                },
+                {
+                    "timestamp": 1734783923,
+                    "value": 74.87
                 }
             ],
             "currencyCode": "EUR"
@@ -628,6 +648,10 @@
                 {
                     "timestamp": 1734544256,
                     "value": 98.77
+                },
+                {
+                    "timestamp": 1734783924,
+                    "value": 86.15
                 }
             ],
             "currencyCode": "EUR"
@@ -673,6 +697,10 @@
                 {
                     "timestamp": 1734544256,
                     "value": 73.99
+                },
+                {
+                    "timestamp": 1734783925,
+                    "value": 84.0
                 }
             ],
             "currencyCode": "EUR"
@@ -722,6 +750,10 @@
                 {
                     "timestamp": 1734544256,
                     "value": 75.87
+                },
+                {
+                    "timestamp": 1734783925,
+                    "value": 72.95
                 }
             ],
             "currencyCode": "EUR"
@@ -771,6 +803,10 @@
                 {
                     "timestamp": 1734544257,
                     "value": 55.99
+                },
+                {
+                    "timestamp": 1734783925,
+                    "value": 75.52
                 }
             ],
             "currencyCode": "EUR"
@@ -816,6 +852,10 @@
                 {
                     "timestamp": 1734107628,
                     "value": 58.75
+                },
+                {
+                    "timestamp": 1734783926,
+                    "value": 74.24
                 }
             ],
             "currencyCode": "EUR"
@@ -914,6 +954,10 @@
                 {
                     "timestamp": 1734544258,
                     "value": 75.52
+                },
+                {
+                    "timestamp": 1734783927,
+                    "value": 86.15
                 }
             ],
             "currencyCode": "EUR"
@@ -963,6 +1007,10 @@
                 {
                     "timestamp": 1734544258,
                     "value": 66.04
+                },
+                {
+                    "timestamp": 1734783928,
+                    "value": 63.9
                 }
             ],
             "currencyCode": "EUR"
@@ -1057,6 +1105,10 @@
                 {
                     "timestamp": 1734544259,
                     "value": 63.9
+                },
+                {
+                    "timestamp": 1734783929,
+                    "value": 65.04
                 }
             ],
             "currencyCode": "EUR"
@@ -1106,6 +1158,10 @@
                 {
                     "timestamp": 1734544259,
                     "value": 60.21
+                },
+                {
+                    "timestamp": 1734783931,
+                    "value": 59.21
                 }
             ],
             "currencyCode": "EUR"
@@ -1155,6 +1211,10 @@
                 {
                     "timestamp": 1734544259,
                     "value": 58.75
+                },
+                {
+                    "timestamp": 1734783931,
+                    "value": 57.75
                 }
             ],
             "currencyCode": "EUR"
@@ -1204,6 +1264,10 @@
                 {
                     "timestamp": 1734544260,
                     "value": 53.39
+                },
+                {
+                    "timestamp": 1734783931,
+                    "value": 48.0
                 }
             ],
             "currencyCode": "EUR"
@@ -1253,6 +1317,10 @@
                 {
                     "timestamp": 1734544260,
                     "value": 53.39
+                },
+                {
+                    "timestamp": 1734783932,
+                    "value": 44.18
                 }
             ],
             "currencyCode": "EUR"
@@ -1298,6 +1366,10 @@
                 {
                     "timestamp": 1734544261,
                     "value": 43.39
+                },
+                {
+                    "timestamp": 1734783933,
+                    "value": 51.87
                 }
             ],
             "currencyCode": "EUR"
@@ -1347,6 +1419,10 @@
                 {
                     "timestamp": 1734544261,
                     "value": 51.45
+                },
+                {
+                    "timestamp": 1734783935,
+                    "value": 57.69
                 }
             ],
             "currencyCode": "EUR"
@@ -1396,6 +1472,10 @@
                 {
                     "timestamp": 1734544262,
                     "value": 114.74
+                },
+                {
+                    "timestamp": 1734783936,
+                    "value": 118.4
                 }
             ],
             "currencyCode": "EUR"
@@ -1445,6 +1525,10 @@
                 {
                     "timestamp": 1734544262,
                     "value": 154.99
+                },
+                {
+                    "timestamp": 1734783936,
+                    "value": 231.27
                 }
             ],
             "currencyCode": "EUR"
@@ -1588,6 +1672,10 @@
                 {
                     "timestamp": 1734544263,
                     "value": 30.66
+                },
+                {
+                    "timestamp": 1734783937,
+                    "value": 33.32
                 }
             ],
             "currencyCode": "EUR"
@@ -1637,6 +1725,10 @@
                 {
                     "timestamp": 1734544263,
                     "value": 31.86
+                },
+                {
+                    "timestamp": 1734783937,
+                    "value": 32.45
                 }
             ],
             "currencyCode": "EUR"
@@ -1686,6 +1778,10 @@
                 {
                     "timestamp": 1734544263,
                     "value": 39.83
+                },
+                {
+                    "timestamp": 1734783938,
+                    "value": 40.83
                 }
             ],
             "currencyCode": "EUR"
@@ -1735,6 +1831,10 @@
                 {
                     "timestamp": 1734544264,
                     "value": 34.22
+                },
+                {
+                    "timestamp": 1734783938,
+                    "value": 34.79
                 }
             ],
             "currencyCode": "EUR"
@@ -1780,6 +1880,10 @@
                 {
                     "timestamp": 1734544264,
                     "value": 43.39
+                },
+                {
+                    "timestamp": 1734783939,
+                    "value": 57.57
                 }
             ],
             "currencyCode": "EUR"
@@ -1829,6 +1933,10 @@
                 {
                     "timestamp": 1734544265,
                     "value": 46.11
+                },
+                {
+                    "timestamp": 1734783939,
+                    "value": 55.33
                 }
             ],
             "currencyCode": "EUR"
@@ -1878,6 +1986,10 @@
                 {
                     "timestamp": 1734544265,
                     "value": 62.21
+                },
+                {
+                    "timestamp": 1734783940,
+                    "value": 55.33
                 }
             ],
             "currencyCode": "EUR"
@@ -1915,6 +2027,10 @@
                 {
                     "timestamp": 1733655393,
                     "value": 63.9
+                },
+                {
+                    "timestamp": 1734783941,
+                    "value": 59.95
                 }
             ],
             "currencyCode": "EUR"
@@ -1956,6 +2072,10 @@
                 {
                     "timestamp": 1734544266,
                     "value": 63.21
+                },
+                {
+                    "timestamp": 1734783943,
+                    "value": 62.21
                 }
             ],
             "currencyCode": "EUR"
@@ -2001,6 +2121,10 @@
                 {
                     "timestamp": 1734544266,
                     "value": 93.41
+                },
+                {
+                    "timestamp": 1734783943,
+                    "value": 105.96
                 }
             ],
             "currencyCode": "EUR"
@@ -2042,6 +2166,10 @@
                 {
                     "timestamp": 1734544267,
                     "value": 47.09
+                },
+                {
+                    "timestamp": 1734783944,
+                    "value": 42.42
                 }
             ],
             "currencyCode": "EUR"
@@ -2157,6 +2285,10 @@
                 {
                     "timestamp": 1734544267,
                     "value": 42.42
+                },
+                {
+                    "timestamp": 1734783945,
+                    "value": 39.99
                 }
             ],
             "currencyCode": "EUR"
@@ -2194,6 +2326,10 @@
                 {
                     "timestamp": 1734544268,
                     "value": 49.0
+                },
+                {
+                    "timestamp": 1734783945,
+                    "value": 47.14
                 }
             ],
             "currencyCode": "EUR"
@@ -2201,6 +2337,80 @@
         "flightNumber": "FR1787",
         "priceUpdated": [
             1734516003000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-03-20T11:05:00",
+        "arrivalDate": "2025-03-20T13:40:00",
+        "price": {
+            "values": [
+                {
+                    "timestamp": 1734783947,
+                    "value": 72.95
+                }
+            ],
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1734763390000
+        ]
+    },
+    {
+        "departureAirport": {
+            "countryName": "Lithuania",
+            "iataCode": "VNO",
+            "name": "Vilnius",
+            "city": {
+                "name": "Vilnius",
+                "code": "VILNIUS",
+                "countryCode": "lt"
+            }
+        },
+        "arrivalAirport": {
+            "countryName": "Spain",
+            "iataCode": "BCN",
+            "name": "Barcelona",
+            "city": {
+                "name": "Barcelona",
+                "code": "BARCELONA",
+                "countryCode": "es"
+            }
+        },
+        "departureDate": "2025-03-21T12:55:00",
+        "arrivalDate": "2025-03-21T15:30:00",
+        "price": {
+            "values": [
+                {
+                    "timestamp": 1734783947,
+                    "value": 96.7
+                }
+            ],
+            "currencyCode": "EUR"
+        },
+        "flightNumber": "FR1787",
+        "priceUpdated": [
+            1734763571000
         ]
     }
 ]

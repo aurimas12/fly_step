@@ -44,6 +44,9 @@ clean_venv:
 info:
 	@echo "Project Information:"
 	@echo "---------------------"
+	@echo "Main project folder name:"
+	@basename $(shell pwd)
+	@echo
 	@echo "Python version:"
 	@$(PYTHON) --version
 	@echo
