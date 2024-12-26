@@ -7,13 +7,13 @@ REQUIREMENTS = requirements.txt
 .PHONY: venv setup all run clean clean_venv info help
 
 
-venv:
+env:
 	@echo "Creates a virtual environment and upgrades pip"
 	$(PYTHON) -m venv $(VENV)
 	$(VENV)/bin/pip install --upgrade pip
 
 
-setup:
+libs:
 	@echo "Install dependencies"
 	$(VENV)/bin/pip install -r $(REQUIREMENTS)
 
@@ -63,8 +63,8 @@ info:
 
 help:
 	@echo "Usage:"
-	@echo "  make venv        - Creates a virtual environment and upgrades pip"
-	@echo "  make setup       - Install dependencies"
+	@echo "  make env         - Creates a virtual environment and upgrades pip"
+	@echo "  make libs      - Install dependencies"
 	@echo "  make all         - single action to instal virtual venv and Install dependencies"
 	@echo "  make run         - Executes the app using the virtual environment"
 	@echo "  make clean       - Clean up files"
