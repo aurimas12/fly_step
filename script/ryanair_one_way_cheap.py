@@ -24,6 +24,8 @@ logger = logging.getLogger(__name__)
 
 departure_airport_iata = "VNO"
 arrival_airport_iata = "BCN"
+get_data_months = 3
+out_num_in_table = 15
 
 
 def get_one_way_cheap_flight(base_url: str,
@@ -209,12 +211,18 @@ def get_flights_by_date_range(start_date: datetime,
             if not extracted_flight_values:
                 continue
 
-            updated_json_schema = update_one_way_flight_json_schema(flight_json_schema, *extracted_flight_values)
+            updated_json_schema = update_one_way_flight_json_schema(
+                flight_json_schema,
+                *extracted_flight_values
+            )
             if not updated_json_schema:
                 logger.info(f"No flight data available on {search_date.strftime('%Y-%m-%d')}")
                 continue
 
-            result = check_append_price_and_write_data_to_json_file(updated_json_schema, vno_bcn_data_json_path)
+            result = check_append_price_and_write_data_to_json_file(
+                updated_json_schema,
+                vno_bcn_data_json_path
+            )
             if result:
                 print(search_date.strftime('%Y-%m-%d'), result)
                 logger.info(f"Flight data successfully saved for {search_date.strftime('%Y-%m-%d')}")
@@ -224,13 +232,15 @@ def get_flights_by_date_range(start_date: datetime,
         except Exception as e:
             logger.error(f"Unexpected error in def get_flights_by_date_range(): {e}")
 
-
-if __name__ == '__main__':
+def main():
     print(check_or_directory_exists(data_folder_path))
     start_date = datetime.today().replace(hour=0, minute=0, second=0, microsecond=0)
-    end_date = start_date + relativedelta(months=3)
+    end_date = start_date + relativedelta(months=get_data_months)
     get_flights_by_date_range(start_date, end_date, departure_airport_iata, arrival_airport_iata)
-    sorted_flights_info = get_sort_json_data_flights(vno_bcn_data_json_path, num_results=15)
+    sorted_flights_info = get_sort_json_data_flights(vno_bcn_data_json_path, num_results=out_num_in_table)
     output_chipest_fligts = prepare_flight_formated_output(sorted_flights_info)
     display_chipest_flights_in_table(output_chipest_fligts)
     logger.info("Flight data scraping complete")
+
+if __name__ == '__main__':
+    main()
