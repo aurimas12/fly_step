@@ -3,8 +3,10 @@ APP = script/ryanair_one_way_cheap.py
 VENV = fs_env
 PIP = $(VENV)/bin/pip
 REQUIREMENTS = requirements.txt
+RUN_SCHEDULER = script/scripts_scheduler.py
 
-.PHONY: venv setup all run clean clean_venv info help
+
+.PHONY: env libs all run run_scheduler clean clean_venv info help
 
 
 env:
@@ -24,6 +26,11 @@ all: venv setup
 run:
 	@echo "Run the app"
 	$(VENV)/bin/python $(APP)
+
+
+run_scheduler:
+	@echo "Scheduling to run scripts automatically by time"
+	$(VENV)/bin/python $(RUN_SCHEDULER)
 
 
 clean:
@@ -56,17 +63,21 @@ info:
 	@echo "Virtual environment location:"
 	@echo "$(VENV)"
 	@echo
-	@echo to activate run command: source $(VENV)/bin/activate
+	@echo to activate environment run command: source $(VENV)/bin/activate
 	@echo
 	@echo "Main application entry point: $(APP)"
-
+	@echo
+	@echo "Run application with scheduler: $(RUN_SCHEDULER)"
+	@echo
 
 help:
 	@echo "Usage:"
-	@echo "  make env         - Creates a virtual environment and upgrades pip"
-	@echo "  make libs      - Install dependencies"
-	@echo "  make all         - single action to instal virtual venv and Install dependencies"
-	@echo "  make run         - Executes the app using the virtual environment"
-	@echo "  make clean       - Clean up files"
-	@echo "  make clean_venv  - Delete virtual env"
-	@echo "  make info        - Display project information"
+	@echo "  make env           - Creates a virtual environment and upgrades pip"
+	@echo "  make libs          - Install dependencies"
+	@echo "  make all           - single action to instal virtual venv and Install dependencies"
+	@echo "  make run           - Executes the app using the virtual environment"
+	@echo "  make clean         - Clean up files"
+	@echo "  make clean_venv    - Delete virtual env"
+	@echo "  make info          - Display project information"
+	@echo "  make run_scheduler - Scheduling to run scripts automatically by time"
+	@echo

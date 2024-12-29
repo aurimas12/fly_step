@@ -21,7 +21,6 @@ def display_chipest_flights_in_table(data: List[Dict[str, str]]) -> None:
     Returns:
         None: Prints the table of cheapest flights to the console.
     """
-    console = Console()
     table = Table(
         Column("Departure Date", justify="center", style="cyan"),
         Column("Direction", justify="left", style="green"),
@@ -38,4 +37,5 @@ def display_chipest_flights_in_table(data: List[Dict[str, str]]) -> None:
         price = item_dict['price']
         table.add_row(departure_date, direction, str(price))
 
+    console = Console()
     console.print(table)
