@@ -17,6 +17,7 @@ from json_data_process import (
                             check_append_price_and_write_data_to_json_file,
                             time_stamp,
                             )
+from config import GET_DATA_MONTHS, OUT_NUM_IN_TABLE
 
 
 logging.config.dictConfig(LOGGING_CONFIG)
@@ -24,8 +25,6 @@ logger = logging.getLogger(__name__)
 
 departure_airport_iata = "VNO"
 arrival_airport_iata = "BCN"
-get_data_months = 3
-out_num_in_table = 15
 
 
 def get_one_way_cheap_flight(base_url: str,
@@ -235,9 +234,9 @@ def get_flights_by_date_range(start_date: datetime,
 def main():
     print(check_or_directory_exists(data_folder_path))
     start_date = datetime.today().replace(hour=0, minute=0, second=0, microsecond=0)
-    end_date = start_date + relativedelta(months=get_data_months)
+    end_date = start_date + relativedelta(months=GET_DATA_MONTHS)
     get_flights_by_date_range(start_date, end_date, departure_airport_iata, arrival_airport_iata)
-    sorted_flights_info = get_sort_json_data_flights(vno_bcn_data_json_path, num_results=out_num_in_table)
+    sorted_flights_info = get_sort_json_data_flights(vno_bcn_data_json_path, num_results=OUT_NUM_IN_TABLE)
     output_chipest_fligts = prepare_flight_formated_output(sorted_flights_info)
     display_chipest_flights_in_table(output_chipest_fligts)
     logger.info("Flight data scraping complete")

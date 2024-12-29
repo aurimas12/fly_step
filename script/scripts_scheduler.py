@@ -3,7 +3,7 @@ from datetime import datetime
 from rich import print
 from apscheduler.schedulers.blocking import BlockingScheduler
 from apscheduler.triggers.cron import CronTrigger
-from constants import TIME_SETTINGS, SCRIPT_FUNCTIONS
+from config import TIME_SETTINGS, SCRIPT_FUNCTIONS
 import logging
 import logging.config
 from logging_config import LOGGING_CONFIG
@@ -20,7 +20,6 @@ class ScriptScheduler:
         time_settings (tuple): Immutable tuple of (hour, minute) schedules.
         scheduler (BlockingScheduler): The APScheduler instance for scheduling jobs.
     """
-
     def __init__(self, scripts, time_settings):
         """
         Initialize the scheduler with scripts and time settings.

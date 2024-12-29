@@ -3053,6 +3053,10 @@
                 {
                     "timestamp": 1735467976,
                     "value": 42.69
+                },
+                {
+                    "timestamp": 1735476556,
+                    "value": 48.14
                 }
             ],
             "currencyCode": "EUR"
