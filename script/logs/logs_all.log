@@ -1,0 +1,511 @@
+2025-01-17 08:45 -  file - INFO -[file.py:29] - check_or_directory_exists - Directory './script/data' already exists.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-01-17&outboundDepartureDateTo=2025-01-17 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-01-18&outboundDepartureDateTo=2025-01-18 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-01-19&outboundDepartureDateTo=2025-01-19 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-01-20&outboundDepartureDateTo=2025-01-20 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-01-21&outboundDepartureDateTo=2025-01-21 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 201.99 with timestamp {'timestamp': 1737132303, 'value': 201.99} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-01-21
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-01-22&outboundDepartureDateTo=2025-01-22 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-01-23&outboundDepartureDateTo=2025-01-23 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-01-24&outboundDepartureDateTo=2025-01-24 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 49.99 with timestamp {'timestamp': 1737132304, 'value': 49.99} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-01-24
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-01-25&outboundDepartureDateTo=2025-01-25 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 56.99 with timestamp {'timestamp': 1737132304, 'value': 56.99} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-01-25
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-01-26&outboundDepartureDateTo=2025-01-26 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-01-27&outboundDepartureDateTo=2025-01-27 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-01-28&outboundDepartureDateTo=2025-01-28 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 84.99 with timestamp {'timestamp': 1737132305, 'value': 84.99} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-01-28
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-01-29&outboundDepartureDateTo=2025-01-29 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-01-30&outboundDepartureDateTo=2025-01-30 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-01-31&outboundDepartureDateTo=2025-01-31 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 64.99 with timestamp {'timestamp': 1737132306, 'value': 64.99} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-01-31
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-02-01&outboundDepartureDateTo=2025-02-01 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 51.83 with timestamp {'timestamp': 1737132307, 'value': 51.83} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-02-01
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-02-02&outboundDepartureDateTo=2025-02-02 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-02-03&outboundDepartureDateTo=2025-02-03 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-02-04&outboundDepartureDateTo=2025-02-04 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 113.82 with timestamp {'timestamp': 1737132308, 'value': 113.82} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-02-04
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-02-05&outboundDepartureDateTo=2025-02-05 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-02-06&outboundDepartureDateTo=2025-02-06 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-02-07&outboundDepartureDateTo=2025-02-07 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 73.99 with timestamp {'timestamp': 1737132309, 'value': 73.99} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-02-07
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-02-08&outboundDepartureDateTo=2025-02-08 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 63.99 with timestamp {'timestamp': 1737132310, 'value': 63.99} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-02-08
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-02-09&outboundDepartureDateTo=2025-02-09 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-02-10&outboundDepartureDateTo=2025-02-10 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-02-11&outboundDepartureDateTo=2025-02-11 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 73.99 with timestamp {'timestamp': 1737132311, 'value': 73.99} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-02-11
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-02-12&outboundDepartureDateTo=2025-02-12 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-02-13&outboundDepartureDateTo=2025-02-13 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-02-14&outboundDepartureDateTo=2025-02-14 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 151.94 with timestamp {'timestamp': 1737132312, 'value': 151.94} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-02-14
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-02-15&outboundDepartureDateTo=2025-02-15 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:113] - check_append_price_and_write_data_to_json_file - No update needed. The price is already in the entry.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-02-15
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-02-16&outboundDepartureDateTo=2025-02-16 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-02-17&outboundDepartureDateTo=2025-02-17 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-02-18&outboundDepartureDateTo=2025-02-18 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 78.57 with timestamp {'timestamp': 1737132313, 'value': 78.57} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-02-18
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-02-19&outboundDepartureDateTo=2025-02-19 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 71.39 with timestamp {'timestamp': 1737132313, 'value': 71.39} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-02-19
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-02-20&outboundDepartureDateTo=2025-02-20 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 36.82 with timestamp {'timestamp': 1737132314, 'value': 36.82} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-02-20
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-02-21&outboundDepartureDateTo=2025-02-21 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 58.13 with timestamp {'timestamp': 1737132314, 'value': 58.13} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-02-21
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-02-22&outboundDepartureDateTo=2025-02-22 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 58.13 with timestamp {'timestamp': 1737132314, 'value': 58.13} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-02-22
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-02-23&outboundDepartureDateTo=2025-02-23 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-02-24&outboundDepartureDateTo=2025-02-24 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-02-25&outboundDepartureDateTo=2025-02-25 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 59.82 with timestamp {'timestamp': 1737132315, 'value': 59.82} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-02-25
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-02-26&outboundDepartureDateTo=2025-02-26 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-02-27&outboundDepartureDateTo=2025-02-27 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-02-28&outboundDepartureDateTo=2025-02-28 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 49.08 with timestamp {'timestamp': 1737132316, 'value': 49.08} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-02-28
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-01&outboundDepartureDateTo=2025-03-01 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 59.95 with timestamp {'timestamp': 1737132316, 'value': 59.95} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-03-01
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-02&outboundDepartureDateTo=2025-03-02 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-03&outboundDepartureDateTo=2025-03-03 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-04&outboundDepartureDateTo=2025-03-04 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 51.34 with timestamp {'timestamp': 1737132317, 'value': 51.34} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-03-04
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-05&outboundDepartureDateTo=2025-03-05 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-06&outboundDepartureDateTo=2025-03-06 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 47.09 with timestamp {'timestamp': 1737132317, 'value': 47.09} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-03-06
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-07&outboundDepartureDateTo=2025-03-07 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 66.84 with timestamp {'timestamp': 1737132317, 'value': 66.84} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-03-07
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-08&outboundDepartureDateTo=2025-03-08 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 84.0 with timestamp {'timestamp': 1737132317, 'value': 84.0} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-03-08
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-09&outboundDepartureDateTo=2025-03-09 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-10&outboundDepartureDateTo=2025-03-10 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-11&outboundDepartureDateTo=2025-03-11 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 68.47 with timestamp {'timestamp': 1737132318, 'value': 68.47} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-03-11
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-12&outboundDepartureDateTo=2025-03-12 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-13&outboundDepartureDateTo=2025-03-13 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 41.55 with timestamp {'timestamp': 1737132318, 'value': 41.55} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-03-13
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-14&outboundDepartureDateTo=2025-03-14 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 55.33 with timestamp {'timestamp': 1737132319, 'value': 55.33} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-03-14
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-15&outboundDepartureDateTo=2025-03-15 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 72.95 with timestamp {'timestamp': 1737132319, 'value': 72.95} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-03-15
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-16&outboundDepartureDateTo=2025-03-16 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-17&outboundDepartureDateTo=2025-03-17 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-18&outboundDepartureDateTo=2025-03-18 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 69.47 with timestamp {'timestamp': 1737132319, 'value': 69.47} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-03-18
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-19&outboundDepartureDateTo=2025-03-19 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-20&outboundDepartureDateTo=2025-03-20 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 91.88 with timestamp {'timestamp': 1737132320, 'value': 91.88} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-03-20
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-21&outboundDepartureDateTo=2025-03-21 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 81.43 with timestamp {'timestamp': 1737132320, 'value': 81.43} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-03-21
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-22&outboundDepartureDateTo=2025-03-22 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 62.08 with timestamp {'timestamp': 1737132320, 'value': 62.08} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-03-22
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-23&outboundDepartureDateTo=2025-03-23 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-24&outboundDepartureDateTo=2025-03-24 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-25&outboundDepartureDateTo=2025-03-25 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 64.9 with timestamp {'timestamp': 1737132321, 'value': 64.9} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-03-25
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-26&outboundDepartureDateTo=2025-03-26 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-27&outboundDepartureDateTo=2025-03-27 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 53.39 with timestamp {'timestamp': 1737132321, 'value': 53.39} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-03-27
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-28&outboundDepartureDateTo=2025-03-28 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 57.78 with timestamp {'timestamp': 1737132321, 'value': 57.78} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-03-28
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-29&outboundDepartureDateTo=2025-03-29 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:143] - check_if_entry_exists - Matching entry found.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:68] - add_price_and_timestamp_to_existing_entry_values - Added new price 56.33 with timestamp {'timestamp': 1737132322, 'value': 56.33} to price list.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-03-29
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-30&outboundDepartureDateTo=2025-03-30 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:146] - check_if_entry_exists - No matching entry found.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-03-30
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-03-31&outboundDepartureDateTo=2025-03-31 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:146] - check_if_entry_exists - No matching entry found.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-03-31
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-04-01&outboundDepartureDateTo=2025-04-01 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-04-02&outboundDepartureDateTo=2025-04-02 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:146] - check_if_entry_exists - No matching entry found.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-04-02
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-04-03&outboundDepartureDateTo=2025-04-03 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:146] - check_if_entry_exists - No matching entry found.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-04-03
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-04-04&outboundDepartureDateTo=2025-04-04 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:146] - check_if_entry_exists - No matching entry found.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-04-04
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-04-05&outboundDepartureDateTo=2025-04-05 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-04-06&outboundDepartureDateTo=2025-04-06 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:146] - check_if_entry_exists - No matching entry found.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-04-06
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-04-07&outboundDepartureDateTo=2025-04-07 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:146] - check_if_entry_exists - No matching entry found.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-04-07
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-04-08&outboundDepartureDateTo=2025-04-08 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-04-09&outboundDepartureDateTo=2025-04-09 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:146] - check_if_entry_exists - No matching entry found.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-04-09
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-04-10&outboundDepartureDateTo=2025-04-10 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:146] - check_if_entry_exists - No matching entry found.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-04-10
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-04-11&outboundDepartureDateTo=2025-04-11 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:146] - check_if_entry_exists - No matching entry found.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-04-11
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-04-12&outboundDepartureDateTo=2025-04-12 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-04-13&outboundDepartureDateTo=2025-04-13 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:146] - check_if_entry_exists - No matching entry found.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-04-13
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-04-14&outboundDepartureDateTo=2025-04-14 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:146] - check_if_entry_exists - No matching entry found.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-04-14
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-04-15&outboundDepartureDateTo=2025-04-15 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:80] - extract_one_way_flight_details - No fares found in the response data.
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-04-16&outboundDepartureDateTo=2025-04-16 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:146] - check_if_entry_exists - No matching entry found.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-04-16
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:1051] - _new_conn - Starting new HTTPS connection (1): services-api.ryanair.com:443
+2025-01-17 08:45 -  urllib3.connectionpool - DEBUG -[connectionpool.py:546] - _make_request - https://services-api.ryanair.com:443 "GET /farfnd/v4/oneWayFares?departureAirportIataCode=VNO&arrivalAirportIataCode=BCN&outboundDepartureDateFrom=2025-04-17&outboundDepartureDateTo=2025-04-17 HTTP/11" 200 None
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:172] - update_one_way_flight_json_schema - JSON schema successfully updated.
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  json_data_process - INFO -[json_data_process.py:146] - check_if_entry_exists - No matching entry found.
+2025-01-17 08:45 -  file - INFO -[file.py:51] - write_data_to_json_file - Data: list successfully written to './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-04-17
+2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
+2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:242] - main - Flight data scraping complete
