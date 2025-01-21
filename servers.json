@@ -1,0 +1,13 @@
+{
+    "Servers": {
+        "1": {
+            "Name": "PostgreSQL",
+            "Group": "Servers",
+            "Host": "my_postgres",
+            "Port": 5432,
+            "MaintenanceDB": "fly_tickets_db",
+            "Username": "admin",
+            "SSLMode": "prefer"
+        }
+    }
+}
