@@ -29,14 +29,13 @@ class FlightData:
     def get_departure_country_code(self) -> str:
         return self.json_data.get("departureAirport", {}).get("city", {}).get("countryCode", "")
 
-    def get_departure_date(self, formatted: bool = False) -> Union[str, datetime]:
+    def get_departure_date(self, as_string: bool = True) -> Union[str, datetime]:
         departure_date_str = self.json_data.get("departureDate", "")
         try:
             departure_date = datetime.fromisoformat(departure_date_str)
-            return departure_date.strftime('%Y-%m-%d %H:%M:%S')
+            return departure_date if not as_string else departure_date.strftime('%Y-%m-%d %H:%M:%S')
         except ValueError:
-            return departure_date_str
-
+            return departure_date_str if as_string else None
 
     def get_arrival_country_name(self) -> str:
         return self.json_data.get("arrivalAirport", {}).get("countryName", "")
@@ -56,13 +55,14 @@ class FlightData:
     def get_arrival_country_code(self) -> str:
         return self.json_data.get("arrivalAirport", {}).get("city", {}).get("countryCode", "")
 
-    def get_arrival_date(self, formatted: bool = False) -> Union[str, datetime]:
+
+    def get_arrival_date(self, as_string: bool = True) -> Union[str, datetime]:
         arrival_date_str = self.json_data.get("arrivalDate", "")
         try:
             arrival_date = datetime.fromisoformat(arrival_date_str)
-            return  arrival_date.strftime('%Y-%m-%d %H:%M:%S')
+            return arrival_date if not as_string else arrival_date.strftime('%Y-%m-%d %H:%M:%S')
         except ValueError:
-            return arrival_date_str
+            return arrival_date_str if as_string else None
 
 
     def get_prices_list(self) -> List[float]:
@@ -135,7 +135,7 @@ class FlightData:
         }
         """
         return {
-            "departureDate": self.get_departure_date(formatted=True),
+            "departureDate": self.get_departure_date(as_string=True),
             "from": self.get_departure_city_name(),
             "to": self.get_arrival_city_name(),
             "direction": self.get_direction(),
