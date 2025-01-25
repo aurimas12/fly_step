@@ -1,4 +1,4 @@
-from constants import logs_file_path, logs_warning_file_path
+from constants import LOGS_FILE_PATH, LOGS_WARNINGS_FILE_PATH
 
 
 LOGGING_CONFIG = {
@@ -30,7 +30,7 @@ LOGGING_CONFIG = {
             'level': 'DEBUG',
             'class': 'logging.handlers.RotatingFileHandler',
             'formatter': 'detailed',
-            'filename': logs_file_path,
+            'filename': LOGS_FILE_PATH,
             'mode': 'a',
             'encoding': 'utf-8',
             "maxBytes": 3_145_728,  # 3MB
@@ -40,7 +40,7 @@ LOGGING_CONFIG = {
             'level': 'WARNING',
             'class': 'logging.handlers.RotatingFileHandler',
             'formatter': 'detailed',
-            'filename': logs_warning_file_path,
+            'filename': LOGS_WARNINGS_FILE_PATH,
             'mode': 'a',
             'encoding': 'utf-8',
             "maxBytes": 1_048_576,  # 1MB
