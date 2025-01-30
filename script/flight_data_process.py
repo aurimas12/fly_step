@@ -79,11 +79,34 @@ class FlightData:
         Returns:
             List[float]: A list of price values.
         """
-        list_of_dict = self.json_data.get("price", {}).get("values", [])
+        list_of_dict = self.get_price_values()
         if isinstance(list_of_dict, list):
             try:
                 prices = [float(item['value']) for item in list_of_dict]
                 return prices
+            except (TypeError, ValueError):
+                return []
+        return []
+
+    def get_prices_timestamp_list(self) -> List[int]:
+        """
+        Get the list of timestamps as floats from the `price["values"]` field.
+        Exp:
+            Input:
+                "values": [
+                    {"timestamp": 1732624691000, "value": 57.27},
+                    {"timestamp": 1732624694000, "value": 73.6}
+                ]
+            Output:
+                [1732624691000, 1732624694000]
+        Returns:
+            List[float]: A list of timestamp values.
+        """
+        list_of_dict = self.get_price_values()
+        if isinstance(list_of_dict, list):
+            try:
+                time_stamps = [int(item['timestamp']) for item in list_of_dict]
+                return  time_stamps
             except (TypeError, ValueError):
                 return []
         return []
@@ -111,6 +134,10 @@ class FlightData:
         price_list = self.get_prices_list()
         return price_list[-1] if price_list else 0.0
 
+    def get_latest_prices_timestamp(self) -> float:
+        """Get the latest timestamp from the timestamp list."""
+        timestamps_list = self.get_prices_timestamp_list()
+        return timestamps_list[-1] if timestamps_list else 0
 
     def get_direction(self) -> str:
         """ Returns(str) direction
