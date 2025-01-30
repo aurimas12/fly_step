@@ -6,6 +6,8 @@ BASE_URL = "https://services-api.ryanair.com/farfnd/v4/oneWayFares"
 CSV_AIRPORTS_FILE_PATH = "./script/airports.csv"
 VNO_BCN_DATA_JSON_PATH = "./script/data/vno_bcn_data.json"
 DATA_FOLDER_PATH = "./script/data"
+
+# Paths using in logging_config.py
 LOGS_FILE_PATH = "./script/logs/logs_all.log"
 LOGS_WARNINGS_FILE_PATH = "./script/logs/logs_warning.log"
 
