@@ -509,3 +509,4 @@
 2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:227] - get_flights_by_date_range - Flight data successfully saved for 2025-04-17
 2025-01-17 08:45 -  file - INFO -[file.py:83] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.
 2025-01-17 08:45 -  __main__ - INFO -[ryanair_one_way_cheap.py:242] - main - Flight data scraping complete
+2025-01-30 19:40 -  file - INFO -[file.py:81] - read_load_json_file - Successfully loaded data from './script/data/vno_bcn_data.json'.

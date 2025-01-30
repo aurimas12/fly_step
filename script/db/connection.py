@@ -3,7 +3,7 @@ import psycopg2
 from dotenv import load_dotenv
 
 
-load_dotenv(dotenv_path='db/.env')
+load_dotenv(dotenv_path='script/db/.env')
 
 db_params = {
     'host': os.getenv('DB_HOST'),

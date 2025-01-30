@@ -116,6 +116,7 @@ celerybeat.pid
 # Environments
 fs_env
 db/.env
+script/db/.env
 .env
 .venv
 env/
