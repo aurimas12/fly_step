@@ -236,13 +236,10 @@ def main():
     end_date = start_date + relativedelta(months=GET_DATA_MONTHS)
 
     for route in FLYGHT_ROUTES:
-        departure_airport_iata = route["departure"]
-        arrival_airport_iata = route["arrival"]
-
         get_flights_by_date_range(start_date,
                                 end_date,
-                                departure_airport_iata,
-                                arrival_airport_iata
+                                route["departure"],
+                                route["arrival"]
                                 )
 
     sorted_flights_info = get_sort_json_data_flights(LT_SPAIN_DATA_JSON_PATH, num_results=OUT_NUM_IN_TABLE)
