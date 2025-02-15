@@ -59,138 +59,132 @@ class DbBaseInitializer:
 class FlightTable(DbBaseInitializer):
     def query_create_table(self):
         _table_name = 'flight'
-        _flight_table_query = \
-            """
-                CREATE TABLE IF NOT EXISTS flight
-                (
-                    flight_id SERIAL NOT NULL,
-                    fk_departure_airport_id INT NOT NULL,
-                    fk_arrival_airport_id INT NOT NULL,
-                    departure_date VARCHAR(20) NOT NULL,
-                    arrival_date VARCHAR(20) NOT NULL,
-                    ticket_price FLOAT NOT NULL,
-                    flight_number VARCHAR(10) NOT NULL,
-                    price_updated_date BIGINT NOT NULL,
+        _flight_table_query = """
+            CREATE TABLE IF NOT EXISTS flight
+            (
+                flight_id SERIAL NOT NULL,
+                fk_route_id INT NOT NULL,
+                fk_depart_airport_id INT NOT NULL,
+                fk_arriv_airport_id INT NOT NULL,
+                departure_date VARCHAR(20) NOT NULL,
+                arrival_date VARCHAR(20) NOT NULL,
+                ticket_price FLOAT NOT NULL,
+                flight_number VARCHAR(10) NOT NULL,
+                price_updated_date BIGINT NOT NULL,
 
-                    PRIMARY KEY (flight_id),
-                    CONSTRAINT route
-                        FOREIGN KEY (flight_id)
-                        REFERENCES route(flight_id),
-                    CONSTRAINT fk_departure_airport
-                        FOREIGN KEY (fk_departure_airport_id)
-                        REFERENCES departure_airport(depart_airport_id),
-                    CONSTRAINT fk_arrival_airport
-                        FOREIGN KEY (fk_arrival_airport_id)
-                        REFERENCES arrival_airport(arriv_airport_id)
-                );
-            """
+                PRIMARY KEY (flight_id),
+                CONSTRAINT fk_route
+                    FOREIGN KEY (fk_route_id)
+                    REFERENCES route(route_id),
+                CONSTRAINT fk_depart_airport
+                    FOREIGN KEY (fk_depart_airport_id)
+                    REFERENCES departure_airport(depart_airport_id),
+                CONSTRAINT fk_arriv_airport
+                    FOREIGN KEY (fk_arriv_airport_id)
+                    REFERENCES arrival_airport(arriv_airport_id)
+            );
+        """
         self.create_table(_flight_table_query, _table_name)
 
 
 class PricesHistoryTable(DbBaseInitializer):
     def query_create_table(self):
         _table_name = 'ticket_prices_history'
-        _prices_table_query = \
-            """
-                CREATE TABLE IF NOT EXISTS ticket_prices_history
-                (
-                    ticket_id SERIAL NOT NULL,
-                    fk_flight_id INT NOT NULL,
-                    price FLOAT NOT NULL,
-                    currency_code CHAR(3) NOT NULL,
-                    price_added_date BIGINT NOT NULL,
+        _prices_table_query = """
+            CREATE TABLE IF NOT EXISTS ticket_prices_history
+            (
+                ticket_id SERIAL NOT NULL,
+                fk_flight_id INT NOT NULL,
+                price FLOAT NOT NULL,
+                currency_code CHAR(3) NOT NULL,
+                price_added_date BIGINT NOT NULL,
 
-                    PRIMARY KEY (ticket_id),
-                    CONSTRAINT fk_flight
-                        FOREIGN KEY (fk_flight_id)
-                        REFERENCES flight(flight_id)
-                );
-            """
+                PRIMARY KEY (ticket_id),
+                CONSTRAINT fk_flight
+                    FOREIGN KEY (fk_flight_id)
+                    REFERENCES flight(flight_id)
+            );
+        """
         self.create_table(_prices_table_query, _table_name)
 
 
 class RouteTable(DbBaseInitializer):
     def query_create_table(self):
         _table_name = 'route'
-        _route_table_query = \
-            """
-                CREATE TABLE IF NOT EXISTS route
-                (
-                    flight_id SERIAL NOT NULL,
-                    fk_departure_airport_id INT NOT NULL,
-                    fk_arrival_airport_id INT NOT NULL,
-                    flight_number VARCHAR(20) NOT NULL,
+        _route_table_query = """
+            CREATE TABLE IF NOT EXISTS route (
+                route_id SERIAL NOT NULL,
+                fk_depart_airport_id INT NOT NULL,
+                fk_arriv_airport_id INT NOT NULL,
+                flight_number VARCHAR(20) NOT NULL,
 
-                    PRIMARY KEY (flight_id),
-                    CONSTRAINT fk_departure_airport
-                        FOREIGN KEY (fk_departure_airport_id)
-                        REFERENCES departure_airport(depart_airport_id),
-                    CONSTRAINT fk_arrival_airport
-                        FOREIGN KEY (fk_arrival_airport_id)
-                        REFERENCES arrival_airport(arriv_airport_id)
-                );
-             """
+                PRIMARY KEY (route_id),
+                CONSTRAINT fk_departure_airport
+                    FOREIGN KEY (fk_depart_airport_id)
+                    REFERENCES departure_airport(depart_airport_id),
+                CONSTRAINT fk_arriv_airport
+                    FOREIGN KEY (fk_arriv_airport_id)
+                    REFERENCES arrival_airport(arriv_airport_id)
+            );
+        """
         self.create_table(_route_table_query, _table_name)
 
 
 class DepartureAirportTable(DbBaseInitializer):
     def query_create_table(self):
         _table_name = 'departure_airport'
-        _departure_airport_table_query = \
-            """
-                CREATE TABLE IF NOT EXISTS departure_airport
-                (
-                    depart_airport_id SERIAL NOT NULL,
-                    depart_country_name VARCHAR(60) NOT NULL,
-                    depart_iata_code CHAR(5) NOT NULL,
-                    depart_airport_name VARCHAR(60) NOT NULL,
-                    fk_city_id INT NOT NULL,
+        _departure_airport_table_query = """
+            CREATE TABLE IF NOT EXISTS departure_airport
+            (
+                depart_airport_id SERIAL NOT NULL,
+                depart_country_name VARCHAR(60) NOT NULL,
+                depart_iata_code CHAR(5) NOT NULL,
+                depart_airport_name VARCHAR(60) NOT NULL,
+                fk_city_id INT NOT NULL,
 
-                    PRIMARY KEY (depart_airport_id),
-                    CONSTRAINT fk_city
-                        FOREIGN KEY (fk_city_id)
-                        REFERENCES city (city_id)
-                );
-            """
+                PRIMARY KEY (depart_airport_id),
+                CONSTRAINT fk_city
+                    FOREIGN KEY (fk_city_id)
+                    REFERENCES city (city_id)
+            );
+        """
         self.create_table(_departure_airport_table_query, _table_name)
 
 class CityTable(DbBaseInitializer):
     def query_create_table(self):
         _table_name = 'city'
-        _city_departure_table_query = \
-            """
-                CREATE TABLE IF NOT EXISTS city
-                (
-                    city_id SERIAL NOT NULL,
-                    city_name VARCHAR(60) NOT NULL,
-                    code VARCHAR(60) NOT NULL,
-                    country_code VARCHAR(10) NOT NULL,
+        _city_departure_table_query = """
+            CREATE TABLE IF NOT EXISTS city
+            (
+                city_id SERIAL NOT NULL,
+                city_name VARCHAR(60) NOT NULL,
+                code VARCHAR(60) NOT NULL,
+                country_code VARCHAR(10) NOT NULL,
 
-                    PRIMARY KEY (city_id)
-                );
-            """
+                PRIMARY KEY (city_id)
+            );
+        """
         self.create_table(_city_departure_table_query, _table_name)
 
 
 class ArrivalAirportTable(DbBaseInitializer):
     def query_create_table(self):
         _table_name = 'arrival_airport'
-        _arrival_airport_table_query = \
-            """
-                CREATE TABLE IF NOT EXISTS arrival_airport
-                (
-                    arriv_airport_id SERIAL NOT NULL,
-                    arriv_country_name VARCHAR(60) NOT NULL,
-                    arriv_iata_code VARCHAR(5) NOT NULL,
-                    arriv_airport_name VARCHAR(60) NOT NULL,
-                    fk_city_id INT NOT NULL,
+        _arrival_airport_table_query = """
+            CREATE TABLE IF NOT EXISTS arrival_airport
+            (
+                arriv_airport_id SERIAL NOT NULL,
+                arriv_country_name VARCHAR(60) NOT NULL,
+                arriv_iata_code VARCHAR(5) NOT NULL,
+                arriv_airport_name VARCHAR(60) NOT NULL,
+                fk_city_id INT NOT NULL,
 
-                    PRIMARY KEY (arriv_airport_id),
-                    CONSTRAINT fk_city
-                        FOREIGN KEY (fk_city_id)
-                        REFERENCES city (city_id)
-                );
-            """
+                PRIMARY KEY (arriv_airport_id),
+                CONSTRAINT fk_city
+                    FOREIGN KEY (fk_city_id)
+                    REFERENCES city (city_id)
+            );
+        """
         self.create_table(_arrival_airport_table_query, _table_name)
 
 

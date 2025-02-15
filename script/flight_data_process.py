@@ -127,7 +127,13 @@ class FlightData:
         return self.json_data.get("flightNumber", "")
 
     def get_price_updated_dates(self) -> List[str]:
-        return self.json_data.get("priceUpdated", [])
+        """
+        Returns: exp: '1733323486000'
+        """
+        timestamps = self.json_data.get("priceUpdated", [])
+        if timestamps:
+            return str(timestamps[0])
+
 
     def get_latest_price(self) -> float:
         """Get the latest price from the price list."""
@@ -173,17 +179,19 @@ class FlightData:
     def __repr__(self):
         return (
             f"<FlightData from {self.get_departure_city_name()} ({self.get_departure_city_code()}) "
-            f"({self.get_departure_airport_iata()}) "
+            f"iata:({self.get_departure_airport_iata()}) "
+            f"{self.get_departure_date()} "
             f"to {self.get_arrival_city_name()} ({self.get_arrival_city_code()}) "
-            f"({self.get_arrival_airport_iata()}) | "
-            f"on {self.get_departure_date()} "
+            f"iata:({self.get_arrival_airport_iata()}) "
+            f"{self.get_arrival_date()} "
             f"Latest price: {self.get_latest_price()} {self.get_currency_code()}>"
         )
 
     def __str__(self) -> str:
         return (
             f"Flight from {self.get_departure_city_name()} ({self.get_departure_airport_iata()}) "
+            f"{self.get_departure_date()} "
             f"to {self.get_arrival_city_name()} ({self.get_arrival_airport_iata()}) "
-            f"on {self.get_departure_date()} "
+            f"{self.get_arrival_date()} "
             f"Price: {self.get_latest_price()} {self.get_currency_code()}"
         )

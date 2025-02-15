@@ -3,8 +3,8 @@ import requests
 from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
 from constants import (
-                    BASE_URL, FLIGHT_JSON_SCHEMA,
-                    VNO_BCN_DATA_JSON_PATH, DATA_FOLDER_PATH)
+                    BASE_URL, FLIGHT_JSON_SCHEMA, FLYGHT_ROUTES,
+                    VNO_BCN_DATA_JSON_PATH, LT_SPAIN_DATA_JSON_PATH, DATA_FOLDER_PATH)
 from file import check_or_directory_exists
 from typing import Dict, Any, Tuple
 import logging
@@ -222,7 +222,7 @@ def get_flights_by_date_range(start_date: datetime,
 
             result = check_append_price_and_write_data_to_json_file(
                 updated_json_schema,
-                VNO_BCN_DATA_JSON_PATH
+                LT_SPAIN_DATA_JSON_PATH
             )
             if result:
                 print(search_date.strftime('%Y-%m-%d'), result)
@@ -237,8 +237,19 @@ def main():
     print(check_or_directory_exists(DATA_FOLDER_PATH))
     start_date = datetime.today().replace(hour=0, minute=0, second=0, microsecond=0)
     end_date = start_date + relativedelta(months=GET_DATA_MONTHS)
-    get_flights_by_date_range(start_date, end_date, departure_airport_iata, arrival_airport_iata)
-    sorted_flights_info = get_sort_json_data_flights(VNO_BCN_DATA_JSON_PATH, num_results=OUT_NUM_IN_TABLE)
+
+    for route in FLYGHT_ROUTES:
+        departure_airport_iata = route["departure"]
+        arrival_airport_iata = route["arrival"]
+
+        get_flights_by_date_range(start_date,
+                                end_date,
+                                departure_airport_iata,
+                                arrival_airport_iata
+                                )
+
+    #get_flights_by_date_range(start_date, end_date, departure_airport_iata, arrival_airport_iata)
+    sorted_flights_info = get_sort_json_data_flights(LT_SPAIN_DATA_JSON_PATH, num_results=OUT_NUM_IN_TABLE)
     output_chipest_fligts = prepare_flight_formated_output(sorted_flights_info)
     display_chipest_flights_in_table(output_chipest_fligts)
     logger.info("Flight data scraping complete")
