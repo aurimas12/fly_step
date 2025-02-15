@@ -5,11 +5,11 @@ import sys
 import pathlib
 sys.path.append(str(pathlib.Path(__file__).parent.parent))
 from flight_data_process import FlightData
-from constants import LT_SPAIN_DATA_JSON_PATH
+from constants import LT_SPAIN_DATA_JSON_PATH, LOAD_DOTENV_PATH
 from file import read_load_json_file
 from typing import List, Tuple
 
-load_dotenv(dotenv_path='script/db/.env')
+load_dotenv(dotenv_path=LOAD_DOTENV_PATH)
 
 class DataBaseInsertion:
     def __init__(self, connection):
@@ -404,7 +404,7 @@ class ArrivalDataInserter(DataBaseInsertion):
         arriv_country_name, arriv_iata_code, arriv_airport_name, city_id = _arrival_data_tuple
 
         db_arriv_id = self.get_arriv_airport_id_from_db(arriv_iata_code)
-        print("from gget_arriv_airport_id_from_db db_arriv_id: ", db_arriv_id)
+        print("from get_arriv_airport_id_from_db db_arriv_id: ", db_arriv_id)
         if db_arriv_id:
             return db_arriv_id
 
@@ -606,7 +606,7 @@ class RouteTableDataInserter(DataBaseInsertion):
     A class responsible for inserting route data into the route table.
     """
 
-    def insert_to_route(self, flight_data: FlightData, depart_airport_id: int, arriv_airport_id: int) -> int | None:
+    def insert_to_route(self, depart_airport_id: int, arriv_airport_id: int) -> int | None:
         """
         Inserts data into the route table using the correct foreign keys for departure and arrival airports.
         Args:
@@ -617,6 +617,8 @@ class RouteTableDataInserter(DataBaseInsertion):
             int | None: The inserted route ID if successful, otherwise None.
         """
         if depart_airport_id is None or arriv_airport_id is None:
+            print("depart_airport_id", depart_airport_id),
+            print("arriv_airport_id", arriv_airport_id)
             print("Error: Unable to retrieve airport IDs for route insertion.")
             return None
 
@@ -816,13 +818,15 @@ class RunDataFlightComparison(DataBaseInsertion):
 
             departure_airport_inserter = DepartureDataInserter(connection)
             depart_airport_id = departure_airport_inserter.insert_to_departure_airport(flight_data)
+            print( "depart_airport_id", depart_airport_id, "from RunDataFlightComparison")
 
             arrival_airport_inserter = ArrivalDataInserter(connection)
             arriv_airport_id = arrival_airport_inserter.insert_to_arrival_airport(flight_data)
+            print("arriv_airport_id", arriv_airport_id, "from RunDataFlightComparison")
 
             route_inserter = RouteTableDataInserter(connection)
-            route_id = route_inserter.insert_to_route(depart_airport_id,
-                                                      arriv_airport_id)
+            route_id = route_inserter.insert_to_route(depart_airport_id, arriv_airport_id)
+            print("route_id", route_id, "from RunDataFlightComparison")
 
             flight_inserter = FlightDataInserter(connection)
             flight_id = flight_inserter.insert_to_flight(flight_data,

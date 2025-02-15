@@ -79,10 +79,10 @@ class FlightData:
         Returns:
             List[float]: A list of price values.
         """
-        list_of_dict = self.get_price_values()
-        if isinstance(list_of_dict, list):
+        list_of_prices = self.get_price_values()
+        if isinstance(list_of_prices, list):
             try:
-                prices = [float(item['value']) for item in list_of_dict]
+                prices = [float(item['value']) for item in list_of_prices]
                 return prices
             except (TypeError, ValueError):
                 return []
@@ -90,7 +90,7 @@ class FlightData:
 
     def get_prices_timestamp_list(self) -> List[int]:
         """
-        Get the list of timestamps as floats from the `price["values"]` field.
+        Get the list of timestamps(int) from the `price["values"]` field.
         Exp:
             Input:
                 "values": [
@@ -100,12 +100,12 @@ class FlightData:
             Output:
                 [1732624691000, 1732624694000]
         Returns:
-            List[float]: A list of timestamp values.
+            List[int]: A list of timestamp values.
         """
-        list_of_dict = self.get_price_values()
-        if isinstance(list_of_dict, list):
+        list_of_prices_values = self.get_price_values()
+        if isinstance(list_of_prices_values, list):
             try:
-                time_stamps = [int(item['timestamp']) for item in list_of_dict]
+                time_stamps = [int(item['timestamp']) for item in list_of_prices_values]
                 return  time_stamps
             except (TypeError, ValueError):
                 return []

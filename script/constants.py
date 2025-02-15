@@ -1,6 +1,8 @@
 # Urls
 BASE_URL = "https://services-api.ryanair.com/farfnd/v4/oneWayFares"
 
+# load_dotenv
+LOAD_DOTENV_PATH = './script/db/.env'
 
 # Paths
 CSV_AIRPORTS_FILE_PATH = "./script/airports.csv"

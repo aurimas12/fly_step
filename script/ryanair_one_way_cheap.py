@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
 from constants import (
                     BASE_URL, FLIGHT_JSON_SCHEMA, FLYGHT_ROUTES,
-                    VNO_BCN_DATA_JSON_PATH, LT_SPAIN_DATA_JSON_PATH, DATA_FOLDER_PATH)
+                    LT_SPAIN_DATA_JSON_PATH, DATA_FOLDER_PATH)
 from file import check_or_directory_exists
 from typing import Dict, Any, Tuple
 import logging
@@ -24,9 +24,6 @@ from config import GET_DATA_MONTHS, OUT_NUM_IN_TABLE
 
 logging.config.dictConfig(LOGGING_CONFIG)
 logger = logging.getLogger(__name__)
-
-departure_airport_iata = "VNO"
-arrival_airport_iata = "BCN"
 
 
 def get_one_way_cheap_flight(base_url: str,
@@ -248,7 +245,6 @@ def main():
                                 arrival_airport_iata
                                 )
 
-    #get_flights_by_date_range(start_date, end_date, departure_airport_iata, arrival_airport_iata)
     sorted_flights_info = get_sort_json_data_flights(LT_SPAIN_DATA_JSON_PATH, num_results=OUT_NUM_IN_TABLE)
     output_chipest_fligts = prepare_flight_formated_output(sorted_flights_info)
     display_chipest_flights_in_table(output_chipest_fligts)
