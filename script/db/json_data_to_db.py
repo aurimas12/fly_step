@@ -203,7 +203,6 @@ class CityDataInserter(DataBaseInsertion):
             (int) The city_id if inserted or found, otherwise None.
         """
         city_id = self.get_existing_city_id(city_name, city_code, country_code)
-        print("from get_existing_city_id city_id : ", city_id)
         if city_id:
             return city_id
 
@@ -219,7 +218,6 @@ class CityDataInserter(DataBaseInsertion):
         _city_data = (city_name, city_code, country_code)
         _table_name = 'city'
         new_city_id = self.insert_data_returning_id(_query_insert, _city_data, _table_name)
-        print("from city insert_to_city new_city_id: ", new_city_id)
         return new_city_id
 
     def extract_city_depart_data(self, flight_data: FlightData) -> tuple:
@@ -273,10 +271,8 @@ class CityDataInserter(DataBaseInsertion):
         if result:
             print("get_existing_city_id", result)
             city_id = result  # result[0]
-            print(f"Found city {city_name} with ID: {city_id}")
             return city_id
         else:
-            print(f"City {city_name} not found. It will be inserted.")
             return None
 
 
@@ -299,11 +295,8 @@ class DepartureDataInserter(DataBaseInsertion):
         city_depart_data = city_inserter.extract_city_depart_data(flight_data)
         city_name, city_code, country_code = city_depart_data
         city_id = city_inserter.insert_to_city(city_name, city_code, country_code)
-        print(city_id, "from departure_data_inserter")
         if not city_id:
-            print("Error: Unable to get city_id to departure airport.")
             return None
-        print(f"city ID from departure_data_inserter: {city_id}")
 
         query = """
             INSERT INTO departure_airport (
@@ -319,17 +312,16 @@ class DepartureDataInserter(DataBaseInsertion):
         depart_country_name, depart_iata_code, depart_airport_name, city_id = _departure_data_tuple
 
         db_depart_id = self.get_depart_airport_id_from_db(depart_iata_code)
-        print("from get_depart_airport_id_from_db db_depart_id: ", db_depart_id)
         if db_depart_id:
             return db_depart_id
 
         _table_name = "departure_airport"
         depart_airport_id = self.insert_data_returning_id(query, _departure_data_tuple, _table_name)
         if depart_airport_id is not None:
-            print(f"Depart airport ID: {depart_airport_id}")
+            return depart_airport_id
         else:
             print("Error: Unable to retrieve departure airport ID.")
-        return depart_airport_id
+
 
     def _extract_departure_data(self, flight_data: FlightData, city_id: int) -> tuple:
         """
@@ -362,7 +354,6 @@ class DepartureDataInserter(DataBaseInsertion):
             WHERE depart_iata_code = %s;
         """
         result = self.fetch_one_from_db(query, (depart_iata_code,))
-        print("get_departure_airport_id_from_db: ", result)
         return result
 
 
@@ -387,7 +378,6 @@ class ArrivalDataInserter(DataBaseInsertion):
         city_id = city_inserter.insert_to_city(city_name, city_code, country_code)
         print(city_id, "from arrival_data_inserter")
         if not city_id:
-            print("Error: Unable to get city_id to arrival airport.")
             return
         print(f"city ID from arrival_data_inserter: {city_id}")
 
@@ -404,7 +394,6 @@ class ArrivalDataInserter(DataBaseInsertion):
         arriv_country_name, arriv_iata_code, arriv_airport_name, city_id = _arrival_data_tuple
 
         db_arriv_id = self.get_arriv_airport_id_from_db(arriv_iata_code)
-        print("from get_arriv_airport_id_from_db db_arriv_id: ", db_arriv_id)
         if db_arriv_id:
             return db_arriv_id
 
@@ -412,10 +401,9 @@ class ArrivalDataInserter(DataBaseInsertion):
 
         arriv_airport_id = self.insert_data_returning_id(query, _arrival_data_tuple, _table_name)
         if arriv_airport_id is not None:
-            print(f"Arrival airport ID: {arriv_airport_id}")
+            return arriv_airport_id
         else:
             print("Error: Unable to retrieve arrival airport ID.")
-        return arriv_airport_id
 
     def _extract_arrival_data(self, flight_data: FlightData, city_id: int) -> tuple:
         """
@@ -448,7 +436,6 @@ class ArrivalDataInserter(DataBaseInsertion):
             WHERE arriv_iata_code = %s;
         """
         result = self.fetch_one_from_db(query, (arriv_iata_code,))
-        print("get_arriv_airport_id_from_db: ", result)
         return result
 
 
@@ -493,10 +480,9 @@ class FlightDataInserter(DataBaseInsertion):
         flight_id = self.insert_data_returning_id(query, flight_data_tuple, table_name)
         print("flight_id from flight data inserter: ", flight_id)
         if flight_id is not None:
-            print(f"Flight successfully inserted with ID: {flight_id}")
+            return flight_id
         else:
             print(f"Error: Unable to insert flight data with ID: {flight_id}")
-        return flight_id
 
     def _extract_flight_data(self, flight_data: FlightData,
                             route_id: int,
@@ -564,7 +550,6 @@ class PricesHistoryDataInserter(DataBaseInsertion):
             int | None: The inserted ticket price history ID if successful, otherwise None.
         """
         if not flight_id:
-            print("Error: Unable to get flight_id from FlightDataInserter.")
             return None
 
         _query = """
@@ -576,11 +561,9 @@ class PricesHistoryDataInserter(DataBaseInsertion):
             ) VALUES (%s, %s, %s, %s)
         """
         _history_data_tuple = self._extract_prices_history_data(flight_data, flight_id)
-        print("history_data_tuple from insert_to_prices_history: ", _history_data_tuple)
         _table_name = "ticket_prices_history"
 
         ticket_id = self.insert_data_to_db(_query, _history_data_tuple, _table_name)
-        print("ticket_id: ", ticket_id)
         return ticket_id
 
     def _extract_prices_history_data(self, flight_data: FlightData, flight_id: int) -> tuple:
@@ -635,10 +618,9 @@ class RouteTableDataInserter(DataBaseInsertion):
         _table_name = "route"
         route_id = self.insert_data_returning_id(_query_route, _route_data_tuple, _table_name)
         if route_id is not None:
-            print(f"Route inserted successfully with ID: {route_id}")
+            return route_id
         else:
             print("Error: Failed to insert route data.")
-        return route_id
 
     def _extract_route_data(self, flight_data: FlightData, departure_airport_id: int, arrival_airport_id: int):
         """
@@ -714,7 +696,6 @@ class PriceHistoryDataRowInserter(DataBaseInsertion):
 
         success = self.insert_data_to_db(_query, _data_tuple, _table_name)
         if success:
-            print(f"New price added to {_table_name}: {price} {currency} (Flight ID: {flight_id}) at {timestamp}")
             return True
         else:
             return False

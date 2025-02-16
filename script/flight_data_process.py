@@ -108,8 +108,8 @@ class FlightData:
                 time_stamps = [int(item['timestamp']) for item in list_of_prices_values]
                 return  time_stamps
             except (TypeError, ValueError):
-                return []
-        return []
+                return None
+        return None
 
     def get_price_values(self) -> List[dict]:
         """ Returns:
