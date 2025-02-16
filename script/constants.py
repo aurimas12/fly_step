@@ -1,17 +1,30 @@
 # Urls
-base_url = "https://services-api.ryanair.com/farfnd/v4/oneWayFares"
+BASE_URL = "https://services-api.ryanair.com/farfnd/v4/oneWayFares"
 
+# load_dotenv
+LOAD_DOTENV_PATH = './script/db/.env'
 
 # Paths
-csv_airports_file_path = "./script/airports.csv"
-vno_bcn_data_json_path = "./script/data/vno_bcn_data.json"
-data_folder_path = "./script/data"
-logs_file_path = "./script/logs/logs_all.log"
-logs_warning_file_path = "./script/logs/logs_warning.log"
+CSV_AIRPORTS_FILE_PATH = "./script/airports.csv"
+VNO_BCN_DATA_JSON_PATH = "./script/data/vno_bcn_data.json"
+LT_SPAIN_DATA_JSON_PATH = "./script/data/lt_spain_data.json"
+DATA_FOLDER_PATH = "./script/data"
 
+# Paths using in logging_config.py
+LOGS_FILE_PATH = "./script/logs/logs_all.log"
+LOGS_WARNINGS_FILE_PATH = "./script/logs/logs_warning.log"
+
+# Routes from Lt to Spain used in ryanair_one_way_cheap.py
+FLYGHT_ROUTES = [
+    {"departure": "VNO", "arrival": "BCN"},
+    {"departure": "KUN", "arrival": "ALC"},
+    {"departure": "KUN", "arrival": "MAD"},
+    {"departure": "KUN", "arrival": "PMI"},
+    {"departure": "KUN", "arrival": "AGP"},
+]
 
 # Json
-flight_json_schema = {
+FLIGHT_JSON_SCHEMA = {
     "departureAirport": {
         "countryName": "",
         "iataCode": "",

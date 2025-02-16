@@ -4,3 +4,4 @@ rich==13.9.4
 apscheduler==3.11.0
 psycopg2-binary==2.9.10
 python-dotenv==1.0.1
+setuptools==75.8.0

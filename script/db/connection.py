@@ -1,9 +1,12 @@
 import os
 import psycopg2
 from dotenv import load_dotenv
+import sys
+import pathlib
+sys.path.append(str(pathlib.Path(__file__).parent.parent))
+from constants import LOAD_DOTENV_PATH
 
-
-load_dotenv(dotenv_path='db/.env')
+load_dotenv(dotenv_path=LOAD_DOTENV_PATH)
 
 db_params = {
     'host': os.getenv('DB_HOST'),
