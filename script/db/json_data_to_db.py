@@ -145,6 +145,40 @@ class DataBaseInsertion:
             if cursor:
                 cursor.close()
 
+    def get_tables_sizes_from_db(self) -> dict:
+        """
+        Retrieves the sizes of tables in the public schema of the database.
+
+        Returns:
+            dict: A dictionary where keys are table names and values are their sizes
+            exp:
+            Table sizes in the database <fly_tickets_db>:
+                {'ticket_prices_history': '40 kB',
+                'flight': '32 kB', 'route': '16 kB',
+                'departure_airport': '8192 bytes',
+                'city': '8192 bytes',
+                'arrival_airport': '8192 bytes'}
+        """
+        try:
+            cursor = self.connection.cursor()
+            db_name = self.connection.get_dsn_parameters().get('dbname')
+            query = """
+                SELECT relname AS table_name,
+                    pg_size_pretty(pg_relation_size(quote_ident(relname))) AS size
+                FROM pg_stat_user_tables
+                ORDER BY pg_relation_size(quote_ident(relname)) DESC
+            """
+            cursor.execute(query)
+            table_sizes = {row[0]: row[1] for row in cursor.fetchall()}
+            print(f"Table sizes in the database <{db_name}>: {table_sizes}")
+            return table_sizes
+        except psycopg2.Error as err:
+            print(f"Error querying table sizes: {err}")
+            return {}
+        finally:
+            if cursor:
+                cursor.close()
+
     def get_existing_tables_from_db(self) -> list:
         """
         Retrieves the list of existing table names in the database.

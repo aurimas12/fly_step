@@ -1,23 +1,31 @@
-PYTHON = python3.12
 APP = script/ryanair_one_way_cheap.py
-VENV = fs_env
+PYTHON = $(VENV)/bin/python3
+PYTHON_3_12 = python3.12.5
 PIP = $(VENV)/bin/pip
 REQUIREMENTS = requirements.txt
-RUN_SCHEDULER = script/scripts_scheduler.py
+VENV = .venv
+UV = uv
+
+.PHONY: venv setup all run clean del_venv clean info help
 
 
-.PHONY: env libs all run run_scheduler clean clean_venv info help
+ifeq ($(OS),Windows_NT)
+    ACTIVATION = .\$(VENV)\Scripts\activate
+else
+    ACTIVATION = source $(VENV)/bin/activate
+endif
 
 
-env:
-	@echo "Creates a virtual environment and upgrades pip"
-	$(PYTHON) -m venv $(VENV)
-	$(VENV)/bin/pip install --upgrade pip
+venv:
+	@echo "Creates a virtual environment"
+	$(UV) init
+	$(UV) venv --python=$(PYTHON_3_12)
 
 
-libs:
-	@echo "Install dependencies"
-	$(VENV)/bin/pip install -r $(REQUIREMENTS)
+setup:
+	@echo "Install dependencies from requirements.txt and sync with uv.lock"
+	$(UV) add -r $(REQUIREMENTS)
+	$(UV) lock
 
 
 all: venv setup
@@ -25,59 +33,60 @@ all: venv setup
 
 run:
 	@echo "Run the app"
-	$(VENV)/bin/python $(APP)
-
-
-run_scheduler:
-	@echo "Scheduling to run scripts automatically by time"
-	$(VENV)/bin/python $(RUN_SCHEDULER)
+	$(ACTIVATION) && $(PYTHON) $(APP)
 
 
 clean:
-	@echo "Cleaning temporary files"
-	@find . -type d -name "__pycache__" -exec rm -rf {} +
-	@find . -type f -name "*.pyc" -delete
-	@find . -type f -name "*.pyo" -delete
+	@echo "Clean up temporary files"
+	$(UV) cache clean
+	$(UV) cache dir
+	rm -rf __pycache__ *.pyc *.pyo
 
 
-clean_venv:
+del_venv:
 	@echo "Delete virtual env"
 	rm -rf $(VENV)
+	rm -rf pyproject.toml
+	rm -rf uv.lock
 
 
 info:
 	@echo "Project Information:"
 	@echo "---------------------"
 	@echo "Main project folder name:"
-	@echo $(shell basename $(shell pwd))
+	@basename $(shell pwd)
+	@echo
+	@echo "Full project path:"
+	@pwd
 	@echo
 	@echo "Python version:"
 	@$(PYTHON) --version
 	@echo
-	@echo "Pip version:"
-	@$(PYTHON) -m pip --version
+	@echo "UV version:"
+	@$(UV) version
 	@echo
 	@echo "Installed dependencies:"
-	@$(PIP) list
+	@$(UV) tree
 	@echo
 	@echo "Virtual environment location:"
 	@echo "$(VENV)"
 	@echo
-	@echo to activate environment run command: source $(VENV)/bin/activate
+	@echo "Active virtual environment:"
+	@echo "$(VIRTUAL_ENV)"
+	@echo
+	@echo to activate run command: source $(VENV)/bin/activate
 	@echo
 	@echo "Main application entry point: $(APP)"
 	@echo
-	@echo "Run application with scheduler: $(RUN_SCHEDULER)"
-	@echo
+
 
 help:
 	@echo "Usage:"
-	@echo "  make env           - Creates a virtual environment and upgrades pip"
-	@echo "  make libs          - Install dependencies"
-	@echo "  make all           - single action to instal virtual venv and Install dependencies"
-	@echo "  make run           - Executes the app using the virtual environment"
-	@echo "  make clean         - Clean up files"
-	@echo "  make clean_venv    - Delete virtual env"
-	@echo "  make info          - Display project information"
-	@echo "  make run_scheduler - Scheduling to run scripts automatically by time"
+	@echo "  make info        - Display project information"
+	@echo "  make venv        - Creates a virtual environment"
+	@echo "  make setup       - Update UV and install dependencies"
+	@echo "  make all         - single action to setup venv"
+	@echo "  make run         - Executes the app using the virtual environment"
+	@echo "  make clean       - Clean up files"
+	@echo "  make del_venv    - Clean and delete virtual env and files exp: pyproject.toml, uv.lock"
 	@echo
