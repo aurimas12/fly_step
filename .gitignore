@@ -114,7 +114,6 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-fs_env
 db/.env
 script/db/.env
 .env
