@@ -114,9 +114,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-db/.env
 script/db/.env
-.env
 .venv
 
 # Spyder project settings
