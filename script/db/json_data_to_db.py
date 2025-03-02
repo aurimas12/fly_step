@@ -1,5 +1,5 @@
 import psycopg2
-from connection import db_connection, db_params
+from db.connection import db_connection, db_params
 from dotenv import load_dotenv
 import sys
 import pathlib
@@ -131,7 +131,7 @@ class DataBaseInsertion:
             cursor.execute(query, values)
             inserted_id = cursor.fetchone()[0]
             self.connection.commit()
-            print(f"Data successfully inserted into '{table_name}' with ID: {inserted_id}")
+            print(f"Data successfully inserted into '{table_name}' with returning ID: {inserted_id}")
             return inserted_id
         except psycopg2.IntegrityError:
             self.connection.rollback()
@@ -303,7 +303,6 @@ class CityDataInserter(DataBaseInsertion):
         result = self.fetch_one_from_db(_query_existing_city_id, (city_name, city_code, country_code))
 
         if result:
-            print("get_existing_city_id", result)
             city_id = result  # result[0]
             return city_id
         else:
@@ -408,12 +407,9 @@ class ArrivalDataInserter(DataBaseInsertion):
         city_inserter = CityDataInserter(self.connection)
         city_arrival_data = city_inserter.extract_city_arrival_data(flight_data)
         city_name, city_code, country_code = city_arrival_data
-        print(city_name, city_code, country_code)
         city_id = city_inserter.insert_to_city(city_name, city_code, country_code)
-        print(city_id, "from arrival_data_inserter")
         if not city_id:
             return
-        print(f"city ID from arrival_data_inserter: {city_id}")
 
         query = """
             INSERT INTO arrival_airport (
@@ -509,10 +505,8 @@ class FlightDataInserter(DataBaseInsertion):
                                                     depart_airport_id,
                                                     arriv_airport_id)
         table_name = "flight"
-        print("flight_data_tuple before insert:", flight_data_tuple)
-
         flight_id = self.insert_data_returning_id(query, flight_data_tuple, table_name)
-        print("flight_id from flight data inserter: ", flight_id)
+
         if flight_id is not None:
             return flight_id
         else:
@@ -623,7 +617,7 @@ class RouteTableDataInserter(DataBaseInsertion):
     A class responsible for inserting route data into the route table.
     """
 
-    def insert_to_route(self, depart_airport_id: int, arriv_airport_id: int) -> int | None:
+    def insert_to_route(self, depart_airport_id: int, arriv_airport_id: int, flight_data: FlightData) -> int | None:
         """
         Inserts data into the route table using the correct foreign keys for departure and arrival airports.
         Args:
@@ -634,8 +628,6 @@ class RouteTableDataInserter(DataBaseInsertion):
             int | None: The inserted route ID if successful, otherwise None.
         """
         if depart_airport_id is None or arriv_airport_id is None:
-            print("depart_airport_id", depart_airport_id),
-            print("arriv_airport_id", arriv_airport_id)
             print("Error: Unable to retrieve airport IDs for route insertion.")
             return None
 
@@ -735,8 +727,6 @@ class PriceHistoryDataRowInserter(DataBaseInsertion):
             return False
 
 
-
-
 class TicketDataDb(DataBaseInsertion):
     """
     Handles fetching ticket-related data from the database.
@@ -828,28 +818,22 @@ class RunDataFlightComparison(DataBaseInsertion):
         db_ticket_data = ticket_data.get_ticket_data(flight_data)
 
         if isinstance(db_ticket_data, list) and len(db_ticket_data) == 0:
-            print(f"No records found for {flight_number} ({depart_iata_code} → {arriv_iata_code})."
-                  f"Inserting new flight record.")
-
-            departure_airport_inserter = DepartureDataInserter(connection)
+            departure_airport_inserter = DepartureDataInserter(self.connection)
             depart_airport_id = departure_airport_inserter.insert_to_departure_airport(flight_data)
-            print( "depart_airport_id", depart_airport_id, "from RunDataFlightComparison")
 
-            arrival_airport_inserter = ArrivalDataInserter(connection)
+            arrival_airport_inserter = ArrivalDataInserter(self.connection)
             arriv_airport_id = arrival_airport_inserter.insert_to_arrival_airport(flight_data)
-            print("arriv_airport_id", arriv_airport_id, "from RunDataFlightComparison")
 
-            route_inserter = RouteTableDataInserter(connection)
-            route_id = route_inserter.insert_to_route(depart_airport_id, arriv_airport_id)
-            print("route_id", route_id, "from RunDataFlightComparison")
+            route_inserter = RouteTableDataInserter(self.connection)
+            route_id = route_inserter.insert_to_route(depart_airport_id, arriv_airport_id, flight_data)
 
-            flight_inserter = FlightDataInserter(connection)
+            flight_inserter = FlightDataInserter(self.connection)
             flight_id = flight_inserter.insert_to_flight(flight_data,
                                                          route_id,
                                                          depart_airport_id,
                                                          arriv_airport_id)
 
-            price_history_inserter = PricesHistoryDataInserter(connection)
+            price_history_inserter = PricesHistoryDataInserter(self.connection)
             price_history_inserter.insert_to_prices_history(flight_data, flight_id)
             return
 
@@ -868,12 +852,12 @@ class RunDataFlightComparison(DataBaseInsertion):
             print(f"Price change detected. Inserting new price {new_price}"
                   f" for flight {flight_number}"
                   f" data row into history.")
-            price_row_insert = PriceHistoryDataRowInserter(connection)
+            price_row_insert = PriceHistoryDataRowInserter(self.connection)
             price_row_insert.insert_row_price_history(db_flight_id,
                                                     new_price,
                                                     currency_code,
                                                     price_timestamp)
-            price_date_update =  FlightDataInserter(connection)
+            price_date_update =  FlightDataInserter(self.connection)
             price_date_update.update_flight_db_ticket_price(db_flight_id,
                                                             new_price,
                                                             price_updated)
@@ -883,8 +867,7 @@ class RunDataFlightComparison(DataBaseInsertion):
                   f"({depart_iata_code} → {arriv_iata_code}). Skipping insert.")
             return
 
-
-if __name__ == '__main__':
+def insert_data_to_db_main():
     connection = db_connection(db_params)
     read_json = read_load_json_file(LT_SPAIN_DATA_JSON_PATH)
     for flight in read_json:
@@ -893,3 +876,6 @@ if __name__ == '__main__':
         flight_for_compa.compare_and_insert(flight_data)
 
     print("Done!")
+
+if __name__ == '__main__':
+    insert_data_to_db_main()

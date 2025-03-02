@@ -1,14 +1,40 @@
 import psycopg2
-from connection import db_connection, db_params
+from db.connection import db_connection, db_params
+#from connection import db_connection, db_params
 from dotenv import load_dotenv
+from constants import LOAD_DOTENV_PATH
 import os
 
-load_dotenv(dotenv_path='db/.env')
+load_dotenv(dotenv_path=LOAD_DOTENV_PATH)
 
 
 class DbBaseInitializer:
     def __init__(self, connection):
         self.connection = connection
+
+    def table_exists(self, table_name):
+        """
+        Checks if a table exists in the database.
+        :param table_name: Name of the table to check
+        :return: True if the table exists, False otherwise
+        """
+        try:
+            cursor = self.connection.cursor()
+            query = """
+                SELECT EXISTS (
+                    SELECT FROM information_schema.tables
+                    WHERE table_name = %s
+                );
+            """
+            cursor.execute(query, (table_name,))
+            exists = cursor.fetchone()[0]
+            return exists
+        except psycopg2.Error as err:
+            print(f"Error checking if table in db '{table_name}' exists:", err)
+            return False
+        finally:
+            if cursor:
+                cursor.close()
 
     def create_table(self, query, table_name):
         """
@@ -16,7 +42,12 @@ class DbBaseInitializer:
         :param query: SQL query to create the table
         :param table_name: Name of the table
         """
+        cursor  = None
         try:
+            if self.table_exists(table_name):
+                print(f"Table '{table_name}' already exists!")
+                return
+
             self.connection.autocommit = False
             cursor = self.connection.cursor()
             cursor.execute(query)
@@ -27,9 +58,8 @@ class DbBaseInitializer:
             self.connection.rollback()
             print(f"Transaction rolled back for table '{table_name}'.")
         finally:
-            if cursor:
+            if cursor is not None:
                 cursor.close()
-            self.connection.autocommit = True
 
     def query_existing_tables(self):
         """
