@@ -20,6 +20,9 @@ from json_data_process import (
                             time_stamp,
                             )
 from config import GET_DATA_MONTHS, OUT_NUM_IN_TABLE
+from db.create_tables import create_all_tables_main
+from db.json_data_to_db import insert_data_to_db_main
+from count_timer import count_timer
 
 
 logging.config.dictConfig(LOGGING_CONFIG)
@@ -230,6 +233,7 @@ def get_flights_by_date_range(start_date: datetime,
         except Exception as e:
             logger.error(f"Unexpected error in def get_flights_by_date_range(): {e}")
 
+@count_timer
 def main():
     print(check_or_directory_exists(DATA_FOLDER_PATH))
     start_date = datetime.today().replace(hour=0, minute=0, second=0, microsecond=0)
@@ -246,6 +250,8 @@ def main():
     output_chipest_fligts = prepare_flight_formated_output(sorted_flights_info)
     display_chipest_flights_in_table(output_chipest_fligts)
     logger.info("Flight data scraping complete")
+    create_all_tables_main()
+    insert_data_to_db_main()
 
 if __name__ == '__main__':
     main()
