@@ -1,5 +1,7 @@
 import time
 import functools
+from datetime import datetime, timedelta, timezone
+
 
 def count_timer(func):
     """
@@ -25,3 +27,16 @@ def count_timer(func):
         print(f"function '{func.__name__}' took {end_time - start_time:.6f} seconds.")
         return result
     return wrapper
+
+
+def get_yesterday_timestamp() -> str:
+    """
+    Get the Unix timestamp (in milliseconds) for yesterday's date.
+    Returns:
+        str: Timestamp representing yesterday in milliseconds since the epoch
+        '1719877200000'.
+    Example:
+        If today is 2025-03-05, the function returns the timestamp for 2025-03-04.
+    """
+    yesterday = datetime.now(timezone.utc) - timedelta(days=1)
+    return str(int(yesterday.timestamp() * 1000))
