@@ -869,12 +869,26 @@ class RunDataFlightComparison(DataBaseInsertion):
             return
 
 def insert_data_to_db_main():
+    """
+    Reads flight data from a JSON file, checks if the departure date is more
+    recent than yesterday, and inserts it into the database if it meets the criteria.
+    Process:
+    1. Establish a database connection.
+    2. Load flight data from the JSON file.
+    3. convert_departure_date_to_timestamp():
+        (int) - Convert each flight's departure date to a timestamp.
+    4. get_yesterday_timestamp(): (int)- yesterday's timestamp.
+    5. If the flight is recent, insert it into the database.
+    Returns:
+        None
+    """
     connection = db_connection(db_params)
     read_json = read_load_json_file(LT_SPAIN_DATA_JSON_PATH)
     for flight in read_json:
         flight_data = FlightData(flight)
-        price_updated = flight_data.get_price_updated_dates()
-        if price_updated > get_yesterday_timestamp():
+        yesterday_day = get_yesterday_timestamp()
+        price_updated = flight_data.convert_departure_date_to_timestamp()
+        if price_updated and price_updated > yesterday_day:
             flight_for_compa = RunDataFlightComparison(connection)
             flight_for_compa.compare_and_insert(flight_data)
         else:
