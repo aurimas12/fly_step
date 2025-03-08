@@ -17,10 +17,10 @@ LOGS_WARNINGS_FILE_PATH = "./script/logs/logs_warning.log"
 # Routes from Lt to Spain used in ryanair_one_way_cheap.py
 FLYGHT_ROUTES = [
     {"departure": "VNO", "arrival": "BCN"},
-    {"departure": "KUN", "arrival": "ALC"},
-    {"departure": "KUN", "arrival": "MAD"},
-    {"departure": "KUN", "arrival": "PMI"},
-    {"departure": "KUN", "arrival": "AGP"},
+    #{"departure": "KUN", "arrival": "ALC"},
+    #{"departure": "KUN", "arrival": "MAD"},
+    #{"departure": "KUN", "arrival": "PMI"},
+    #{"departure": "KUN", "arrival": "AGP"},
 ]
 
 # Json

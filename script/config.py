@@ -21,8 +21,8 @@ TIME_SETTINGS = [
 
 
 # List of script to run in scrips_scheduler.py use in script/scripts_scheduler.py
-from ryanair_one_way_cheap import main
-SCRIPT_FUNCTIONS = [
-    main,
-    main
-]
+#from ryanair_one_way_cheap import main
+#SCRIPT_FUNCTIONS = [
+#    main,
+#    main
+#]

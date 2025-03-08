@@ -30,12 +30,29 @@ class FlightData:
         return self.json_data.get("departureAirport", {}).get("city", {}).get("countryCode", "")
 
     def get_departure_date(self, as_string: bool = True) -> Union[str, datetime]:
+        """
+        Returns: '2025-05-02 11:15:00'
+        """
         departure_date_str = self.json_data.get("departureDate", "")
         try:
             departure_date = datetime.fromisoformat(departure_date_str)
             return departure_date if not as_string else departure_date.strftime('%Y-%m-%d %H:%M:%S')
         except ValueError:
             return departure_date_str if as_string else None
+
+    def convert_departure_date_to_timestamp(self) -> int:
+        """
+        Converts the departure date to a Unix timestamp.
+        input: (str) get_departure_date() - 2025-10-05 05:45:00
+        Returns: (int) 1744944300
+        """
+        date_str = self.get_departure_date()
+        try:
+            departure_time = datetime.strptime(date_str, "%Y-%m-%d %H:%M:%S")
+            departure_timestamp = int(departure_time.timestamp())
+            return departure_timestamp
+        except ValueError:
+            return None
 
     def get_arrival_country_name(self) -> str:
         return self.json_data.get("arrivalAirport", {}).get("countryName", "")
@@ -140,8 +157,10 @@ class FlightData:
         price_list = self.get_prices_list()
         return price_list[-1] if price_list else 0.0
 
-    def get_latest_prices_timestamp(self) -> float:
-        """Get the latest timestamp from the timestamp list."""
+    def get_latest_prices_timestamp(self) -> int:
+        """Get the latest timestamp from the timestamp list.
+        Returns: 1741116530
+        """
         timestamps_list = self.get_prices_timestamp_list()
         return timestamps_list[-1] if timestamps_list else 0
 
