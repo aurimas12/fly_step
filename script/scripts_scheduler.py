@@ -7,9 +7,12 @@ from config import TIME_SETTINGS, SCRIPT_FUNCTIONS
 import logging
 import logging.config
 from logging_config import LOGGING_CONFIG
+from ryanair_one_way_cheap import main
 
 logging.config.dictConfig(LOGGING_CONFIG)
 logger = logging.getLogger(__name__)
+
+
 
 
 class ScriptScheduler:
@@ -108,5 +111,6 @@ class ScriptScheduler:
 
 
 if __name__ == "__main__":
+    SCRIPT_FUNCTIONS = [main,]
     scheduler = ScriptScheduler(SCRIPT_FUNCTIONS, TIME_SETTINGS)
     scheduler.start()
