@@ -3,7 +3,7 @@ from datetime import datetime
 from rich import print
 from apscheduler.schedulers.blocking import BlockingScheduler
 from apscheduler.triggers.cron import CronTrigger
-from config import TIME_SETTINGS, SCRIPT_FUNCTIONS
+from config import TIME_SETTINGS
 import logging
 import logging.config
 from logging_config import LOGGING_CONFIG
