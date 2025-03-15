@@ -18,11 +18,3 @@ TIME_SETTINGS = [
     (22, 5), (22, 43), (23, 0), (0, 22),
     (0, 26), (0, 48), (0, 49),
 ]
-
-
-# List of script to run in scrips_scheduler.py use in script/scripts_scheduler.py
-from ryanair_one_way_cheap import main
-SCRIPT_FUNCTIONS = [
-    main,
-    main
-]
