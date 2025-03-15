@@ -102,7 +102,7 @@ def extract_one_way_flight_details(one_flight_data: Dict[str, Any]) -> Tuple[Any
         price_value = outbound['price']['value']
         price_currency = outbound['price']['currencyCode']
         price_updated = outbound['priceUpdated']
-
+# TODO:geriau grazint dict koki bet nevisa sauja
         return (
             departure_country, departure_iata, departure_city, departure_city_name,
             departure_city_code, departure_country_code, arrival_country, arrival_iata,
@@ -120,15 +120,27 @@ def extract_one_way_flight_details(one_flight_data: Dict[str, Any]) -> Tuple[Any
         logger.error(f"Unexpected error during extraction: {e}")
         raise
 
-
+# TODO: geriau faials kur shcemu template butu
 def update_one_way_flight_json_schema(
     json_schema: Dict[str, Any],
-    departure_country: str, departure_iata: str, departure_city: str,
-    departure_city_name: str, departure_city_code: str, departure_country_code: str,
-    arrival_country: str, arrival_iata: str, arrival_city: str,
-    arrival_city_name: str, arrival_city_code: str, arrival_country_code: str,
-    departure_date: str, arrival_date: str, flight_number: str,
-    price_value: float, price_currency: str, price_updated: str
+    departure_country: str, 
+    departure_iata: str, 
+    departure_city: str,
+    departure_city_name: str, 
+    departure_city_code: str, 
+    departure_country_code: str,
+    arrival_country: str, 
+    arrival_iata: str, 
+    arrival_city: str,
+    arrival_city_name: str, 
+    arrival_city_code: str, 
+    arrival_country_code: str,
+    departure_date: str, 
+    arrival_date: str, 
+    flight_number: str,
+    price_value: float, 
+    price_currency: str, 
+    price_updated: str
 ) -> str:
     """
     Updates the JSON schema with the provided flight details from
@@ -252,6 +264,6 @@ def main():
     logger.info("Flight data scraping complete")
     create_all_tables_main()
     insert_data_to_db_main()
-
+# TODO:turetu visas failas but main.py lkuri paleidi ir daro darbus kuris enr apkrautas nereikalingais dalykais
 if __name__ == '__main__':
     main()

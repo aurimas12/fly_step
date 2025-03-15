@@ -1,3 +1,5 @@
+# TODO: sitie visi labai i constant panasus
+
 # Number of months to scraping use in script/ryanair_one_way_cheap.py
 GET_DATA_MONTHS = 3
 

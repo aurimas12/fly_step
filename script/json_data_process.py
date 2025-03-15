@@ -21,6 +21,8 @@ def time_stamp() -> int:
         int: The current timestamp in seconds.
     """
     dt = datetime.now()
+
+    # TODO:patikrinai ar nenukapoja sekundziu geriau kita konverteri naudot
     return int(datetime.timestamp(dt))
 
 

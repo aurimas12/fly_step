@@ -16,5 +16,6 @@ def run_compiled_pyc(compiled_file_apth):
         print(f"Compiled .pyc file not found at {compiled_file_apth}")
 
 if __name__ == "__main__":
+    # TODO: mano path skirsis del to geriau nenaudot taip,pasiziurek cia  budus https://www.geeksforgeeks.org/find-path-to-the-given-file-using-python/
     compiled_file_path = "/Users/home/Github/fly_step/script/__pycache__/ryanair_one_way_cheap.cpython-312.pyc"
     run_compiled_pyc(compiled_file_path)

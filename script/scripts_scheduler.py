@@ -109,7 +109,7 @@ class ScriptScheduler:
             logger.warning("Scheduler stopped SystemExit")
             print("Scheduler stopped SystemExit")
 
-
+# TODO:sita su main failu reiktu apjungt
 if __name__ == "__main__":
     SCRIPT_FUNCTIONS = [main,]
     scheduler = ScriptScheduler(SCRIPT_FUNCTIONS, TIME_SETTINGS)

@@ -10,7 +10,7 @@ class FlightData:
             json_data (Dict): JSON data structure containing flight details.
         """
         self.json_data = json_data
-
+    # TODO: daug get,jei tiesiog tu paduodi name ar param ir funkcija pati supranta ka tau grazint
     def get_departure_country_name(self) -> str:
         return self.json_data.get("departureAirport", {}).get("countryName", "")
 
@@ -28,7 +28,7 @@ class FlightData:
 
     def get_departure_country_code(self) -> str:
         return self.json_data.get("departureAirport", {}).get("city", {}).get("countryCode", "")
-
+# TODO:kam cia ta Union grazint?
     def get_departure_date(self, as_string: bool = True) -> Union[str, datetime]:
         """
         Returns: '2025-05-02 11:15:00'
@@ -53,7 +53,7 @@ class FlightData:
             return departure_timestamp
         except ValueError:
             return None
-
+# TODO: auksciau rasiau kad reik suprastint sitas nes cia suprantu tau tik jis reikalingas kad atspausdint text i print
     def get_arrival_country_name(self) -> str:
         return self.json_data.get("arrivalAirport", {}).get("countryName", "")
 
@@ -102,6 +102,7 @@ class FlightData:
                 prices = [float(item['value']) for item in list_of_prices]
                 return prices
             except (TypeError, ValueError):
+                # TODO:geriau error atspausdin kok bet nereik grazint empty array
                 return []
         return []
 
@@ -142,7 +143,7 @@ class FlightData:
 
     def get_flight_number(self) -> str:
         return self.json_data.get("flightNumber", "")
-
+# TODO:ar visa lsita grazina ar tik viena reiksme is listo,jei viena nezymim kad grazinam lista
     def get_price_updated_dates(self) -> List[str]:
         """
         Returns: exp: '1733323486000'

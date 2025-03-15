@@ -23,6 +23,8 @@ FLYGHT_ROUTES = [
     #{"departure": "KUN", "arrival": "AGP"},
 ]
 
+
+# TODO: sitas json negali but constant faile
 # Json
 FLIGHT_JSON_SCHEMA = {
     "departureAirport": {
