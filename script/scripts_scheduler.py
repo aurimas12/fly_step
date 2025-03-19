@@ -3,16 +3,14 @@ from datetime import datetime
 from rich import print
 from apscheduler.schedulers.blocking import BlockingScheduler
 from apscheduler.triggers.cron import CronTrigger
-from config import TIME_SETTINGS
+from constants import TIME_SETTINGS
 import logging
 import logging.config
 from logging_config import LOGGING_CONFIG
-from ryanair_one_way_cheap import main
+from ryanair_one_way_cheap import ryanair_main
 
 logging.config.dictConfig(LOGGING_CONFIG)
 logger = logging.getLogger(__name__)
-
-
 
 
 class ScriptScheduler:
@@ -23,7 +21,7 @@ class ScriptScheduler:
         time_settings (tuple): Immutable tuple of (hour, minute) schedules.
         scheduler (BlockingScheduler): The APScheduler instance for scheduling jobs.
     """
-    def __init__(self, scripts, time_settings):
+    def __init__(self, scripts: list, time_settings: list):
         """
         Initialize the scheduler with scripts and time settings.
         Args:
@@ -109,8 +107,11 @@ class ScriptScheduler:
             logger.warning("Scheduler stopped SystemExit")
             print("Scheduler stopped SystemExit")
 
-# TODO:sita su main failu reiktu apjungt
-if __name__ == "__main__":
-    SCRIPT_FUNCTIONS = [main,]
+def script_scheduler_main():
+    SCRIPT_FUNCTIONS = [ryanair_main,]
     scheduler = ScriptScheduler(SCRIPT_FUNCTIONS, TIME_SETTINGS)
     scheduler.start()
+
+# TODO:sita su main failu reiktu apjungt
+if __name__ == "__main__":
+    script_scheduler_main()

@@ -1,5 +1,6 @@
 from file import read_load_json_file, write_data_to_json_file
 import json
+import time
 from datetime import datetime
 from typing import List, Dict
 from flight_data_process import FlightData
@@ -13,17 +14,25 @@ logging.config.dictConfig(LOGGING_CONFIG)
 logger = logging.getLogger(__name__)
 
 
+#def time_stamp() -> int:
+#    """
+#    Get the current timestamp in seconds (without milliseconds).
+#    The time format is: YYYY-MM-DD HH:MM:SS
+#    Returns:
+#        int: The current timestamp in seconds.
+#    """
+#    dt = datetime.now()
+
+#    # TODO:patikrinai ar nenukapoja sekundziu geriau kita konverteri naudot
+#    return int(datetime.timestamp(dt))
+
 def time_stamp() -> int:
     """
     Get the current timestamp in seconds (without milliseconds).
-    The time format is: YYYY-MM-DD HH:MM:SS
     Returns:
-        int: The current timestamp in seconds.
+        int: The current Unix timestamp in seconds. exp: 1742146869
     """
-    dt = datetime.now()
-
-    # TODO:patikrinai ar nenukapoja sekundziu geriau kita konverteri naudot
-    return int(datetime.timestamp(dt))
+    return int(time.time())
 
 
 def parse_json_safely(data: str) -> dict | None:

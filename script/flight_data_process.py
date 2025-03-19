@@ -1,4 +1,4 @@
-from typing import List, Dict, Union
+from typing import List, Dict
 from datetime import datetime
 
 
@@ -29,7 +29,7 @@ class FlightData:
     def get_departure_country_code(self) -> str:
         return self.json_data.get("departureAirport", {}).get("city", {}).get("countryCode", "")
 # TODO:kam cia ta Union grazint?
-    def get_departure_date(self, as_string: bool = True) -> Union[str, datetime]:
+    def get_departure_date(self, as_string: bool = True) -> str:
         """
         Returns: '2025-05-02 11:15:00'
         """
@@ -73,7 +73,7 @@ class FlightData:
         return self.json_data.get("arrivalAirport", {}).get("city", {}).get("countryCode", "")
 
 
-    def get_arrival_date(self, as_string: bool = True) -> Union[str, datetime]:
+    def get_arrival_date(self, as_string: bool = True) -> str:
         arrival_date_str = self.json_data.get("arrivalDate", "")
         try:
             arrival_date = datetime.fromisoformat(arrival_date_str)
@@ -101,10 +101,11 @@ class FlightData:
             try:
                 prices = [float(item['value']) for item in list_of_prices]
                 return prices
-            except (TypeError, ValueError):
+            except (TypeError, ValueError) as err:
+                print(f"Error processing get_prices_list() values: {err}")
                 # TODO:geriau error atspausdin kok bet nereik grazint empty array
-                return []
-        return []
+        print("Invalid  get_prices_list() values format: Expected a list.")
+
 
     def get_prices_timestamp_list(self) -> List[int]:
         """
@@ -143,15 +144,15 @@ class FlightData:
 
     def get_flight_number(self) -> str:
         return self.json_data.get("flightNumber", "")
+    
 # TODO:ar visa lsita grazina ar tik viena reiksme is listo,jei viena nezymim kad grazinam lista
-    def get_price_updated_dates(self) -> List[str]:
+    def get_price_updated_dates(self) -> str:
         """
         Returns: exp: '1733323486000'
         """
         timestamps = self.json_data.get("priceUpdated", [])
         if timestamps:
-            return str(timestamps[0])
-
+            return str(timestamps)
 
     def get_latest_price(self) -> float:
         """Get the latest price from the price list."""
@@ -175,7 +176,7 @@ class FlightData:
 
         return f"{departure_city} ({departure_iata}) -> {arrival_city} ({arrival_iata})"
 
-    def to_table_formated_dict(self) -> Dict[str, Union[str, float]]:
+    def to_table_formated_dict(self) -> Dict:
         """
         Returns a (dict) with formatted output for easier processing.
         "departureDate", "from", "to", ("direction" from def get_direction()),"price"
