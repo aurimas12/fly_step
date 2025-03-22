@@ -14,27 +14,6 @@ logging.config.dictConfig(LOGGING_CONFIG)
 logger = logging.getLogger(__name__)
 
 
-#def time_stamp() -> int:
-#    """
-#    Get the current timestamp in seconds (without milliseconds).
-#    The time format is: YYYY-MM-DD HH:MM:SS
-#    Returns:
-#        int: The current timestamp in seconds.
-#    """
-#    dt = datetime.now()
-
-#    # TODO:patikrinai ar nenukapoja sekundziu geriau kita konverteri naudot
-#    return int(datetime.timestamp(dt))
-
-def time_stamp() -> int:
-    """
-    Get the current timestamp in seconds (without milliseconds).
-    Returns:
-        int: The current Unix timestamp in seconds. exp: 1742146869
-    """
-    return int(time.time())
-
-
 def parse_json_safely(data: str) -> dict | None:
     """
     Attempts to parse a string of JSON data. Logs an error if the parsing fails.
@@ -74,7 +53,7 @@ def add_price_and_timestamp_to_existing_entry_values(existing_item: dict, new_pr
     if "price" not in existing_item or "values" not in existing_item["price"]:
         existing_item["price"] = {"values": []}
 
-    new_price_entry = {"timestamp": time_stamp(), "value": new_price}
+    new_price_entry = {"timestamp": int(time.time()), "value": new_price}
     existing_flight.get_price_values().append(new_price_entry)
     logger.info(
         f"Added new price {new_price} with timestamp {new_price_entry} to price list."

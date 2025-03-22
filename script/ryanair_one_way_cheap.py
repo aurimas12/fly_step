@@ -1,4 +1,5 @@
 import json
+import time
 import requests
 from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
@@ -18,7 +19,6 @@ from json_data_process import (
                             get_sort_json_data_flights,
                             prepare_flight_formated_output,
                             check_append_price_and_write_data_to_json_file,
-                            time_stamp,
                             )
 from db.create_tables import create_all_tables_main
 from db.json_data_to_db import insert_data_to_db_main
@@ -107,7 +107,7 @@ def extract_one_way_flight_details(one_flight_data: Dict[str, Any]) -> FlightMod
             flightNumber = outbound['flightNumber'],
             price = Price(
                 values = [PriceValue(
-                    timestamp = time_stamp(),
+                    timestamp = int(time.time()),
                     value = outbound['price']['value']
                     )],
                 currencyCode = outbound['price']['currencyCode']
@@ -134,7 +134,7 @@ def update_one_way_flight_json_schema(flight_model: FlightModel) -> str:
         json_schema = flight_model.model_dump()
         json_schema['price']['values'] = [
             {
-                "timestamp": time_stamp(),
+                "timestamp": int(time.time()),
                 "value": json_schema['price']['values'][0]['value']
             }
         ]
@@ -212,7 +212,7 @@ def ryanair_main():
     logger.info("Flight data scraping complete")
     create_all_tables_main()
     insert_data_to_db_main()
-    
+
 # TODO:turetu visas failas but main.py lkuri paleidi ir daro darbus kuris enr apkrautas nereikalingais dalykais
 if __name__ == '__main__':
     ryanair_main()

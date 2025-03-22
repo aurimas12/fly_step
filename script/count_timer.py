@@ -29,7 +29,7 @@ def count_timer(func):
         return result
     return wrapper
 
-# TODO:jei dedi tipa koki grazins ar priims dek prie visu funkciju
+
 def get_yesterday_timestamp() -> int:
     """
     Get the Unix timestamp (in milliseconds) for yesterday's date.

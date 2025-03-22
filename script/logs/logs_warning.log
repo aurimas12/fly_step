@@ -1154,3 +1154,653 @@ priceUpdated
   Input should be a valid string [type=string_type, input_value=1742193870000, input_type=int]
     For further information visit https://errors.pydantic.dev/2.10/v/string_type
 2025-03-17 22:39 -  file - WARNING -[file.py:87] - read_load_json_file - File './script/data/lt_spain_data.json' not found. Returning an empty list.
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:146] - update_one_way_flight_json_schema - Error updating JSON schema: 'values'
+2025-03-20 23:15 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 'values'
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640954, 'price': 175.29}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640954, 'price': 175.29}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640954, 'price': 191.29}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640954, 'price': 191.29}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640954, 'price': 83.67}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640954, 'price': 83.67}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640954, 'price': 61.39}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640954, 'price': 61.39}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640954, 'price': 46.77}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640954, 'price': 46.77}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640955, 'price': 61.39}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640955, 'price': 61.39}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640955, 'price': 107.17}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640955, 'price': 107.17}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640955, 'price': 40.12}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640955, 'price': 40.12}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640955, 'price': 54.73}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640955, 'price': 54.73}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640955, 'price': 83.04}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640955, 'price': 83.04}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640955, 'price': 86.24}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640955, 'price': 86.24}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640956, 'price': 92.72}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640956, 'price': 92.72}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640956, 'price': 60.78}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640956, 'price': 60.78}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640956, 'price': 319.79}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640956, 'price': 319.79}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640956, 'price': 84.95}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640956, 'price': 84.95}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640957, 'price': 71.52}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640957, 'price': 71.52}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640957, 'price': 124.03}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640957, 'price': 124.03}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640957, 'price': 142.55}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640957, 'price': 142.55}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640957, 'price': 121.99}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640957, 'price': 121.99}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640957, 'price': 129.31}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640957, 'price': 129.31}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640957, 'price': 267.98}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640957, 'price': 267.98}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640958, 'price': 134.8}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640958, 'price': 134.8}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640958, 'price': 86.99}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640958, 'price': 86.99}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640958, 'price': 181.01}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640958, 'price': 181.01}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640958, 'price': 97.99}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640958, 'price': 97.99}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640958, 'price': 140.29}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640958, 'price': 140.29}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640959, 'price': 148.97}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640959, 'price': 148.97}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640959, 'price': 160.14}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640959, 'price': 160.14}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640959, 'price': 122.4}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640959, 'price': 122.4}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640959, 'price': 97.0}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640959, 'price': 97.0}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640959, 'price': 206.59}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:55 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640959, 'price': 206.59}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640960, 'price': 74.71}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640960, 'price': 74.71}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640960, 'price': 81.12}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640960, 'price': 81.12}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640960, 'price': 127.29}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640960, 'price': 127.29}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640960, 'price': 127.29}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640960, 'price': 127.29}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640960, 'price': 98.44}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640960, 'price': 98.44}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640961, 'price': 49.13}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640961, 'price': 49.13}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640961, 'price': 94.17}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640961, 'price': 94.17}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640961, 'price': 83.42}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640961, 'price': 83.42}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640961, 'price': 98.44}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640961, 'price': 98.44}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640962, 'price': 96.46}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640962, 'price': 96.46}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640962, 'price': 78.29}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640962, 'price': 78.29}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640962, 'price': 71.52}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640962, 'price': 71.52}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640962, 'price': 83.04}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640962, 'price': 83.04}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640962, 'price': 65.86}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640962, 'price': 65.86}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640963, 'price': 69.59}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640963, 'price': 69.59}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640963, 'price': 62.87}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640963, 'price': 62.87}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640963, 'price': 84.95}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640963, 'price': 84.95}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640963, 'price': 117.51}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640963, 'price': 117.51}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640964, 'price': 97.72}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640964, 'price': 97.72}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640964, 'price': 94.17}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640964, 'price': 94.17}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640964, 'price': 62.84}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640964, 'price': 62.84}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640964, 'price': 64.17}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640964, 'price': 64.17}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640964, 'price': 72.64}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640964, 'price': 72.64}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640965, 'price': 94.14}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640965, 'price': 94.14}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640965, 'price': 120.77}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640965, 'price': 120.77}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640965, 'price': 80.47}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640965, 'price': 80.47}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640965, 'price': 171.0}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640965, 'price': 171.0}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640966, 'price': 83.67}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640966, 'price': 83.67}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640966, 'price': 95.57}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640966, 'price': 95.57}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640966, 'price': 131.14}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640966, 'price': 131.14}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640967, 'price': 57.02}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640967, 'price': 57.02}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640967, 'price': 80.47}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640967, 'price': 80.47}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640967, 'price': 98.72}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640967, 'price': 98.72}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:125] - extract_one_way_flight_details - Unexpected error during extraction: 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640967, 'price': 96.57}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-03-22 12:56 -  __main__ - ERROR -[ryanair_one_way_cheap.py:193] - get_flights_by_date_range - Unexpected error in def get_flights_by_date_range(): 1 validation error for PriceValue
+value
+  Field required [type=missing, input_value={'timestamp': 1742640967, 'price': 96.57}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing

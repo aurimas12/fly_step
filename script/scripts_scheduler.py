@@ -111,7 +111,3 @@ def script_scheduler_main():
     SCRIPT_FUNCTIONS = [ryanair_main,]
     scheduler = ScriptScheduler(SCRIPT_FUNCTIONS, TIME_SETTINGS)
     scheduler.start()
-
-# TODO:sita su main failu reiktu apjungt
-if __name__ == "__main__":
-    script_scheduler_main()

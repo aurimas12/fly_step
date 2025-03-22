@@ -28,7 +28,7 @@ class FlightData:
 
     def get_departure_country_code(self) -> str:
         return self.json_data.get("departureAirport", {}).get("city", {}).get("countryCode", "")
-# TODO:kam cia ta Union grazint?
+
     def get_departure_date(self, as_string: bool = True) -> str:
         """
         Returns: '2025-05-02 11:15:00'
@@ -103,7 +103,7 @@ class FlightData:
                 return prices
             except (TypeError, ValueError) as err:
                 print(f"Error processing get_prices_list() values: {err}")
-                # TODO:geriau error atspausdin kok bet nereik grazint empty array
+
         print("Invalid  get_prices_list() values format: Expected a list.")
 
 
@@ -144,15 +144,14 @@ class FlightData:
 
     def get_flight_number(self) -> str:
         return self.json_data.get("flightNumber", "")
-    
+
 # TODO:ar visa lsita grazina ar tik viena reiksme is listo,jei viena nezymim kad grazinam lista
     def get_price_updated_dates(self) -> str:
         """
         Returns: exp: '1733323486000'
         """
         timestamps = self.json_data.get("priceUpdated", [])
-        if timestamps:
-            return str(timestamps)
+        return str(timestamps)
 
     def get_latest_price(self) -> float:
         """Get the latest price from the price list."""
