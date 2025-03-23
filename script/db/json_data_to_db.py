@@ -894,7 +894,3 @@ def insert_data_to_db_main():
         else:
             continue
     print("Done!")
-
-
-if __name__ == '__main__':
-    insert_data_to_db_main()

@@ -1,6 +1,7 @@
 import time
 import functools
 from datetime import datetime, timedelta, timezone
+from typing import Any
 
 
 def count_timer(func):
@@ -12,7 +13,7 @@ def count_timer(func):
         callable: A wrapped function that prints its execution time.
     """
     @functools.wraps(func)
-    def wrapper(*args, **kwargs):
+    def wrapper(*args: Any, **kwargs: Any) -> Any:
         """
         Wrapper function that records the execution time of the original function.
         Args:
@@ -39,4 +40,4 @@ def get_yesterday_timestamp() -> int:
         If today is 2025-03-05, the function returns the timestamp for 2025-03-04.
     """
     yesterday = datetime.now(timezone.utc) - timedelta(days=1)
-    return int(yesterday.timestamp()) 
+    return int(yesterday.timestamp())

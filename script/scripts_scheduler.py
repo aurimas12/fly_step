@@ -3,16 +3,14 @@ from datetime import datetime
 from rich import print
 from apscheduler.schedulers.blocking import BlockingScheduler
 from apscheduler.triggers.cron import CronTrigger
-from config import TIME_SETTINGS
+from constants import TIME_SETTINGS
 import logging
 import logging.config
 from logging_config import LOGGING_CONFIG
-from ryanair_one_way_cheap import main
+from ryanair_one_way_cheap import ryanair_main
 
 logging.config.dictConfig(LOGGING_CONFIG)
 logger = logging.getLogger(__name__)
-
-
 
 
 class ScriptScheduler:
@@ -23,7 +21,7 @@ class ScriptScheduler:
         time_settings (tuple): Immutable tuple of (hour, minute) schedules.
         scheduler (BlockingScheduler): The APScheduler instance for scheduling jobs.
     """
-    def __init__(self, scripts, time_settings):
+    def __init__(self, scripts: list, time_settings: list):
         """
         Initialize the scheduler with scripts and time settings.
         Args:
@@ -48,6 +46,7 @@ class ScriptScheduler:
         for script_function in self.scripts:
             try:
                 print(f"Starting '{script_function.__name__}' script...")
+                print(f"Script starting time: {datetime.now().strftime('%H:%M:%S')}")
                 script_function()
                 print(f"script '{script_function.__name__}' completed successfully")
             except Exception as e:
@@ -95,11 +94,12 @@ class ScriptScheduler:
             job_id = f"job_{hour}_{minute}"
             self.add_job(job_id, trigger)
 
+
     def start(self):
         """Start the scheduler."""
         self.schedule_jobs()
         print("Starting scripts scheduler ...")
-        print(f"Current time: {datetime.now().strftime('%H:%M:%S')}")
+        print(f"Starting scheduler time: {datetime.now().strftime('%H:%M:%S')}")
         try:
             self.scheduler.start()
         except (KeyboardInterrupt):
@@ -110,7 +110,7 @@ class ScriptScheduler:
             print("Scheduler stopped SystemExit")
 
 
-if __name__ == "__main__":
-    SCRIPT_FUNCTIONS = [main,]
+def script_scheduler_main():
+    SCRIPT_FUNCTIONS = [ryanair_main,]
     scheduler = ScriptScheduler(SCRIPT_FUNCTIONS, TIME_SETTINGS)
     scheduler.start()

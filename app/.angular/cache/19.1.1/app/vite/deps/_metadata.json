@@ -1,0 +1,34 @@
+{
+  "hash": "c52bcfa1",
+  "configHash": "6b25f746",
+  "lockfileHash": "415bdad1",
+  "browserHash": "46d250d6",
+  "optimized": {
+    "@angular/core": {
+      "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "473f7840",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "9f4292cc",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "454bb0d4",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-US7XBJH3": {
+      "file": "chunk-US7XBJH3.js"
+    },
+    "chunk-TAIACK7E": {
+      "file": "chunk-TAIACK7E.js"
+    }
+  }
+}
