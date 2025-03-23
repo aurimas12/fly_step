@@ -106,15 +106,15 @@ def extract_one_way_flight_details(one_flight_data: Dict[str, Any]) -> FlightMod
             arrivalDate = outbound['arrivalDate'],
             flightNumber = outbound['flightNumber'],
             price = Price(
-                values = [PriceValue(
+                prices_history = [PriceValue(
                     timestamp = int(time.time()),
-                    value = outbound['price']['value']
+                    price = outbound['price']['value']
                     )],
                 currencyCode = outbound['price']['currencyCode']
             ),
             priceUpdated=outbound['priceUpdated']
         )
-# TODO:geriau grazint dict koki bet nevisa sauja
+
     except KeyError as e:
         logger.error(f"KeyError encountered during extraction: {e}")
         raise
@@ -125,17 +125,17 @@ def extract_one_way_flight_details(one_flight_data: Dict[str, Any]) -> FlightMod
         logger.error(f"Unexpected error during extraction: {e}")
         raise
 
-# TODO: geriau faials kur shcemu template butu
+
 def update_one_way_flight_json_schema(flight_model: FlightModel) -> str:
     """
     Update and format JSON schema with flight details.
     """
     try:
         json_schema = flight_model.model_dump()
-        json_schema['price']['values'] = [
+        json_schema['price']['prices_history'] = [
             {
                 "timestamp": int(time.time()),
-                "value": json_schema['price']['values'][0]['value']
+                "price": json_schema['price']['prices_history'][0]['price']
             }
         ]
         json_schema['price']['currencyCode'] = flight_model.price.currencyCode
@@ -212,7 +212,3 @@ def ryanair_main():
     logger.info("Flight data scraping complete")
     create_all_tables_main()
     insert_data_to_db_main()
-
-# TODO:turetu visas failas but main.py lkuri paleidi ir daro darbus kuris enr apkrautas nereikalingais dalykais
-if __name__ == '__main__':
-    ryanair_main()

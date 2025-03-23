@@ -32,12 +32,12 @@ def parse_json_safely(data: str) -> dict | None:
 def add_price_and_timestamp_to_existing_entry_values(existing_item: dict, new_price: float) -> None:
     """
     Add the price from the new entry to the list of prices in the existing entry.
-    This function ensures that the price list (`price.values`) exists in the
-    existing entry and then appends a new price entry with the
+    This function ensures that the price list (`price.prices_history`) exists
+    in the existing entry and then appends a new price entry with the
     current timestamp and the new price.
     Args:
         existing_item (dict): The existing flight entry to be updated.
-            It should contain a `price` key with a nested `values` list.
+           It should contain a `price` key with a nested `values` list.
         new_price (float): The price from the new entry to add.
             This should be a numeric value (int or float).
     Returns:
@@ -45,19 +45,14 @@ def add_price_and_timestamp_to_existing_entry_values(existing_item: dict, new_pr
             in place and does not return any value.
     """
     existing_flight = FlightData(existing_item)
-
+  
     if not isinstance(new_price, (int, float)):
         logger.warning(f"Invalid price value {new_price}. Price was not added.")
         return
 
-    if "price" not in existing_item or "values" not in existing_item["price"]:
-        existing_item["price"] = {"values": []}
-
-    new_price_entry = {"timestamp": int(time.time()), "value": new_price}
+    new_price_entry = {"timestamp": int(time.time()), "price": new_price}
     existing_flight.get_price_values().append(new_price_entry)
-    logger.info(
-        f"Added new price {new_price} with timestamp {new_price_entry} to price list."
-    )
+    logger.info(f"Added new price {new_price} with timestamp {new_price_entry} to price list.")
 
 
 def check_append_price_and_write_data_to_json_file(data: str, json_file_path: str) -> str:
@@ -65,8 +60,8 @@ def check_append_price_and_write_data_to_json_file(data: str, json_file_path: st
     Processes a new flight entry, checks for an existing entry in a JSON file,
     and updates or appends the data accordingly.
     Args:
-        data (str): JSON string containing the new flight entry from
-        update_one_way_flight_json_schema().
+        data (str): JSON string containing the new flight entry
+        from ryanair_one_way_cheap.py - update_one_way_flight_json_schema().
         json_file_path (str): Path to the JSON file containing existing flight data.
     Returns:
         str: A message indicating whether the entry was updated or added.
@@ -97,6 +92,7 @@ def check_append_price_and_write_data_to_json_file(data: str, json_file_path: st
 
         if new_price not in all_prices:
             add_price_and_timestamp_to_existing_entry_values(existing_entry, new_price)
+            existing_entry['priceUpdated'] = new_flight.get_price_updated_dates()
             write_data_to_json_file(existing_data, json_file_path)
             return f"Updated entry with new price: {new_price} in entry: {all_prices}"
         else:
@@ -170,7 +166,7 @@ def get_sort_json_data_flights(path_to_json: str, num_results: int=5) -> List[Di
 
     sorted_flights = sorted(
         filtered_flights_list_of_dict,
-        key=lambda x: x["price"]["values"][-1]["value"]
+        key=lambda x: x["price"]["prices_history"][-1]["price"]
     )
     sorted_flights = sorted_flights[:num_results]
     return sorted_flights

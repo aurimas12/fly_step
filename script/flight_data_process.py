@@ -10,7 +10,7 @@ class FlightData:
             json_data (Dict): JSON data structure containing flight details.
         """
         self.json_data = json_data
-    # TODO: daug get,jei tiesiog tu paduodi name ar param ir funkcija pati supranta ka tau grazint
+
     def get_departure_country_name(self) -> str:
         return self.json_data.get("departureAirport", {}).get("countryName", "")
 
@@ -53,7 +53,7 @@ class FlightData:
             return departure_timestamp
         except ValueError:
             return None
-# TODO: auksciau rasiau kad reik suprastint sitas nes cia suprantu tau tik jis reikalingas kad atspausdint text i print
+
     def get_arrival_country_name(self) -> str:
         return self.json_data.get("arrivalAirport", {}).get("countryName", "")
 
@@ -81,15 +81,23 @@ class FlightData:
         except ValueError:
             return arrival_date_str if as_string else None
 
+    def get_price_values(self) -> List[dict]:
+        """ Returns:
+        exp: [
+        {'timestamp': 1732624691000, 'price': 57.27},
+        {'timestamp': 1732624694000, 'price': 73.6}
+        ]
+        """
+        return self.json_data.get("price", {}).get("prices_history", [])
 
     def get_prices_list(self) -> List[float]:
         """
-        Get the list of prices as floats from the `price["values"]` field.
+        Get the list of prices as floats from the `price["prices_history"]` field.
         Exp:
             Input:
-                "values": [
-                    {"timestamp": 1732624691000, "value": 57.27},
-                    {"timestamp": 1732624694000, "value": 73.6}
+                "prices_history": [
+                    {"timestamp": 1732624691000, "price": 57.27},
+                    {"timestamp": 1732624694000, "price": 73.6}
                 ]
             Output:
                 [57.27, 73.6]
@@ -99,22 +107,22 @@ class FlightData:
         list_of_prices = self.get_price_values()
         if isinstance(list_of_prices, list):
             try:
-                prices = [float(item['value']) for item in list_of_prices]
+                prices = [float(item['price']) for item in list_of_prices]
                 return prices
             except (TypeError, ValueError) as err:
                 print(f"Error processing get_prices_list() values: {err}")
 
-        print("Invalid  get_prices_list() values format: Expected a list.")
+        print("Invalid  get_prices_list() price values format: Expected a list.")
 
 
     def get_prices_timestamp_list(self) -> List[int]:
         """
-        Get the list of timestamps(int) from the `price["values"]` field.
+        Get the list of timestamps(int) from the `price["prices_history"]` field.
         Exp:
             Input:
-                "values": [
-                    {"timestamp": 1732624691000, "value": 57.27},
-                    {"timestamp": 1732624694000, "value": 73.6}
+                "prices_history": [
+                    {"timestamp": 1732624691000, "price": 57.27},
+                    {"timestamp": 1732624694000, "price": 73.6}
                 ]
             Output:
                 [1732624691000, 1732624694000]
@@ -130,14 +138,6 @@ class FlightData:
                 return None
         return None
 
-    def get_price_values(self) -> List[dict]:
-        """ Returns:
-        exp: [
-        {'timestamp': 1732624691000, 'value': 57.27},
-        {'timestamp': 1732624694000, 'value': 73.6}
-        ]
-        """
-        return self.json_data.get("price", {}).get("values", [])
 
     def get_currency_code(self) -> str:
         return self.json_data.get("price", {}).get("currencyCode", "")
@@ -145,7 +145,7 @@ class FlightData:
     def get_flight_number(self) -> str:
         return self.json_data.get("flightNumber", "")
 
-# TODO:ar visa lsita grazina ar tik viena reiksme is listo,jei viena nezymim kad grazinam lista
+
     def get_price_updated_dates(self) -> str:
         """
         Returns: exp: '1733323486000'
@@ -177,7 +177,7 @@ class FlightData:
 
     def to_table_formated_dict(self) -> Dict:
         """
-        Returns a (dict) with formatted output for easier processing.
+        Returns a {dict} with formatted output for easier processing.
         "departureDate", "from", "to", ("direction" from def get_direction()),"price"
         {
             'departureDate': '2024-12-27 12:55:00',
@@ -206,6 +206,7 @@ class FlightData:
             f"{self.get_arrival_date()} "
             f"Latest price: {self.get_latest_price()} {self.get_currency_code()}>"
         )
+
 
     def __str__(self) -> str:
         return (

@@ -31,11 +31,11 @@ class ArrivalAirport(BaseModel):
 
 class PriceValue(BaseModel):
     timestamp: int
-    value: float
+    price: float
 
 
 class Price(BaseModel):
-    values: List[PriceValue]
+    prices_history: List[PriceValue]
     currencyCode: str
 
 
@@ -48,39 +48,6 @@ class FlightModel(BaseModel):
     flightNumber: str
     priceUpdated: int
 
-
-"""
-flight_json_schema = {
-    "departureAirport": {
-        "countryName": "",
-        "iataCode": "",
-        "name": "",
-        "city": {
-            "name": "",
-            "code": "",
-            "countryCode": ""
-        }
-    },
-    "arrivalAirport": {
-        "countryName": "",
-        "iataCode": "",
-        "name": "",
-        "city": {
-            "name": "",
-            "code": "",
-            "countryCode": ""
-        }
-    },
-    "departureDate": "",
-    "arrivalDate": "",
-        "price": {
-            "values": [],
-            "currencyCode": ""
-        },
-    "flightNumber": "",
-    "priceUpdated": ""
-}
-"""
 
 """
     {
@@ -104,22 +71,18 @@ flight_json_schema = {
                 "countryCode": "es"
             }
         },
-        "departureDate": "2025-06-15T05:45:00",
-        "arrivalDate": "2025-06-15T08:20:00",
+        "departureDate": "2025-03-25T17:05:00",
+        "arrivalDate": "2025-03-25T19:40:00",
         "price": {
-            "values": [
+            "prices_history": [
                 {
-                    "timestamp": 1742243975,
-                    "value": 95.57
-                },
-                {
-                    "timestamp": 1742413323,
-                    "value": 107.17
+                    "timestamp": 1742751829,
+                    "price": 191.29
                 }
             ],
             "currencyCode": "EUR"
         },
         "flightNumber": "FR1787",
-        "priceUpdated": 1742197497000
-    },
+        "priceUpdated": 1742734424000
+    }
 """

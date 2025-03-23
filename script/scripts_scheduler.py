@@ -46,6 +46,7 @@ class ScriptScheduler:
         for script_function in self.scripts:
             try:
                 print(f"Starting '{script_function.__name__}' script...")
+                print(f"Script starting time: {datetime.now().strftime('%H:%M:%S')}")
                 script_function()
                 print(f"script '{script_function.__name__}' completed successfully")
             except Exception as e:
@@ -93,11 +94,12 @@ class ScriptScheduler:
             job_id = f"job_{hour}_{minute}"
             self.add_job(job_id, trigger)
 
+
     def start(self):
         """Start the scheduler."""
         self.schedule_jobs()
         print("Starting scripts scheduler ...")
-        print(f"Current time: {datetime.now().strftime('%H:%M:%S')}")
+        print(f"Starting scheduler time: {datetime.now().strftime('%H:%M:%S')}")
         try:
             self.scheduler.start()
         except (KeyboardInterrupt):
@@ -106,6 +108,7 @@ class ScriptScheduler:
         except (SystemExit):
             logger.warning("Scheduler stopped SystemExit")
             print("Scheduler stopped SystemExit")
+
 
 def script_scheduler_main():
     SCRIPT_FUNCTIONS = [ryanair_main,]
